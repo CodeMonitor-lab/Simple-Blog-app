@@ -22,8 +22,8 @@ const Header = () => {
         {/*  */}
        <div className={Styles.Auth_links}>
        <ul className={Styles.Auths}>
-        <NavLink to='#!' ><button  className={Styles.Auth_Navigate} type="submit">Login</button></NavLink>
-        <NavLink to='#!' ><button  className={Styles.Auth_Navigate} type="submit">SignUp</button></NavLink>
+        <NavLink to='/Login' ><button  className={Styles.Auth_Navigate} type="submit">Login</button></NavLink>
+        <NavLink to='/SignUp' ><button  className={Styles.Auth_Navigate} type="submit">SignUp</button></NavLink>
         </ul>
        </div>
        {/*  */}

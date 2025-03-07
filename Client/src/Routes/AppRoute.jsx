@@ -18,6 +18,10 @@ const AppRoute = () => {
                     element:<SignUp/>
                 },
                 {
+                    path:'/Login',
+                    element:<Login/>
+                },
+                {
                     path:'*',
                     element:<PageNotFound/>
                 }
