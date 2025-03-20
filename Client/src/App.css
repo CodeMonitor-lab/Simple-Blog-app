@@ -5,3 +5,23 @@
     text-decoration: none;
     list-style: none;
 }
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    /* font-family: inherit; */
+    font-family: "Urbanist";
+}
+body{
+    /* background: red; */
+}
+h1{
+    font-size: 2rem;
+}
+p,li,button{
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem
+}
+.Navbar_Container{
+    max-width: 132rem;
+    margin: auto;
+}

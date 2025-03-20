@@ -1,0 +1,31 @@
+.Hero_container{
+    /* background: blue; */
+    width: 100%;
+}
+.Hero_section{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+.Hero_article{
+    /* background: red; */
+    padding: 2rem;
+}
+.Hero_article h1{
+    text-align: center;
+}
+.Hero_article p{
+    padding: 1rem 0rem 1rem 0rem;
+    font-family: 'Poppins',sans-serif;
+    line-height: 2rem;
+}
+.Hero_button{
+    background: darkcyan;
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+}
