@@ -1,7 +1,7 @@
 .Home_Container{
     height: 100vh;
-    color: darkmagenta;
+    padding: 2rem;
 }
-.Home_Section{
-    
+.Home_Container h1{
+    color: darkmagenta;
 }
