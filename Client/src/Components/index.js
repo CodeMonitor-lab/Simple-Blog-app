@@ -1,6 +1,3 @@
-// Form
-export {default as Login} from './Form/Login'
-export {default as SignUp} from './Form/SignUp'
 
 // UI
 export {default as Header} from './UI/Header/Header'

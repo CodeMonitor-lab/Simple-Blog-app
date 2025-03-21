@@ -2,7 +2,8 @@
     width: 100%;
     height: 60vh;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns:repeat(2,1fr);
+    justify-content: center;
 }
 .Login_Section{
     display: flex;
@@ -15,6 +16,7 @@
 }
 .heading1{
     margin: 0rem 0rem 3rem;
+    font-size:2em;
 }
 .Login_Form .Form{
     box-shadow: 0px 0px 5px #FFF;
@@ -31,12 +33,12 @@
     width: 100%;
 }
 .Form li{
-    color:blueviolet;
+    color:#000;
     font-family: sans-serif;
     text-decoration: underline;
     text-underline-offset: 0.4rem;
     font-size: 1.6rem;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 .Login_Button{
     background:none;
@@ -57,11 +59,29 @@
 }
 /* image */
 .Login_Image{
-    /* display: flex; */
-    padding: 1rem;
+    width: 100%;
+    padding: 0.2rem;
 }
 .Login_Image img{
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     background-size: cover;
+    background-position: center;
+}
+
+/* Media Queries */
+@media (max-width:625px){
+    .Login_Container{
+        width: 100%;
+        height: 60vh;
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+        justify-content: center;
+    }
+    .Login_Form{
+        width: 100%;
+    }
+    .Login_Section{
+        
+    }
 }

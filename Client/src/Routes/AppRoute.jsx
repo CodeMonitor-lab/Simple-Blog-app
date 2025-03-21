@@ -1,9 +1,9 @@
 import React from 'react'
 // Components
-import {Login,PageNotFound,SignUp} from '../Components/index'
+import {PageNotFound} from '../Components/index'
 import AppLayout from '../Components/Layout/AppLayoute'
 // page
-import {Home,Register} from '../pages/index'
+import {Home,Login,SignUp} from '../pages/index'
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 
 const AppRoute = () => {
@@ -17,20 +17,12 @@ const AppRoute = () => {
                     element:<Home/>
                 },
                 {
-                    path:'/',
+                    path:'/Login',
                     element:<Login/>
                 },
                 {
                     path:'/Register',
-                    element:<Register/>
-                },
-                {
-                    path:'/SignUp',
                     element:<SignUp/>
-                },
-                {
-                    path:'/Login',
-                    element:<Login/>
                 },
                 {
                     path:'*',

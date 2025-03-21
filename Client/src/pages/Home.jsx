@@ -1,6 +1,7 @@
 import React from 'react'
 import Styles from '../Styles/Home.module.css'
-import { Hero_Section,Login,SignUp } from '../Components/index'
+import { Hero_Section} from '../Components/index'
+import {Login,SignUp} from '../pages/index'
 
 const Home = () => {
     return (
