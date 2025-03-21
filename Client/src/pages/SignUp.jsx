@@ -1,5 +1,5 @@
 import React from 'react'
-import Styles from '../Styles/Login.module.css'
+import Styles from '../Styles/SignUp.module.css'
 import {NavLink} from 'react-router-dom'
 import LoginImage from '../assets/Login.png'
 
