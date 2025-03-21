@@ -6,10 +6,11 @@ const Home = () => {
     return (
         <div>
             <div className={Styles.Home_Container}>
+                <div className={Styles.Hero_Section}>
                 <Hero_Section />
-                <h1 style={{color:'blueviolet',textAlign:'center',fontFamily:'sans-serif',textDecoration:'underline 0.2rem'}} >Home Page</h1>
-                <Login/>
-                
+                </div>
+                <div className={Styles.login_Section}>
+                </div>
             </div>
         </div>
     )

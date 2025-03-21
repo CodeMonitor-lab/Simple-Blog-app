@@ -22,9 +22,7 @@ const Header_2 = () => {
             <nav className={showMenu ? `${Styles.Menu_mobile}` :` ${Styles.Web_menu}`}>
               <ul>
                 <NavLink to='/' ><li>Home</li></NavLink>
-                <NavLink to='/' ><li>About</li></NavLink>
-                <NavLink to='/' ><li>Services</li></NavLink>
-                <NavLink to='/Register' ><li>Contact</li></NavLink>
+                <NavLink to='/Register' ><li>Register</li></NavLink>
               </ul>
             </nav>
             {/*  */}
