@@ -2,7 +2,6 @@ import Styles from '../Styles/Login.module.css'
 import {NavLink} from 'react-router-dom'
 import LoginImage from '../assets/Login.png'
 
-
 const Login = () => (
   <>
     <main className={Styles.Login_Container}>
@@ -20,7 +19,7 @@ const Login = () => (
       </section>
       {/* image */}
       <div className={Styles.Login_Image}>
-        <img src={LoginImage} alt="" />
+        <img src={LoginImage} alt="Login_banner" />
       </div>
     </main>
   </>
