@@ -1,5 +1,6 @@
 .Footer_Container{
     width: 100%;
+    height: auto;
     background: rgb(18, 98, 104);
     margin-top: 2rem;
 }
@@ -13,6 +14,7 @@
 }
 .Footer_links{
     /* background: red; */
+
 }
 .Footer_links li{
     color: #fff;

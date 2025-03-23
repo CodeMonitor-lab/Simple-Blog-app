@@ -4,7 +4,7 @@
 }
 .Footer_Icons{
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     gap: 2rem;
 }
 .Footer_Icons span{
