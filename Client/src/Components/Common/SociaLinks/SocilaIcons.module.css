@@ -8,8 +8,10 @@
     gap: 2rem;
 }
 .Footer_Icons span{
+    display: flex;
     color: #fff;
     background: blue;
+    border: 1px solid #fff;
     font-size: 2rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
