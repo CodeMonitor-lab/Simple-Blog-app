@@ -1,0 +1,23 @@
+
+.SocialIcons_Section{
+    /* background:blue ; */
+}
+.Footer_Icons{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 2rem;
+}
+.Footer_Icons span{
+    color: #fff;
+    background: blue;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+.Footer_Icons .Instgram{
+    background:rgb(161, 18, 18);
+}
+.Footer_Icons .Twitter{
+    background: #000;
+}

@@ -1,0 +1,39 @@
+.Footer_Container{
+    width: 100%;
+    background: rgb(18, 98, 104);
+    margin-top: 2rem;
+}
+.Footer_Section{
+    /* height:20vh; */
+    padding: 2rem;
+    display:grid;
+    grid-template-columns: 12rem 10rem;
+    justify-content: center;
+    gap: 10%;
+}
+.Footer_links{
+    /* background: red; */
+}
+.Footer_links li{
+    color: #fff;
+    font-family: sans-serif;
+    font-weight:bold;
+    line-height: 4rem;
+
+    &:hover{
+        color:#000;
+    }
+}
+.Footer_Rights{
+    background:#fff;
+    box-shadow: 0px 0px 5px #000;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.Footer_Rights span{
+    color:#000;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+}

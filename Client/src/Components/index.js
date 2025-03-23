@@ -7,6 +7,7 @@ export {default as Hero_Section} from './UI/Hero_Section/Hero_Section'
 
 // Common
 export {default as PageNotFound} from './Common/PageNotFound'
+export {default as SocialIcons} from './Common/SociaLinks/SocialIcons'
 
 // Layout
 export {default as AppLayout} from './Layout/AppLayoute'
