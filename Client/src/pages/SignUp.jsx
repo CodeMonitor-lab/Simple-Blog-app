@@ -13,21 +13,24 @@ const SignUp = () => {
   const SignUpValidation = (event)=>{
     if(!name.trim() && !email.trim() && !password.trim()){
       toast.warn('All Filed Required')
-      return false
+      return true;
     }
     if(!name.trim()){
       toast.warn('Name Required')
-      return false
+      return true
     }
     if(!email.trim()){
       toast.warn('Email Required');
-      return false
+      return true
     }
     if(!password.trim()){
       toast.warn('password Required');
-      return false
+      return true
     }
-    return true
+    if(name >= 3){
+      alert('big')
+    }
+    return false
   }
 
   // handle Submit my form
@@ -48,26 +51,18 @@ const SignUp = () => {
       }
 
     }catch(error){
-      console.log(error)
-      if(error.response){
-        const status = error.response.status;
-        if(status=== 409){
-          toast.warn('User already Exists')
-        }
-        else if(status === 500){
-          toast.error("Internal-Server-Error!");
-        }
-        else if(status === 422){
-          // console.log(error.data.message)
-          
-        }
-        else{
-          toast.error('Something went Wrong')
-        }  
-        // console.log(error.response.data.message)
-        console.log(error)
-      }else{
-        toast.error('Network Error or Timeout')
+      const status = error.response.status;
+      if(status === 409){
+        toast.warn('User already exist');
+      }
+      else if(status === 500){
+        toast.error('Request Timeout or Network-Error')
+      }
+      else if(status === 422){
+        console.log(error.response.data);
+      }
+      else{
+        console.log(error.response.data)
       }
     }
   }
