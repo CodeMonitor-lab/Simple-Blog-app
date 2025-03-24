@@ -1,6 +1,6 @@
 // import Styles from '../Styles/Login.module.css'
-import { useState,useEffect } from 'react'
 import Styles from '../Styles/SignUp.module.css'
+import { useState,useEffect } from 'react'
 import {NavLink} from 'react-router-dom'
 import LoginImage from '../assets/Login.png'
 import { toast } from 'react-toastify'
@@ -10,24 +10,25 @@ const Login = () => {
   const [email,setEmail] = useState('');
   const [password,setPassword] = useState('');
  
-   const loginValidation = (event)=>{
+   const loginValidation = ()=>{
       if(!email.trim() && !password.trim()){
         toast.warn('All Filed Required')
-        return false
+        return true
       }
       if(!email.trim()){
         toast.warn('Email Required');
-        return false
+        return true
       }
       if(!password.trim()){
         toast.warn('password Required');
-        return false
+        return true
       }
-      return true
+      return false
     }
     // handle login
     const handleOnLogin = async(event)=>{
       event.preventDefault();
+
       if(loginValidation()){
         return;
       }
@@ -37,32 +38,26 @@ const Login = () => {
       }
       try{
         const response = await axios.post(`http://127.0.0.1:8000/login`,loginData)
+
         if(response.status === 200){
           toast.success("Login Sucess");      
         }
   
       }catch(error){
-        console.log(error)
-        if(error.response){
-          const status = error.response.status;
-          if(status=== 401){
-            toast.warn('Invalid email or password')
-          }
-          else if(status === 500){
-            toast.error("Internal-Server-Error!");
-          }
-          else if(status === 422){
-            console.log(error.response.data.message)
-            
-          }
-          else{
-            toast.error('Something went Wrong')
-          }  
-          // console.log(error.response.data.message)
-          console.log(error)
-        }else{
-          toast.error('Network Error or Timeout')
+        const status = error.response.status;
+        if(status=== 404){
+          toast.warn('Invalid email or password')
         }
+        else if(status === 500){
+          toast.error("Internal-Server-Error!");
+        }
+        else if(status === 401){
+          toast.warn('Invalid email or password') 
+        }
+        else{
+          console.log(error.response.data);
+        }
+
       }
     }
 
@@ -74,8 +69,8 @@ const Login = () => {
           <form onSubmit={handleOnLogin} action="#!" className={Styles.Form}>
             <h1 className={Styles.heading1} >{'<<<'}Connect with us!{'>>>'}</h1>
             {/* <input type="text" name="name" placeholder='Name' /> */}
-            <input type="email" name="email" placeholder='Email' />
-            <input type="password" name="password" placeholder='Password' />
+            <input value={email} onChange={((event)=> setEmail(event.target.value))} type="email" name="email" placeholder='Email' />
+            <input value={password} onChange={((event)=> setPassword(event.target.value))} type="password" name="password" placeholder='Password' />
             <NavLink to='/Register'><li>Create an Account!</li></NavLink>
             <button className={Styles.Login_Button} type="submit">Login</button>
           </form>

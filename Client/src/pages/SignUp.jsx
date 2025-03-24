@@ -27,9 +27,6 @@ const SignUp = () => {
       toast.warn('password Required');
       return true
     }
-    if(name >= 3){
-      alert('big')
-    }
     return false
   }
 

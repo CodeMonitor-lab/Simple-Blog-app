@@ -41,17 +41,23 @@ const userLogin = async (req, res) => {
     const {email,password} = req.body;
     try{
         const loginUser = await User.findOne({email})
+        
         if(!loginUser){
-            res.status(404).json({msg:"Invalid Credentials!",sucess:false})
+            return res.status(404).json({msg:"Invalid Credentials!",sucess:false})
         }
         const isMatchPassword = await bcyrpt.compare(password,loginUser.password)
         if(isMatchPassword){
+            console.log('Login Sucess')
             res.status(200).json({
                 msg:"Login Sucess!",
                 userId:loginUser._id.toString(),
                 token:await loginUser.generateToken(),
             })
-        }else{
+            if(isMatchPassword != isMatchPassword){
+                console.log('Password not match');
+            }
+        }
+        else{
             res.status(401).json({msg:"Invalid email or password",sucess:false});
         }
     }catch(error){
