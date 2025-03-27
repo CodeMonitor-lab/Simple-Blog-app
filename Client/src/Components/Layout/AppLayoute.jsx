@@ -7,12 +7,13 @@ const AppLayoute = () => {
   return (
     <main className={Styles.layoute_container} >
        <Header_2/>
-     <section className={Styles.app_layoute}>
        {/* <Header/> */}
+     <section className={Styles.app_layoute}>
       <Outlet/>
      </section>
       <Footer/>
     </main>
+
   )
 }
 

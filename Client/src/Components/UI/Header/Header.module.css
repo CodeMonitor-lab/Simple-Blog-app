@@ -1,9 +1,11 @@
 .Header_container{
     width: 100%;
+    /* background:skyblue; */
 }
 .Header_section{
-    /* background:skyblue; */
-    box-shadow: 0 0px 3px #000;
+    background: transparent;
+    /* background: blue; */
+    box-shadow: 0 0px 1px #000;
     height: 70px;
     display: flex;
     align-items: center;
@@ -13,26 +15,15 @@
 .Navbar_items{
     display:grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
-}
-/* Navbar_logo */
-.Navbar_items .logo{
-    /* background: firebrick; */
-    display: flex;
+    grid-template-rows:repeat(1fr);
     justify-content: center;
+    gap: 2rem;
+    background: blueviolet;
 }
-.logo h1{
-    color:darkorange;
-    font-size: 1.6rem;
-    font-style: italic;
-    font-family: sans-serif;
-}
+
 /* Header Links */
 .Header_links{
-    /* background: blueviolet; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
 .Header_links .links{
     display: flex;
@@ -47,38 +38,6 @@
     color: blue;
     text-decoration: underline 2px;
     text-underline-offset: 5px;
-}
-/* Auth links */
-.Auth_links{
-    /* background: blue; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Auth_links .Auths{
-    display: flex;
-    gap: 0.2rem;
-}
-.Auth_Navigate{
-    font-size: 1.2rem;
-    font-family: sans-serif;
-    font-weight: bold;
-    padding: 0.3rem 0.7rem;
-    background-color: blueviolet;
-    /* background:darkcyan ; */
-    color: #fff;
-    box-shadow: 0px 0px 2px purple;
-    border: none;
-    text-align: center;
-    cursor: pointer;
-    /* border-radius: 1rem; */
-    border-end-end-radius:1rem;
-    border-top-left-radius: 0.5rem;
-}
-.Auth_Navigate:hover{
-    color:#000;
-    background-color: rgb(141, 52, 224);
-    box-shadow: 0px 0px 10px blueviolet;
 }
 /* Media Screen Sizes */
 @media (Max-Width:740px){
