@@ -17,6 +17,7 @@
     font-family: sans-serif;
 }
 .Card_article img{
+    margin-bottom: 1.5rem;
     background-size:cover;
     background-position: center;
     border-radius: 1rem;

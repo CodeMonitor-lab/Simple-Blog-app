@@ -2,13 +2,8 @@
     height:auto;
     padding: 2rem;
 }
-.Home_Container h1{
-    color: darkmagenta;
-}
 .Hero_section{
-    
 }
-.login_Section{
-    display: flex;
-    justify-content: center;
+.Catagories_Section{
+    background: blue;   
 }

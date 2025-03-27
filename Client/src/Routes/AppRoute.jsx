@@ -3,7 +3,7 @@ import React from 'react'
 import {PageNotFound} from '../Components/index'
 import AppLayout from '../Components/Layout/AppLayoute'
 // page
-import {Home,Login,SignUp} from '../pages/index'
+import {Home,Login,SignUp,Fitness,Food,Tech} from '../pages/index'
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 
 const AppRoute = () => {
@@ -23,6 +23,18 @@ const AppRoute = () => {
                 {
                     path:'/Register',
                     element:<SignUp/>
+                },
+                {
+                    path:'/Food',
+                    element:<Food/>
+                },
+                {
+                    path:'/Fitness',
+                    element:<Fitness/>
+                },
+                {
+                    path:'/Tech',
+                    element:<Tech/>
                 },
                 {
                     path:'*',
