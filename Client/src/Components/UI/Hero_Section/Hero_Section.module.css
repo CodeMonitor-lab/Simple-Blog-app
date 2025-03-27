@@ -1,31 +1,32 @@
 .Hero_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
     /* background: blue; */
-    width: 100%;
+    padding: 2rem;
 }
-.Hero_section{    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000;
+.Hero_section{
+
 }
 .Hero_article{
-    /* background: red; */
-    /* padding: 2rem; */
+    font-family: sans-serif;
 }
 .Hero_article h1{
-    text-align: center;
+    font-size: 2.5em;
 }
 .Hero_article p{
-    padding: 1rem 0rem 1rem 0rem;
-    font-family: 'Poppins',sans-serif;
-    line-height: 2rem;
+    margin: 2rem 0rem 1rem;
 }
 .Hero_button{
-    background: darkcyan;
-    color: #fff;
-    padding: 1rem 3rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: bold;
-    border: none;
-    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+/*  */
+.Hero_img{
+}
+.Hero_img img{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
 }
