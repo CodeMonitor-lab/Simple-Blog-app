@@ -18,8 +18,9 @@
 }
 .Card_article img{
     background-size:cover;
-    border-radius: 2rem;
     background-position: center;
+    border-radius: 1rem;
+    /* border: 1px solid #000; */
     width: 100%;
 }
 .Card_tittle{
