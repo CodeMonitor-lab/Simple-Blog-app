@@ -7,12 +7,11 @@ const Home = () => {
     return (
         <>
             <main className={Styles.Home_Container}>
-                <div className={Styles.Hero_section}>
+                <section className={Styles.Hero_section}>
                 <Hero_Section />
-                </div>
+                </section>
                 {/*  */}
                 <section className={Styles.Catagories_Section} >
-                <h1>Blog Catagories</h1>
                 <Catagories/>
                 </section>
                 {/*  */}
