@@ -1,6 +1,6 @@
 import React from 'react'
 import Styles from '../Styles/Admin.module.css'
-import {Dashboard,Sidebar} from '../Components/index'
+import {Sidebar} from '../Components/index'
 
 const Admin = () => {
   return (

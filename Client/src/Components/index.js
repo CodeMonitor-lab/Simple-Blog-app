@@ -15,6 +15,6 @@ export {default as SocialIcons} from './Common/SociaLinks/SocialIcons'
 export {default as AppLayout} from './Layout/AppLayoute'
 export {default as AdminLayoute} from './Layout/AdminLayoute'
 
-// Admin Dashboard
+// Admin 
 export {default as Sidebar} from './Admin/Sidebar/Sidebar'
-export {default as Dashboard} from '../pages/Dashboard'
+export {default as Navbar} from './Admin/Navbar/Navbar'

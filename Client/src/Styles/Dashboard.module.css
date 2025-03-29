@@ -1,7 +1,6 @@
 .Dashboard_Container{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1,30rem 1fr);
-    background: blue;
-    /* height: 100vh; */
+    height: 94vh;
+    background: red;
+    /* padding: 2rem; */
 }

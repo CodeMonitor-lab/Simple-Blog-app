@@ -47,7 +47,7 @@ const AppRoute = () => {
                  element:<AdminLayoute/>,
                  children:[
                      {
-                         path:'Admin/Dasboard',
+                         path:'/Admin/Dasboard',
                          element:<Dashboard/>
                      },
                      {
