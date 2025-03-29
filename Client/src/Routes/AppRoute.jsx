@@ -1,9 +1,9 @@
 import React from 'react'
 // Components
-import {PageNotFound} from '../Components/index'
+import {AdminLayoute, PageNotFound} from '../Components/index'
 import AppLayout from '../Components/Layout/AppLayoute'
 // page
-import {Home,Login,SignUp,Fitness,Food,Tech} from '../pages/index'
+import {Home,Login,SignUp,Fitness,Food,Tech, Admin,Dashboard} from '../pages/index'
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 
 const AppRoute = () => {
@@ -41,6 +41,20 @@ const AppRoute = () => {
                     element:<PageNotFound/>
                 }
             ]
+        },
+        {
+                 path:'/Admin',
+                 element:<AdminLayoute/>,
+                 children:[
+                     {
+                         path:'Admin/Dasboard',
+                         element:<Dashboard/>
+                     },
+                     {
+                        path:'*',
+                        element:<><h1>Page not found</h1></>
+                     }
+                 ]
         }
     ])
   return <RouterProvider router={router} />

@@ -13,3 +13,8 @@ export {default as SocialIcons} from './Common/SociaLinks/SocialIcons'
 
 // Layout
 export {default as AppLayout} from './Layout/AppLayoute'
+export {default as AdminLayoute} from './Layout/AdminLayoute'
+
+// Admin Dashboard
+export {default as Sidebar} from './Admin/Sidebar/Sidebar'
+export {default as Dashboard} from '../pages/Dashboard'

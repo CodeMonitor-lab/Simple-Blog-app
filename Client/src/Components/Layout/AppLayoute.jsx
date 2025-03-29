@@ -1,7 +1,7 @@
 import React from 'react'
 import {Header,Footer,Header_2} from '../index'
-import Styles from './AppLayoute.module.css'
 import { Outlet } from 'react-router-dom'
+import Styles from './AppLayoute.module.css'
 
 const AppLayoute = () => {
   return (
