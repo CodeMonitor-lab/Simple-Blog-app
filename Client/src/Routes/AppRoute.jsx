@@ -1,10 +1,14 @@
 import React from 'react'
 // Components
-import {AdminLayoute, PageNotFound} from '../Components/index'
-import AppLayout from '../Components/Layout/AppLayoute'
-// page
-import {Home,Login,SignUp,Fitness,Food,Tech, Admin,Dashboard} from '../pages/index'
+import {AdminLayoute , PageNotFound} from '../Components/index'
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
+import AppLayout from '../Components/Layout/AppLayoute'
+// Public
+import {Home,Login,SignUp,Fitness,Food,Tech} from '../pages/index'
+// Admin
+import {Catagory,Admin,Dashboard} from '../pages/Admin/index'
+// Private Routes
+import PrivateRoute from './PrivateRoute'
 
 const AppRoute = () => {
     const router = createBrowserRouter([
@@ -44,17 +48,30 @@ const AppRoute = () => {
         },
         {
                  path:'/Admin',
-                 element:<AdminLayoute/>,
+                 element:<Admin/>,
                  children:[
-                     {
-                         path:'/Admin/Dasboard',
-                         element:<Dashboard/>
-                     },
-                     {
-                        path:'*',
-                        element:<><h1>Page not found</h1></>
-                     }
+                    {
+                        path:'/Admin/Dashboard',
+                        element:<PrivateRoute element={<AdminLayoute/>} />,
+                        children:[
+                            {
+                                path:'/Admin/Dashboard',
+                                // element:<PrivateRoute index element={<Dashboard/>}/>
+                                element:<Dashboard/>
+                            },
+                          {
+                            path:'/Admin/Dashboard/Catagory',
+                            element:<Catagory/>
+                          },
+                          {
+                            path:'*',
+                            element:<>Page Not Found</>
+                          }
+                        ]
+
+                    },
                  ]
+
         }
     ])
   return <RouterProvider router={router} />

@@ -10,11 +10,11 @@ const Sidebar = () => {
         </div>
         <div className={Styles.Sidebar_Section}>
             <div className={Styles.Sidebar_links}>
-                <NavLink><li>Dashboard</li></NavLink>
-                <NavLink><li>Catagory</li></NavLink>
-                <NavLink><li>All Posts</li></NavLink>
-                <NavLink><li>Manage Posts</li></NavLink>
-                <NavLink><li>Settings</li></NavLink>
+                <NavLink to='/Admin/Dashboard'><li>Dashboard</li></NavLink>
+                <NavLink to='/Admin/Catagory'><li>Catagory</li></NavLink>
+                <NavLink to='/'  ><li>All Posts</li></NavLink>
+                <NavLink to='/'  ><li>Manage Posts</li></NavLink>
+                <NavLink to='/'  ><li>Settings</li></NavLink>
             </div>
         </div>
     </main>

@@ -6,7 +6,4 @@ export {default as Fitness} from './Fitness'
 export {default as Food} from './Food'
 export {default as Tech} from './Tech'
 
-// Admin
-export {default as Admin} from './Admin'
-export {default as Dashboard} from './Dashboard'
 
