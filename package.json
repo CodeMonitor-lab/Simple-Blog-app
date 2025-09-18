@@ -1,0 +1,32 @@
+{
+  "name": "Simple-Blog-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://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@github.com/CodeMonitor-lab/Simple-Blog-app.git",
+  "author": "CodeMonitor-lab <niteshcse3333@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "web",
+    "admin",
+    "server"
+  ],
+  "scripts": {
+    "dev:web": "yarn workspace web dev ",
+    "dev:admin": "yarn workspace admin dev",
+    "dev:server": "yarn workspace server dev",
+    "dev": "concurrently -n web,admin,server -c blue,green,yellow \"yarn dev:web\" \"yarn dev:admin\" \"yarn dev:server\""
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "@types/react": "^19.1.13",
+    "typescript": "^5.9.2"
+  },
+  "resolutions": {
+  "react-side-effect": "^2.1.2"
+}
+
+}
