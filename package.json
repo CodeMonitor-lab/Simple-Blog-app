@@ -15,10 +15,14 @@
     "dev:web": "yarn workspace web dev ",
     "dev:admin": "yarn workspace admin dev",
     "dev:server": "yarn workspace server dev",
-    "dev": "concurrently -n web,admin,server -c blue,green,yellow \"yarn dev:web\" \"yarn dev:admin\" \"yarn dev:server\""
+    "dev": "concurrently -n WebClient,AdminClient,Server-API -c magenta,cyan,green \"yarn dev:web\" \"yarn dev:admin\" \"yarn dev:server\""
   },
   "dependencies": {
-    "concurrently": "^9.2.1"
+    "axios": "^1.12.2",
+    "concurrently": "^9.2.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-toastify": "^11.0.5"
   },
   "devDependencies": {
     "@types/node": "^24.5.2",
@@ -26,7 +30,6 @@
     "typescript": "^5.9.2"
   },
   "resolutions": {
-  "react-side-effect": "^2.1.2"
-}
-
+    "react-side-effect": "^2.1.2"
+  }
 }
