@@ -2,7 +2,7 @@
   "name": "Simple-Blog-app",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://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@github.com/CodeMonitor-lab/Simple-Blog-app.git",
+  "repository": "https://github.com/CodeMonitor-lab/Simple-Blog-app.git",
   "author": "CodeMonitor-lab <niteshcse3333@gmail.com>",
   "license": "MIT",
   "private": true,
