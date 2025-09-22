@@ -1,12 +1,36 @@
 import React from 'react'
-import { createBrowserRouter,RouterProvider } from 'react-router-dom'
-import {Admin} from '../pages/index'
-import {AdminLayoute} from '../Components/index'
+import { createBrowserRouter,Navigate,RouterProvider } from 'react-router-dom'
 
+// import {Login,AdminLayout} from '@/components/custom/index' 
+
+import AdminLayout from '@/components/custom/AdminLayout'
+import Login from '@/components/custom/Login' 
+import {Home,Dashboard,EditPost,Posts,AddPost,Settings} from '@/pages/index'
+import ProtectedRoutes from './ProtectedRoutes'
 
 const AdminRoutes = () => {
     const router = createBrowserRouter([
-     
+      {
+        path:'/',
+        element:<Login/>
+      },
+      {
+        element:<ProtectedRoutes/>,
+        children:[
+          {
+            path:'/admin',
+            element:<AdminLayout/>,
+            children:[
+              {index:true,element:<Navigate to='/dashboard' replace />},                                                  
+              {path:'dashboard',element:<Dashboard/>},
+              {path:'add-post',element:<AddPost/>},
+              {path:'edit-post/:id',element:<EditPost/>},
+              {path:'posts',element:<Posts/>},
+              {path:'settings',element:<Settings/>},
+            ]
+          }
+        ]
+      }
     ])
   return (
       <RouterProvider router={router}  />

@@ -1,0 +1,31 @@
+[
+    {
+      "title": "Getting Started with React",
+      "desc": "A beginner-friendly introduction to building components and managing state in React. A beginner-friendly introduction to building components and managing state in React.",
+      "author": "Alice Johnson",
+      "date": "2025-09-15",
+      "content": "React is a popular JavaScript library for building user interfaces. It uses a component-based architecture that allows developers to create reusable UI pieces. In this guide, we will cover the basics of JSX, props, and state so you can start building interactive applications quickly."
+    },
+    {
+      "title": "Mastering Tailwind CSS",
+      "desc": "Learn how to rapidly design modern UIs with utility-first Tailwind CSS classes.",
+      "author": "Bob Smith",
+      "date": "2025-09-17",
+      "content": "Tailwind CSS is a utility-first CSS framework that provides low-level utility classes. Instead of writing custom CSS, you combine utility classes directly in your HTML or JSX. This makes it faster to prototype and ensures consistency across your project. We'll explore layouts, typography, and responsive design with Tailwind."
+    },
+    {
+      "title": "React Router Deep Dive",
+      "desc": "Understand nested routes, loaders, actions, and error handling in React Router v6.",
+      "author": "Charlie Brown",
+      "date": "2025-09-19",
+      "content": "React Router v6 introduces powerful features like nested routes and data APIs (loaders and actions). Nested routes allow you to structure your UI in a hierarchy, making layouts more maintainable. Loaders fetch data before rendering, and actions handle mutations. We'll walk through practical examples like building a blog admin dashboard."
+    },
+    {
+      "title": "Optimizing React Performance",
+      "desc": "Tips on memoization, code-splitting, and reducing re-renders for faster apps.",
+      "author": "Diana Prince",
+      "date": "2025-09-20",
+      "content": "Performance optimization in React often involves preventing unnecessary re-renders. Using React.memo, useCallback, and useMemo can help. Code-splitting with dynamic imports allows your app to load only the code needed. We'll also discuss React Profiler and common pitfalls when dealing with large applications."
+    }
+  ]
+  
