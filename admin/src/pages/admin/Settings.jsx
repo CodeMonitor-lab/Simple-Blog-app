@@ -1,8 +1,13 @@
 import React from 'react'
+import AddUser from '@/components/custom/AddUser'
 
 const Settings = () => {
   return (
-    <div>Settings</div>
+    <main>
+      <h1 >Create User</h1>
+      <p className='pb-6'></p>
+     <AddUser/>
+    </main>
   )
 }
 

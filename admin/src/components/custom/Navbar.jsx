@@ -1,29 +1,37 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { SidebarTrigger } from "@/components/ui/sidebar";
+import { MessageCircle, User, BellDot } from "lucide-react";
 
 const Navbar = () => {
   const links = [
-    { to: "/admin/comments", label: "Comment" },
-    { to: "/admin/message", label: "Message" },
-    { to: "/admin/notification", label: "Notification" },
-    { to: "/admin/settings", label: "Settings" },
+    { to: "/admin/messages", label: "Message", Icon: MessageCircle },
+    { to: "/admin/notification", label: "Notification", Icon: BellDot },
+    { to: "/admin/profile", label: "Profile", Icon: User },
   ];
 
   return (
-    <header className="bg-blue-200 p-2 sticky top-0 z-50 shadow">
-      <nav>
+    <header className="bg-gray-100 px-10 py-2 sticky top-0 z-50 shadow">
+      <nav className="flex justify-between items-center" >
+          <div className="flex items-center justify-center" >
+            <SidebarTrigger>
+              <h1>Hello</h1>
+            </SidebarTrigger>
+            <h1 className="text-gray-600" >Admin Panel</h1>
+          </div>
         <ul className="flex gap-4">
-          {links.map((link) => (
-            <li key={link.to}>
+          {links.map(({ to, label, Icon }) => (
+            <li key={to}>
               <NavLink
-                to={link.to}
+                to={to}
                 className={({ isActive }) =>
                   isActive
-                    ? "text-white bg-blue-500 px-3 py-1 rounded font-semibold"
-                    : "text-gray-800 hover:bg-blue-300 px-3 py-1 rounded"
+                    ? "flex items-center gap-1 text-black bg-gray-400 text-sm hover:bg-gray-300 border-1 border-gray-400  px-2 py-2 rounded-sm"
+                    : "flex items-center gap-1 text-gray-900 bg-gray-300 text-sm hover:bg-gray-300 border-1 border-gray-300  px-2 py-2 rounded-sm"
                 }
               >
-                {link.label}
+                <Icon size={18} />
+                {/* <span>{}</span> */}
               </NavLink>
             </li>
           ))}
@@ -34,3 +42,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

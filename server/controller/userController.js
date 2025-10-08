@@ -1,6 +1,5 @@
-const User = require('../models/authModel')
+const User = require('../models/userModel')
 const bcyrpt = require('bcryptjs');
-const { response } = require('express');
 const jwt = require('jsonwebtoken');
 
 // user register
@@ -66,7 +65,23 @@ const userLogin = async (req, res) => {
     }
 }
 
-// get User 
+// get User By Id
+const getUserById = async(req,res)=>{
+    const {id} = req.params;
+    try{
+        const findUser = await User.findById(id).select('-password')
+        if(!findUser){
+            res.status(404).json({msg:"User Not Found!",sucess:false})
+        }
+        if(findUser){
+            res.status(200).json({findUser})
+        }
+    }catch(error){
+        res.status(500).json({msg:"Internal-Server Error!",sucess:false})
+    }   
+}
+
+// get All User 
 const getAllUser = async (req,res)=>{
     try{
         const findAllUser = await User.find()
@@ -81,4 +96,4 @@ const getAllUser = async (req,res)=>{
         res.status(500).json({msg:"Internal-Server Error!",sucess:false})
     }
 }
-module.exports = { userSignup, userLogin,getAllUser};
+module.exports = { userSignup, userLogin,getUserById,getAllUser};

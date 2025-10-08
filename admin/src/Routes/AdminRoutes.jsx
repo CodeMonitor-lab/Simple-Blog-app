@@ -5,7 +5,21 @@ import { createBrowserRouter,Navigate,RouterProvider } from 'react-router-dom'
 
 import AdminLayout from '@/components/custom/AdminLayout'
 import Login from '@/components/custom/Login' 
-import {Home,Dashboard,EditPost,Posts,AddPost,Settings} from '@/pages/index'
+import {
+  Home,
+  Dashboard,
+  EditPost,
+  Posts,
+  AddPost,
+  Settings,
+  Draft,
+  Profile,
+  PostMedia,
+  PostComment,
+  PostCatagory,
+  Messages,
+  Notification
+} from '@/pages/index'
 import ProtectedRoutes from './ProtectedRoutes'
 
 const AdminRoutes = () => {
@@ -26,7 +40,15 @@ const AdminRoutes = () => {
               {path:'add-post',element:<AddPost/>},
               {path:'edit-post/:id',element:<EditPost/>},
               {path:'posts',element:<Posts/>},
+              {path:'categories',element:<PostCatagory/>},
+              {path:'comments',element:<PostComment/>},
+              {path:'media',element:<PostMedia/>},
+              {path:'draft',element:<Draft/>},
+              {path:'Profile',element:<Profile/>},
               {path:'settings',element:<Settings/>},
+              {path:'messages',element:<Messages/>},
+              {path:'notification',element:<Notification/>},
+
             ]
           }
         ]

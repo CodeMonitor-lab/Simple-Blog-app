@@ -1,31 +1,72 @@
 [
-    {
-      "title": "Getting Started with React",
-      "desc": "A beginner-friendly introduction to building components and managing state in React. A beginner-friendly introduction to building components and managing state in React.",
-      "author": "Alice Johnson",
-      "date": "2025-09-15",
-      "content": "React is a popular JavaScript library for building user interfaces. It uses a component-based architecture that allows developers to create reusable UI pieces. In this guide, we will cover the basics of JSX, props, and state so you can start building interactive applications quickly."
-    },
-    {
-      "title": "Mastering Tailwind CSS",
-      "desc": "Learn how to rapidly design modern UIs with utility-first Tailwind CSS classes.",
-      "author": "Bob Smith",
-      "date": "2025-09-17",
-      "content": "Tailwind CSS is a utility-first CSS framework that provides low-level utility classes. Instead of writing custom CSS, you combine utility classes directly in your HTML or JSX. This makes it faster to prototype and ensures consistency across your project. We'll explore layouts, typography, and responsive design with Tailwind."
-    },
-    {
-      "title": "React Router Deep Dive",
-      "desc": "Understand nested routes, loaders, actions, and error handling in React Router v6.",
-      "author": "Charlie Brown",
-      "date": "2025-09-19",
-      "content": "React Router v6 introduces powerful features like nested routes and data APIs (loaders and actions). Nested routes allow you to structure your UI in a hierarchy, making layouts more maintainable. Loaders fetch data before rendering, and actions handle mutations. We'll walk through practical examples like building a blog admin dashboard."
-    },
-    {
-      "title": "Optimizing React Performance",
-      "desc": "Tips on memoization, code-splitting, and reducing re-renders for faster apps.",
-      "author": "Diana Prince",
-      "date": "2025-09-20",
-      "content": "Performance optimization in React often involves preventing unnecessary re-renders. Using React.memo, useCallback, and useMemo can help. Code-splitting with dynamic imports allows your app to load only the code needed. We'll also discuss React Profiler and common pitfalls when dealing with large applications."
-    }
-  ]
-  
+  {
+    "title": "Getting Started with React",
+    "desc": "A beginner-friendly introduction to building components and managing state in React. A beginner-friendly introduction to building components and managing state in React.",
+    "author": "Alice Johnson",
+    "date": "2025-09-15",
+    "content": "React is a popular JavaScript library for building user interfaces. It uses a component-based architecture that allows developers to create reusable UI pieces. In this guide, we will cover the basics of JSX, props, and state so you can start building interactive applications quickly."
+  },
+  {
+    "title": "Mastering Tailwind CSS",
+    "desc": "Learn how to rapidly design modern UIs with utility-first Tailwind CSS classes.",
+    "author": "Bob Smith",
+    "date": "2025-09-17",
+    "content": "Tailwind CSS is a utility-first CSS framework that provides low-level utility classes. Instead of writing custom CSS, you combine utility classes directly in your HTML or JSX. This makes it faster to prototype and ensures consistency across your project. We'll explore layouts, typography, and responsive design with Tailwind."
+  },
+  {
+    "title": "React Router Deep Dive",
+    "desc": "Understand nested routes, loaders, actions, and error handling in React Router v6.",
+    "author": "Charlie Brown",
+    "date": "2025-09-19",
+    "content": "React Router v6 introduces powerful features like nested routes and data APIs (loaders and actions). Nested routes allow you to structure your UI in a hierarchy, making layouts more maintainable. Loaders fetch data before rendering, and actions handle mutations. We'll walk through practical examples like building a blog admin dashboard."
+  },
+  {
+    "title": "Optimizing React Performance",
+    "desc": "Tips on memoization, code-splitting, and reducing re-renders for faster apps.",
+    "author": "Diana Prince",
+    "date": "2025-09-20",
+    "content": "Performance optimization in React often involves preventing unnecessary re-renders. Using React.memo, useCallback, and useMemo can help. Code-splitting with dynamic imports allows your app to load only the code needed. We'll also discuss React Profiler and common pitfalls when dealing with large applications."
+  },
+  {
+    "title": "State Management with Redux Toolkit",
+    "desc": "Learn how to manage global state efficiently with Redux Toolkit.",
+    "author": "Ethan Clark",
+    "date": "2025-09-21",
+    "content": "Redux Toolkit simplifies Redux development by reducing boilerplate. It provides utilities like createSlice, configureStore, and createAsyncThunk. This guide walks through setting up a store, creating reducers, and handling async logic with ease."
+  },
+  {
+    "title": "Building Forms with React Hook Form",
+    "desc": "A lightweight way to manage form state, validation, and submissions in React.",
+    "author": "Fiona Adams",
+    "date": "2025-09-22",
+    "content": "React Hook Form minimizes re-renders and provides simple APIs for form validation. We’ll cover building forms with controlled/uncontrolled components, integrating with libraries like Zod or Yup, and handling async form submissions."
+  },
+  {
+    "title": "Dark Mode with Tailwind and React",
+    "desc": "Implementing theme toggling with Tailwind’s dark mode and React state.",
+    "author": "George Miller",
+    "date": "2025-09-23",
+    "content": "Tailwind offers built-in support for dark mode using class-based toggling. In this article, we'll create a theme switcher in React, persist user preferences with localStorage, and ensure smooth UI transitions."
+  },
+  {
+    "title": "Animating with Framer Motion",
+    "desc": "Bring your React apps to life with animations and transitions.",
+    "author": "Hannah Lee",
+    "date": "2025-09-24",
+    "content": "Framer Motion provides declarative APIs for animations in React. We'll cover basics like motion.div, keyframes, and transitions, then move on to advanced topics like scroll animations and layout transitions."
+  },
+  {
+    "title": "Deploying React Apps",
+    "desc": "A step-by-step guide to deploying React apps on Vercel, Netlify, and GitHub Pages.",
+    "author": "Ian Turner",
+    "date": "2025-09-25",
+    "content": "Deployment is often the final step in the development cycle. We'll explore deploying React apps to popular platforms, configuring CI/CD pipelines, handling environment variables, and ensuring performance optimization for production."
+  },
+  {
+    "title": "TypeScript with React",
+    "desc": "Make your React apps safer and more predictable with TypeScript.",
+    "author": "Jane Foster",
+    "date": "2025-09-26",
+    "content": "TypeScript provides static typing that catches errors at compile time. This article covers typing props, state, and hooks in React. We'll also dive into generics, utility types, and best practices for large-scale applications."
+  }
+]

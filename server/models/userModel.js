@@ -25,7 +25,7 @@ const authSchema = new mongoose.Schema({
     },
     createdAt: {
         type: Date,
-        default: Date(Date.now())
+        default: Date.now
     },
 })
 // methode to  hash pwa 
@@ -60,5 +60,5 @@ authSchema.methods.generateToken = async function () {
     }
 }
 
-const User = mongoose.model('users', authSchema);
+const User = mongoose.model('User', authSchema);
 module.exports = User;
