@@ -14,11 +14,21 @@ const blogPostRoutes = require('./routes/blogPostRoutes');
 const userRoutes = require('./routes/userRoutes');
 
 
-app.use(cors());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended:true}))
+app.use(cors({
+    origin: '*',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']   
+}));
+app.use(express.json())
+app.use(express.urlencoded({extended:true}));
 app.use('/api',blogPostRoutes) 
 app.use('/api',userRoutes)
+
+app.get('/',(req,res)=>{
+    res.send('API is running....')
+})
+
+// database connection and server start 
 
 mongoose.connect(db_uri,{}).then(()=>{
     console.log(color.green_bt('Database connected successfully'));
