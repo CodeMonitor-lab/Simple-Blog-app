@@ -6,7 +6,8 @@ const color = require('colors-cli');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser')
 const port = process.env.LOCAL_PORT || 5000;
-const host = process.env.LOCAL_HOST;
+const host = "0.0.0.0"
+// const host = process.env.LOCAL_HOST;
 const db_uri = process.env.MONGODB_URI;
 
 // imported routes
