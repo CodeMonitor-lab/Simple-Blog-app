@@ -32,7 +32,7 @@ const AddUser = () => {
       if (data) {
         localStorage.setItem("isAuthenticated", "true");
         localStorage.setItem("name", data.name || name);
-        toastMsg.sucess("User created successfully!");
+        toastMsg.success("User created successfully!");
         navigate("/admin/profile");
       } else {
         toastMsg.error("Error creating user");

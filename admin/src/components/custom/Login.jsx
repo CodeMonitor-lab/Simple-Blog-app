@@ -6,6 +6,8 @@ import toastMsg from "@/utils/toastMsg";
 const Login = () => {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+
   const navigate = useNavigate();
 
   const userValidate = () => {
@@ -19,7 +21,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     if (!userValidate()) return;
-
+    setLoading(true);
     try {
       const response = await axios.post(
         `${import.meta.env.VITE_API_URL}/api/login`,
@@ -44,6 +46,8 @@ const Login = () => {
         toastMsg.error("Something went wrong!");
       }
       console.error(error);
+    }finally{
+      setLoading(false);
     }
   };
 
@@ -73,9 +77,12 @@ const Login = () => {
 
         <button
           type="submit"
-          className="bg-blue-500 text-white px-4 py-2 rounded w-full hover:bg-blue-600 transition"
+          disabled={loading}
+          className={`${
+            loading ? "bg-blue-300 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-600"
+          } text-white px-4 py-2 rounded w-full transition`}
         >
-          Login
+          {loading ? "Loading..." : "Login"}
         </button>
       </form>
     </div>

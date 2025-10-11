@@ -1,7 +1,7 @@
 import { toast } from "react-toastify"
 
 const toastMsg = {
-    sucess:(msg)=>{
+    success:(msg)=>{
         toast.success(msg,{
             position: "top-right",
             autoClose: 5000,
