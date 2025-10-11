@@ -2,12 +2,13 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { MessageCircle, User, BellDot } from "lucide-react";
+import { UserProfile } from "@/components/custom/users";
 
 const Navbar = () => {
   const links = [
     { to: "/admin/messages", label: "Message", Icon: MessageCircle },
     { to: "/admin/notification", label: "Notification", Icon: BellDot },
-    { to: "/admin/profile", label: "Profile", Icon: User },
+    { to: "/admin/profile", label: "Profile", Icon: UserProfile },
   ];
 
   return (

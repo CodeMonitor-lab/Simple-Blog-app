@@ -1,6 +1,0 @@
-export {defaul as AdminLayout } from '@/components/custom/AdminLayout'
-export {defaul as Login } from './Login'
-export {defaul as Navbar } from './Navbar'
-export {defaul as SidebarLayout } from './SidebarLayout'
-export {defaul as TextEditor } from './TextEditor'
-export {defaul as Card } from './PostsCard'
