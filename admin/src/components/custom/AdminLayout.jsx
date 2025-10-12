@@ -15,7 +15,7 @@ const AdminLayout = () => {
           <header className="sticky top-0 z-40 border-b border-gray-200 shadow-sm">
             <Navbar />
           </header>
-          <main className="flex-1 overflow-y-auto p-2 sm:p-6 lg:p-8 bg-gray-50">
+          <main className="flex-1 overflow-y-auto p-2 sm:p-6 lg:p-6 bg-gray-50">
             <Outlet />
           </main>
         </div>

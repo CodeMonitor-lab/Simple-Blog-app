@@ -82,18 +82,34 @@ const getUserById = async(req,res)=>{
 }
 
 // get All User 
-const getAllUser = async (req,res)=>{
-    try{
-        const findAllUser = await User.find()
-        const counAllUser = await User.countDocuments()
-        if(!findAllUser){
-            res.status(404).json({msg:"User Not Found!",sucess:false})
-        }
-        if(findAllUser){
-            res.status(200).json({counAllUser,findAllUser})
-        }
-    }catch(error){
-        res.status(500).json({msg:"Internal-Server Error!",sucess:false})
+
+const getAllUser = async (req, res) => {
+    try {
+      // Get all users and total count in parallel for better performance
+      const [findAllUser, allUsers] = await Promise.all([
+        User.find(),
+        User.countDocuments(),
+      ]);
+  
+      if (!findAllUser || findAllUser.length === 0) {
+        return res.status(404).json({
+          success: false,
+          message: "No users found!",
+        });
+      }
+  
+      res.status(200).json({
+        success: true,
+        totalUsers: allUsers,
+        users: findAllUser,
+      });
+    } catch (error) {
+      console.error("Error fetching users:", error);
+      res.status(500).json({
+        success: false,
+        message: "Internal Server Error!",
+      });
     }
-}
+  };
+  
 module.exports = { userSignup, userLogin,getUserById,getAllUser};
