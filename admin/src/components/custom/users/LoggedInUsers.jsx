@@ -4,15 +4,20 @@ import { Card, CardHeader, CardContent } from "@/components/ui/card";
 
 const LoggedInUsers = () => {
   const [users, setUsers] = React.useState([]);
+  const [loading,setLoading] = React.useState(false)
 
   React.useEffect(() => {
     const getAllUsers = async () => {
+      setLoading(true);
       try {
-        const response = await axios.get("http://127.0.0.1:3000/api/users");
+        const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/users`);
         const data = response.data;
+        // const isActiveUser = localStorage.getItem("name");
         setUsers(data.findAllUser || []);
       } catch (error) {
         console.log(error);
+      }finally{
+        setLoading(false)
       }
     };
     getAllUsers();
@@ -22,9 +27,8 @@ const LoggedInUsers = () => {
     <main className="p-4">
       <Card className="p-4">
         <CardHeader>
-          <h2 className="text-xl font-semibold">Logged In Users</h2>
-        </CardHeader>
-
+          {loading ? "Loading":"Logged In Users"}
+          </CardHeader>
         <CardContent>
           <ul className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
             {users.map((user) => (
@@ -37,8 +41,8 @@ const LoggedInUsers = () => {
                   src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0"
                   alt={user.name}
                 />
-                <p className="font-semibold text-gray-900">{user.name}</p>
                 <p className="text-sm text-gray-600">{user.email}</p>
+                <p className="font-semibold text-gray-600">{user.name}</p>
                 <p className="text-sm mt-1">
                   Status:{" "}
                   <span

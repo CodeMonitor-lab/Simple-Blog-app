@@ -15,10 +15,7 @@ const Navbar = () => {
     <header className="bg-gray-100 px-10 py-2 sticky top-0 z-50 shadow">
       <nav className="flex justify-between items-center" >
           <div className="flex items-center justify-center" >
-            <SidebarTrigger>
-              <h1>Hello</h1>
-            </SidebarTrigger>
-            <h1 className="text-gray-600" >Admin Panel</h1>
+            <SidebarTrigger/>
           </div>
         <ul className="flex gap-4">
           {links.map(({ to, label, Icon }) => (

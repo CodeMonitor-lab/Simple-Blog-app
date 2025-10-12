@@ -8,23 +8,28 @@ const AddUser = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [role, setRole] = useState("");
-  const navigate = useNavigate();
+  const [loading,setLoading] = useState(false)
 
-  // ✅ handle submit properly outside useEffect
+  const navigate = useNavigate();
+  const validateUser = () =>{
+    if(!name || !email || !password || !role){
+      toastMsg.info("All filed reauired!")
+      return false
+    }
+    return true
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (!name || !email || !password || !role) {
-      toastMsg.error("All fields are required");
-      return;
-    }
+    if(!validateUser()) return;
+    setLoading(true)
 
     try {
-      const response = await axios.post("http://127.0.0.1:3000/api/signup", {
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/signup`, {
         name,
         email,
         password,
-        role,
+        role
       });
 
       const data = response.data;
@@ -32,14 +37,21 @@ const AddUser = () => {
       if (data) {
         localStorage.setItem("isAuthenticated", "true");
         localStorage.setItem("name", data.name || name);
+        setEmail("");
+        setName("");
+        setPassword("");
+        setRole("");  
         toastMsg.success("User created successfully!");
         navigate("/admin/profile");
       } else {
         toastMsg.error("Error creating user");
       }
     } catch (error) {
-      console.error("Error posting user:", error);
-      toastMsg.error("Failed to create user");
+      console.log("SignUp failed",error)
+      const signUpError = error.response?.data?.message || "Failed to create user" ;
+      toastMsg.error(signUpError);
+    }finally{
+      setLoading(false)
     }
   };
 
@@ -92,9 +104,13 @@ const AddUser = () => {
 
         <button
           type="submit"
-          className="bg-blue-500 text-white px-4 py-2 rounded w-full hover:bg-blue-600 transition"
+          aria-label="Create User"
+          disabled = {loading}
+          className={`${
+            loading ? "bg-blue-300 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-600"
+          } text-white px-4 py-2 rounded w-full transition`} 
         >
-          Create New User
+         {loading ? "Creating...":"Create New User"} 
         </button>
       </form>
     </main>

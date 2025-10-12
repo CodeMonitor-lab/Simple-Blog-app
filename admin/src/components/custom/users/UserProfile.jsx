@@ -7,6 +7,7 @@ const UserProfile = () => {
 
   useEffect(() => {
     const storedName = localStorage.getItem("name");
+    console.log(storedName)
     if (storedName) {
       setUserName(storedName);
       setIsLoggedIn(true);
@@ -19,9 +20,9 @@ const UserProfile = () => {
 
   return (
     <div className="flex items-center gap-2">
-      <User className="text-gray-600 w-5 h-5" />
+      {/* <User className="text-gray-600 w-5 h-5" /> */}
       {isLoggedIn ? (
-        <span className="font-semibold text-gray-800">{userName}</span>
+        <span className="font-semibold  px-2 rounded-full text-green-800">{userName.charAt(0).toUpperCase()}</span>
       ) : (
         <span className="text-gray-400 text-sm italic">Guest</span>
       )}
