@@ -9,7 +9,7 @@ const Dashboard = () => {
     <main className="bg-gray-50 min-h-screen">
     <section>
       <div className="bg-white p-4 rounded-lg shadow-sm mb-4">
-        <h1 className="text-2xl font-semibold">👋 Admin Dashboard</h1>
+        <h1 className="text-2xl font-semibold"> Admin Dashboard</h1>
       </div>
       <Stats />
     </section>

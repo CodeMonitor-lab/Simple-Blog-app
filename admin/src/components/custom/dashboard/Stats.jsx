@@ -1,23 +1,24 @@
-import React, { useEffect, useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import axios from "axios";
-import toastMsg from "@/utils/toastMsg";
+import React, { useEffect, useState } from 'react';
+import { Card, CardContent } from '@/components/ui/card';
+import axios from 'axios';
+import toastMsg from '@/utils/toastMsg';
 
 const Stats = () => {
-  const [totalUsers, setTotalUsers] = useState(0);
+  const [totalUsers, setTotalUsers] = useState(0); // store number
   const [loading, setLoading] = useState(true);
 
   const fetchUsers = async () => {
     try {
       const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/users`);
-      if (res.data.success) {
-        setTotalUsers(res.data.totalUsers || 0);
+      const data = res.data;
+      if (data?.success) {
+        setTotalUsers(data.totalUsers || 0); // number
       } else {
-        toastMsg.error("Failed to fetch user count");
+        toastMsg.error('Failed to fetch users');
       }
     } catch (error) {
-      console.error("Error fetching users:", error);
-      toastMsg.error("Error fetching users");
+      toastMsg.error('Internal Server Error');
+      console.log("Stats fetch failed", error);
     } finally {
       setLoading(false);
     }
@@ -28,13 +29,13 @@ const Stats = () => {
   }, []);
 
   const stats = [
-    { name: "👥 Total Users", count: loading ? "..." : totalUsers },
-    { name: "📝 Total Posts", count: "120" },
-    { name: "🗒️ Drafts", count: "8" },
-    { name: "⏰ Scheduled Posts", count: "5" },
-    { name: "👁️ Total Views", count: "23,450" },
-    { name: "💬 Comments", count: "320" },
-    { name: "🧑‍🤝‍🧑 Subscribers", count: "1,250" },
+    { name: "Total Users", count: loading ? "..." : totalUsers, icon: "📈" },
+    { name: "Total Posts", count: "120", icon: "📝" },
+    { name: "Drafts", count: "8", icon: "🗒️" },
+    { name: "Scheduled Posts", count: "5", icon: "⏰" },
+    { name: "Total Views", count: "23,450", icon: "👁️" },
+    { name: "Comments", count: "320", icon: "💬" },
+    { name: "Subscribers", count: "1,250", icon: "🧑‍🤝‍🧑" },
   ];
 
   return (
@@ -43,10 +44,10 @@ const Stats = () => {
         {stats.map((item, index) => (
           <CardContent
             key={index}
-            className="bg-white rounded-lg shadow hover:shadow-md transition duration-200 p-4 flex flex-col items-center justify-center gap-2"
+            className="bg-gray-50  rounded-md shadow hover:shadow-md transition duration-200 p-4 flex flex-col items-center justify-center gap-2"
           >
-            <h3 className="text-3xl">{item.name.split(" ")[0]}</h3>
-            <h3 className="text-lg font-medium text-gray-700">{item.name.split(" ").slice(1).join(" ")}</h3>
+            <span className="text-3xl">{item.icon}</span>
+            <h3 className="text-lg font-medium text-gray-700">{item.name}</h3>
             <p className="text-2xl font-bold text-gray-900">{item.count}</p>
           </CardContent>
         ))}
