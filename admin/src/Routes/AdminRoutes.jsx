@@ -1,10 +1,8 @@
 import React from 'react'
-import { createBrowserRouter,Navigate,RouterProvider } from 'react-router-dom'
+import { createBrowserRouter,Navigate,RouterProvider } from 'react-router-dom' 
+import {AdminLayout} from '@/layout'
 
-// import {Login,AdminLayout} from '@/components/custom/index' 
-
-import AdminLayout from '@/components/custom/AdminLayout'
-import Login from '@/components/custom/Login' 
+import Login from '@/components/custom/Form/Login' 
 import {
   Home,
   Dashboard,

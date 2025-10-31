@@ -1,10 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import { Card, CardContent } from '@/components/ui/card';
-import axios from 'axios';
-import toastMsg from '@/utils/toastMsg';
+import React, { useEffect, useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import axios from "axios";
+import toastMsg from "@/utils/toastMsg";
+import {
+  Users,
+  FileText,
+  Eye,
+  UserCheck,
+} from "lucide-react"; // ✅ Lucide icons
 
 const Stats = () => {
-  const [totalUsers, setTotalUsers] = useState(0); // store number
+  const [totalUsers, setTotalUsers] = useState(0);
   const [loading, setLoading] = useState(true);
 
   const fetchUsers = async () => {
@@ -12,12 +18,12 @@ const Stats = () => {
       const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/users`);
       const data = res.data;
       if (data?.success) {
-        setTotalUsers(data.totalUsers || 0); // number
+        setTotalUsers(data.counAllUser);
       } else {
-        toastMsg.error('Failed to fetch users');
+        toastMsg.error("Failed to fetch users");
       }
     } catch (error) {
-      toastMsg.error('Internal Server Error');
+      toastMsg.error("Internal Server Error");
       console.log("Stats fetch failed", error);
     } finally {
       setLoading(false);
@@ -29,13 +35,10 @@ const Stats = () => {
   }, []);
 
   const stats = [
-    { name: "Total Users", count: loading ? "..." : totalUsers, icon: "📈" },
-    { name: "Total Posts", count: "120", icon: "📝" },
-    { name: "Drafts", count: "8", icon: "🗒️" },
-    { name: "Scheduled Posts", count: "5", icon: "⏰" },
-    { name: "Total Views", count: "23,450", icon: "👁️" },
-    { name: "Comments", count: "320", icon: "💬" },
-    { name: "Subscribers", count: "1,250", icon: "🧑‍🤝‍🧑" },
+    { name: "Active Users", count: loading ? "..." : totalUsers, icon: Users },
+    { name: "Total Posts", count: "120", icon: FileText },
+    { name: "Total Views", count: "23,450", icon: Eye },
+    { name: "Subscribers", count: "1,250", icon: UserCheck },
   ];
 
   return (
@@ -44,11 +47,15 @@ const Stats = () => {
         {stats.map((item, index) => (
           <CardContent
             key={index}
-            className="bg-gray-50  rounded-md shadow hover:shadow-md transition duration-200 p-4 flex flex-col items-center justify-center gap-2"
+            className="rounded-md border bg-white shadow-sm hover:shadow-md transition duration-200 p-4 flex flex-col items-center justify-center gap-3"
           >
-            <span className="text-3xl">{item.icon}</span>
-            <h3 className="text-lg font-medium text-gray-700">{item.name}</h3>
+            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+              <item.icon className="w-6 h-6 text-blue-600" />
+            </div>
             <p className="text-2xl font-bold text-gray-900">{item.count}</p>
+            <h3 className="text-lg font-medium text-gray-700 text-center">
+              {item.name}
+            </h3>
           </CardContent>
         ))}
       </div>

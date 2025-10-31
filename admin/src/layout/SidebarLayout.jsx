@@ -12,7 +12,6 @@ import {
   // SidebarTrigger,
 } from "@/components/ui/sidebar";
 import { Button } from "@/components/ui/button";
-import Navbar from "./Navbar";
 import { LogOut, Home, FileText, PlusSquare, Settings,Tag,MessageCircle,User,Image} from "lucide-react";
 
 const SidebarLayout = () => {

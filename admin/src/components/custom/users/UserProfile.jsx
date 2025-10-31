@@ -7,11 +7,9 @@ const UserProfile = () => {
 
   useEffect(() => {
     const storedName = localStorage.getItem("name");
-    console.log(storedName)
     if (storedName) {
       setUserName(storedName);
       setIsLoggedIn(true);
-      console.log("User Name:", storedName);
     } else {
       setIsLoggedIn(false);
       console.log("No user name found in localStorage");

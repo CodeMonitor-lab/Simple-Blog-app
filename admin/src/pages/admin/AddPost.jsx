@@ -1,10 +1,10 @@
 import React from "react";
-import TextEditor from '@/components/custom/TextEditor'
+import {CreatePost} from '@/components/custom/posts'
 
 const AddPost = () => {
   return (
     <main>
-      <TextEditor/>
+      <CreatePost/>
     </main>
   )
 }
