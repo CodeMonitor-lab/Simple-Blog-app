@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router()
 const {createPost,getAllPost,getPostById} = require('../controller/blogPostController');
 
-router.post('/create',createPost)
+router.post('/createPost',createPost)
 router.get('/postId/:id',getPostById)
-router.get('/getAll',getAllPost)
+router.get('/posts',getAllPost)
 
 module.exports = router;

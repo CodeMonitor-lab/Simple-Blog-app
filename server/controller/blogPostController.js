@@ -15,6 +15,7 @@ const createPost = async(req,res)=>{
             tags
         });
         const savedPost = await newPost.save();
+        console.log(savedPost)
         return res.status(201).json({message:"Blog post created successfully",post:savedPost})
     }catch(err){
         return res.status(500).json({message:"Internal server error",error:err.message})

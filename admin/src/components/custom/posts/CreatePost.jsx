@@ -77,7 +77,7 @@ export default function AdminCreatePost() {
   };
 
   return (
-    <Card className="max-w-full mx-auto mt-6">
+    <Card className="max-w-full mx-auto">
       <CardHeader>
         <CardTitle>🛠️ Admin - Create New Blog Post</CardTitle>
         <CardDescription>

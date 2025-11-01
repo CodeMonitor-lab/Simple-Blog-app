@@ -11,3 +11,4 @@ export {default as PostCatagory } from './admin/PostCatagory';
 export {default as Profile} from './admin/Profile';
 export {default as Messages } from './admin/Messages';
 export {default as Notification } from './admin/Notification';
+export {default as Analytics } from './admin/Analytics';

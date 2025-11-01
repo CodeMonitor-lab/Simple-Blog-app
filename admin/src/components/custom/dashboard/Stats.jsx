@@ -47,7 +47,7 @@ const Stats = () => {
         {stats.map((item, index) => (
           <CardContent
             key={index}
-            className="rounded-md border bg-white shadow-sm hover:shadow-md transition duration-200 p-4 flex flex-col items-center justify-center gap-3"
+            className="rounded-md border shadow-sm hover:shadow-md transition duration-200 p-4 flex flex-col items-center justify-center gap-3"
           >
             <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
               <item.icon className="w-6 h-6 text-blue-600" />

@@ -1,0 +1,78 @@
+[
+    {
+      "id": 1,
+      "title": "Web Development",
+      "desc": "Frontend, backend, and full-stack frameworks like React, Node.js, and Next.js."
+    },
+    {
+      "id": 2,
+      "title": "AI & Machine Learning",
+      "desc": "Explore artificial intelligence, deep learning, and data-driven innovation."
+    },
+    {
+      "id": 3,
+      "title": "Cloud & DevOps",
+      "desc": "AWS, Azure, Docker, Kubernetes, and CI/CD pipelines for scalable infrastructure."
+    },
+    {
+      "id": 4,
+      "title": "UI / UX Design",
+      "desc": "Modern design systems, Figma workflows, and user experience principles."
+    },
+    {
+      "id": 5,
+      "title": "Mobile Apps",
+      "desc": "Building high-performance apps with React Native, Flutter, and Swift."
+    },
+    {
+      "id": 6,
+      "title": "APIs & Microservices",
+      "desc": "REST, GraphQL, gRPC, and microservice-based application architecture."
+    },
+    {
+      "id": 7,
+      "title": "Programming Languages",
+      "desc": "Latest updates and best practices in JavaScript, Python, Go, and Rust."
+    },
+    {
+      "id": 8,
+      "title": "Open Source",
+      "desc": "Contribute, collaborate, and grow in the open-source community."
+    },
+    {
+      "id": 9,
+      "title": "SaaS Tools",
+      "desc": "Explore emerging SaaS platforms for analytics, automation, and productivity."
+    },
+    {
+      "id": 10,
+      "title": "No-Code / Low-Code",
+      "desc": "Build apps fast using Webflow, Bubble, or Glide — no coding needed."
+    },
+    {
+      "id": 11,
+      "title": "Software Engineering",
+      "desc": "Clean code, scalable architecture, and modern development workflows."
+    },
+    {
+      "id": 12,
+      "title": "Cloud Platforms",
+      "desc": "In-depth resources on AWS, GCP, and Azure for developers and teams."
+    },
+    {
+      "id": 13,
+      "title": "Developer Tools",
+      "desc": "Essential tools and extensions to boost your coding productivity."
+    },
+    {
+      "id": 14,
+      "title": "Cybersecurity",
+      "desc": "Protect systems with ethical hacking, encryption, and secure coding."
+    },
+    {
+      "id": 15,
+      "title": "Automation",
+      "desc": "Use AI agents, workflows, and scripts to automate repetitive tasks."
+    }
+  ]
+  

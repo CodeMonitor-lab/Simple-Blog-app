@@ -16,7 +16,8 @@ import {
   PostComment,
   PostCatagory,
   Messages,
-  Notification
+  Notification,
+  Analytics
 } from '@/pages/index'
 import ProtectedRoutes from './ProtectedRoutes'
 
@@ -38,6 +39,7 @@ const AdminRoutes = () => {
               {path:'add-post',element:<AddPost/>},
               {path:'edit-post/:id',element:<EditPost/>},
               {path:'posts',element:<Posts/>},
+              {path:'analytics',element:<Analytics/>},
               {path:'categories',element:<PostCatagory/>},
               {path:'comments',element:<PostComment/>},
               {path:'media',element:<PostMedia/>},
