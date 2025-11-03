@@ -3,7 +3,7 @@ import { User, Upload } from "lucide-react";
 
 const AdminProfile = () => {
   const renderProfileSettings = () => (
-    <div className="space-y-6">
+    <div className="space-y-4" >
       {/* Avatar + Info */}
       <div className="flex items-center space-x-6">
         <div className="relative">
@@ -83,14 +83,7 @@ const AdminProfile = () => {
   );
 
   return (
-    <main className="min-h-screen bg-gray-50 p-6">
-      <header className="mb-8">
-        <h1 className="text-2xl font-bold text-gray-800">Admin Profile</h1>
-        <p className="text-gray-500 text-sm mt-1">
-          Manage your account details and personal info
-        </p>
-      </header>
-
+    <main className="bg-gray-50">
       <section className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
         {renderProfileSettings()}
       </section>
