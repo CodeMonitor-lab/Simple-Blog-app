@@ -1,0 +1,99 @@
+[
+    {
+        "id": 1,
+        "user": "John Doe",
+        "content": "This post was really insightful! Thanks for sharing. 💡",
+        "date": "2h ago",
+        "status": "approved",
+        "likes": 12,
+        "post": {
+            "title": "Mastering React Hooks in 2025",
+            "image": "https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=800&q=80"
+    }
+},
+{
+    "id": 2,
+    "user": "Jane Smith",
+    "content": "Your examples made everything so easy to understand 👏",
+    "date": "1d ago",
+    "status": "pending",
+    "likes": 8,
+    "post": {
+        "title": "Building a Node.js API with Express",
+        "image": "https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=800&q=80"
+    }
+},
+{
+      "id": 3,
+      "user": "Alex Carter",
+      "content": "Can you make a follow-up about React performance tips? That’d be awesome!",
+      "date": "3d ago",
+      "status": "approved",
+      "likes": 4,
+      "post": {
+        "title": "Optimizing React Apps for Speed",
+        "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80"
+    }
+},
+{
+      "id": 4,
+      "user": "Sophia Lee",
+      "content": "I’ve been struggling with API authentication, this post really helped me out 🙏",
+      "date": "5d ago",
+      "status": "approved",
+      "likes": 15,
+      "post": {
+          "title": "Secure Authentication with JWT in Node.js",
+        "image": "https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?auto=format&fit=crop&w=800&q=80"
+      }
+    },
+    {
+      "id": 5,
+      "user": "Chris Johnson",
+      "content": "That section on caching was 🔥 — my load time dropped by 60%.",
+      "date": "6d ago",
+      "status": "approved",
+      "likes": 22,
+      "post": {
+        "title": "Improving Web Performance with Caching",
+        "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+      }
+    },
+    {
+      "id": 6,
+      "user": "Emma Watson",
+      "content": "I shared this with my team — everyone loved the clean explanation!",
+      "date": "1w ago",
+      "status": "approved",
+      "likes": 10,
+      "post": {
+        "title": "Deploying Fullstack Apps on Vercel",
+        "image": "https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80"
+      }
+    },
+    {
+      "id": 7,
+      "user": "Daniel Kim",
+      "content": "Great content! Would love a part 2 covering database optimization 👌",
+      "date": "2w ago",
+      "status": "pending",
+      "likes": 5,
+      "post": {
+        "title": "Scaling Databases for High Traffic",
+        "image": "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?auto=format&fit=crop&w=800&q=80"
+      }
+    },
+    {
+      "id": 8,
+      "user": "Liam Brown",
+      "content": "Super helpful write-up! The diagrams made things crystal clear. 🙌",
+      "date": "3w ago",
+      "status": "approved",
+      "likes": 18,
+      "post": {
+        "title": "Understanding Microservices Architecture",
+        "image": "https://images.unsplash.com/photo-1505238680356-667803448bb6?auto=format&fit=crop&w=800&q=80"
+      }
+    }
+  ]
+  

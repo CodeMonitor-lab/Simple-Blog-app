@@ -1,19 +1,19 @@
 import React, { useState, useMemo } from "react";
 import {
   Search,
-  MessageSquare,
-  Briefcase,
-  HelpCircle,
-  Heart,
-  Filter,
-  Trash2,
+  MessageCircle,
+  Send,
+  MoreVertical,
   Reply,
+  Trash2,
   CheckCircle,
 } from "lucide-react";
 
 const AdminMessages = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filter, setFilter] = useState("all");
+  const [replyingTo, setReplyingTo] = useState(null);
+  const [replyText, setReplyText] = useState("");
 
   const messages = [
     {
@@ -42,12 +42,6 @@ const AdminMessages = () => {
     },
   ];
 
-  const typeIcons = {
-    support: <HelpCircle className="w-4 h-4 text-blue-500" />,
-    business: <Briefcase className="w-4 h-4 text-purple-500" />,
-    general: <Heart className="w-4 h-4 text-pink-500" />,
-  };
-
   const filteredMessages = useMemo(() => {
     return messages.filter((msg) => {
       const matchesFilter = filter === "all" || msg.type === filter;
@@ -58,111 +52,105 @@ const AdminMessages = () => {
     });
   }, [messages, filter, searchTerm]);
 
+  const handleReply = (id) => {
+    if (replyText.trim() === "") return;
+    console.log(`Reply to message ${id}:`, replyText);
+    alert(`Replied to ${id}: "${replyText}"`);
+    setReplyingTo(null);
+    setReplyText("");
+  };
+
   return (
-    <main className="p-6 bg-white rounded-2xl shadow-sm border border-gray-200 space-y-6">
+    <main className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
       {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <h2 className="text-xl font-semibold text-gray-800 flex items-center gap-2">
-          <MessageSquare className="w-5 h-5 text-blue-500" />
-          Admin Messages
+      <div className="border-b border-gray-200 px-6 py-4 flex items-center justify-between">
+        <h2 className="text-lg font-semibold text-gray-800 flex items-center gap-2">
+          <MessageCircle className="w-5 h-5 text-blue-500" />
+          Admin Inbox
         </h2>
 
-        <div className="flex flex-wrap items-center gap-3">
-          <div className="relative">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
-            <input
-              type="text"
-              placeholder="Search messages..."
-              className="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 w-64 text-sm"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-          </div>
-
-          <div className="flex items-center gap-2">
-            <Filter className="w-4 h-4 text-gray-500" />
-            <select
-              className="text-sm border border-gray-300 rounded-lg px-2 py-1 focus:ring-2 focus:ring-blue-500"
-              value={filter}
-              onChange={(e) => setFilter(e.target.value)}
-            >
-              <option value="all">All</option>
-              <option value="support">Support</option>
-              <option value="business">Business</option>
-              <option value="general">General</option>
-            </select>
-          </div>
+        <div className="relative">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
+          <input
+            type="text"
+            placeholder="Search..."
+            className="pl-9 pr-3 py-1.5 border border-gray-300 rounded-full focus:ring-2 focus:ring-blue-400 w-48 text-sm"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
         </div>
       </div>
 
-      {/* Message Cards */}
-      <div className="space-y-4">
+      {/* Message area */}
+      <div className="h-[600px] overflow-y-auto p-4 bg-gray-50">
         {filteredMessages.length > 0 ? (
           filteredMessages.map((msg) => (
             <div
               key={msg.id}
-              className={`flex items-start justify-between p-4 rounded-xl border transition-all ${
-                msg.status === "unread"
-                  ? "bg-blue-50 border-blue-200"
-                  : "bg-gray-50 border-gray-200"
-              } hover:shadow-sm`}
+              className={`mb-6 ${
+                msg.sender === "Admin"
+                  ? "text-right flex flex-col items-end"
+                  : "text-left flex flex-col items-start"
+              }`}
             >
-              {/* Message info */}
-              <div className="flex items-start gap-3">
-                <div className="flex-shrink-0 mt-1">
-                  {typeIcons[msg.type]}
-                </div>
-                <div>
-                  <div className="flex items-center gap-2">
-                    <h3 className="font-semibold text-gray-900">{msg.sender}</h3>
-                    <span className="text-xs text-gray-500">{msg.date}</span>
-                  </div>
-                  <p className="text-gray-700 text-sm mt-1">{msg.content}</p>
-                  <div className="mt-2">
-                    <span
-                      className={`inline-flex items-center gap-1 text-xs px-2 py-0.5 rounded-full capitalize ${
-                        msg.type === "support"
-                          ? "bg-blue-100 text-blue-700"
-                          : msg.type === "business"
-                          ? "bg-purple-100 text-purple-700"
-                          : "bg-pink-100 text-pink-700"
-                      }`}
-                    >
-                      {typeIcons[msg.type]}
-                      {msg.type}
-                    </span>
-                    {msg.status === "unread" && (
-                      <span className="ml-2 inline-block w-2 h-2 bg-blue-500 rounded-full"></span>
-                    )}
-                  </div>
-                </div>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-sm font-semibold text-gray-700">
+                  {msg.sender}
+                </span>
+                <span className="text-xs text-gray-400">{msg.date}</span>
               </div>
 
-              {/* Actions */}
-              <div className="flex items-center gap-2 ml-4">
+              <div
+                className={`max-w-[75%] px-4 py-2 rounded-2xl text-sm shadow-sm ${
+                  msg.sender === "Admin"
+                    ? "bg-blue-500 text-white rounded-br-none"
+                    : "bg-white text-gray-800 border rounded-bl-none"
+                }`}
+              >
+                {msg.content}
+              </div>
+
+              <div className="flex items-center gap-2 mt-2">
                 <button
-                  className="p-2 rounded-lg hover:bg-blue-100 text-blue-600 transition"
-                  title="Reply"
+                  onClick={() =>
+                    setReplyingTo(replyingTo === msg.id ? null : msg.id)
+                  }
+                  className="text-gray-500 hover:text-blue-500 text-xs flex items-center gap-1"
                 >
-                  <Reply className="w-4 h-4" />
+                  <Reply className="w-3 h-3" /> Reply
                 </button>
-                <button
-                  className="p-2 rounded-lg hover:bg-green-100 text-green-600 transition"
-                  title="Mark as read"
-                >
-                  <CheckCircle className="w-4 h-4" />
+                <button className="text-gray-400 hover:text-green-500 text-xs flex items-center gap-1">
+                  <CheckCircle className="w-3 h-3" /> Mark read
                 </button>
-                <button
-                  className="p-2 rounded-lg hover:bg-red-100 text-red-600 transition"
-                  title="Delete"
-                >
-                  <Trash2 className="w-4 h-4" />
+                <button className="text-gray-400 hover:text-red-500 text-xs flex items-center gap-1">
+                  <Trash2 className="w-3 h-3" /> Delete
+                </button>
+                <button className="text-gray-400 hover:text-gray-700 text-xs">
+                  <MoreVertical className="w-3 h-3" />
                 </button>
               </div>
+
+              {replyingTo === msg.id && (
+                <div className="mt-3 flex items-center gap-2 w-full max-w-[75%]">
+                  <input
+                    type="text"
+                    placeholder="Write a reply..."
+                    className="flex-1 border border-gray-300 rounded-full px-4 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-400 bg-white"
+                    value={replyText}
+                    onChange={(e) => setReplyText(e.target.value)}
+                  />
+                  <button
+                    onClick={() => handleReply(msg.id)}
+                    className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-full transition"
+                  >
+                    <Send className="w-4 h-4" />
+                  </button>
+                </div>
+              )}
             </div>
           ))
         ) : (
-          <p className="text-center text-gray-500 italic py-6">
+          <p className="text-center text-gray-400 mt-10 italic">
             No messages found.
           </p>
         )}
