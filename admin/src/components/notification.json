@@ -1,0 +1,115 @@
+[
+    {
+      "id": 1,
+      "type": "comment",
+      "user": "Rohan Verma",
+      "message": "commented on your post 'Mastering React Hooks in 2025'.",
+      "time": "2m ago",
+      "isRead": false
+    },
+    {
+      "id": 2,
+      "type": "like",
+      "user": "Aditi Sharma",
+      "message": "liked your post 'Building Scalable APIs with Node.js'.",
+      "time": "15m ago",
+      "isRead": false
+    },
+    {
+      "id": 3,
+      "type": "follow",
+      "user": "Arjun Mehta",
+      "message": "started following your blog.",
+      "time": "1h ago",
+      "isRead": true
+    },
+    {
+      "id": 4,
+      "type": "message",
+      "user": "Neha Patel",
+      "message": "sent you a message about collaboration.",
+      "time": "3h ago",
+      "isRead": false
+    },
+    {
+      "id": 5,
+      "type": "like",
+      "user": "Vikram Singh",
+      "message": "liked your post 'React Query vs Redux Toolkit'.",
+      "time": "1d ago",
+      "isRead": true
+    },
+    {
+      "id": 6,
+      "type": "comment",
+      "user": "Sneha Kapoor",
+      "message": "commented 'Loved this article, very insightful!' on your post.",
+      "time": "2d ago",
+      "isRead": true
+    },
+    {
+      "id": 7,
+      "type": "system",
+      "user": "System Health Monitor",
+      "message": "Server uptime is at 99.98%. All systems operational.",
+      "time": "5h ago",
+      "isRead": false
+    },
+    {
+      "id": 8,
+      "type": "security",
+      "user": "Security Center",
+      "message": "Unusual login detected from a new device in Mumbai, India.",
+      "time": "8h ago",
+      "isRead": false
+    },
+    {
+      "id": 9,
+      "type": "update",
+      "user": "App Update",
+      "message": "Version 3.2.1 deployed successfully. Performance improvements and UI fixes included.",
+      "time": "1d ago",
+      "isRead": true
+    },
+    {
+      "id": 10,
+      "type": "seo",
+      "user": "SEO Insights",
+      "message": "Your Lighthouse SEO score dropped from 92 → 76 due to missing meta descriptions on 3 pages.",
+      "time": "4h ago",
+      "isRead": false
+    },
+    {
+      "id": 11,
+      "type": "seo",
+      "user": "SEO Monitor",
+      "message": "New backlink opportunity detected: 'reactdeveloper.in' linked to your latest post.",
+      "time": "10h ago",
+      "isRead": true
+    },
+    {
+      "id": 12,
+      "type": "core",
+      "user": "Core Performance Tracker",
+      "message": "Backend response time increased to 780ms. Investigate slow MongoDB queries.",
+      "time": "2h ago",
+      "isRead": false
+    },
+    {
+      "id": 13,
+      "type": "core",
+      "user": "Full Stack Monitor",
+      "message": "API endpoint /api/posts is taking longer than expected (1.2s). Consider optimizing server logic.",
+      "time": "6h ago",
+      "isRead": false
+    },
+    {
+      "id": 14,
+      "type": "core",
+      "user": "Deployment Bot",
+      "message": "Next.js build completed successfully on production (v3.3.0). No critical issues detected.",
+      "time": "12h ago",
+      "isRead": true
+    }
+  ]
+  

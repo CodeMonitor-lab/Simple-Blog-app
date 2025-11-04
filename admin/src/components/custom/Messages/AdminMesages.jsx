@@ -7,7 +7,10 @@ import {
   Reply,
   Trash2,
   CheckCircle,
+  Mail,
 } from "lucide-react";
+
+import messagesData from "@/components/messages.json";
 
 const AdminMessages = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -15,32 +18,8 @@ const AdminMessages = () => {
   const [replyingTo, setReplyingTo] = useState(null);
   const [replyText, setReplyText] = useState("");
 
-  const messages = [
-    {
-      id: 1,
-      type: "support",
-      sender: "John Doe",
-      content: "Need help with my account. I can’t log in since last update.",
-      date: "2025-11-03",
-      status: "unread",
-    },
-    {
-      id: 2,
-      type: "business",
-      sender: "Acme Corp",
-      content: "We’d like to discuss a potential sponsorship for your blog.",
-      date: "2025-11-02",
-      status: "read",
-    },
-    {
-      id: 3,
-      type: "general",
-      sender: "Jane Smith",
-      content: "Your latest React tutorial was amazing — thank you!",
-      date: "2025-10-30",
-      status: "unread",
-    },
-  ];
+  // ✅ Load initial messages from JSON file
+  const [messages, setMessages] = useState(messagesData);
 
   const filteredMessages = useMemo(() => {
     return messages.filter((msg) => {
@@ -60,13 +39,34 @@ const AdminMessages = () => {
     setReplyText("");
   };
 
+  const toggleReadStatus = (id) => {
+    setMessages((prev) =>
+      prev.map((msg) =>
+        msg.id === id
+          ? { ...msg, status: msg.status === "read" ? "unread" : "read" }
+          : msg
+      )
+    );
+  };
+
+  const deleteMessage = (id) => {
+    setMessages((prev) => prev.filter((msg) => msg.id !== id));
+  };
+
+  const unreadCount = messages.filter((m) => m.status === "unread").length;
+
   return (
     <main className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
-      {/* Header */}
+      {/* ===== Header ===== */}
       <div className="border-b border-gray-200 px-6 py-4 flex items-center justify-between">
         <h2 className="text-lg font-semibold text-gray-800 flex items-center gap-2">
           <MessageCircle className="w-5 h-5 text-blue-500" />
           Admin Inbox
+          {unreadCount > 0 && (
+            <span className="bg-red-500 text-white text-xs px-2 py-0.5 rounded-full">
+              {unreadCount} unread
+            </span>
+          )}
         </h2>
 
         <div className="relative">
@@ -81,7 +81,7 @@ const AdminMessages = () => {
         </div>
       </div>
 
-      {/* Message area */}
+      {/* ===== Message List ===== */}
       <div className="h-[600px] overflow-y-auto p-4 bg-gray-50">
         {filteredMessages.length > 0 ? (
           filteredMessages.map((msg) => (
@@ -93,24 +93,36 @@ const AdminMessages = () => {
                   : "text-left flex flex-col items-start"
               }`}
             >
+              {/* Sender Info */}
               <div className="flex items-center gap-2 mb-1">
-                <span className="text-sm font-semibold text-gray-700">
+                <span
+                  className={`text-sm font-semibold ${
+                    msg.status === "unread" ? "text-blue-600" : "text-gray-700"
+                  }`}
+                >
                   {msg.sender}
                 </span>
                 <span className="text-xs text-gray-400">{msg.date}</span>
+                {msg.status === "unread" && (
+                  <Mail className="w-3 h-3 text-blue-400" />
+                )}
               </div>
 
+              {/* Message Bubble */}
               <div
-                className={`max-w-[75%] px-4 py-2 rounded-2xl text-sm shadow-sm ${
+                className={`max-w-[75%] px-4 py-2 rounded-2xl text-sm shadow-sm transition-all ${
                   msg.sender === "Admin"
                     ? "bg-blue-500 text-white rounded-br-none"
+                    : msg.status === "unread"
+                    ? "bg-blue-50 text-gray-800 border-blue-100 border rounded-bl-none"
                     : "bg-white text-gray-800 border rounded-bl-none"
                 }`}
               >
                 {msg.content}
               </div>
 
-              <div className="flex items-center gap-2 mt-2">
+              {/* Actions */}
+              <div className="flex items-center gap-3 mt-2">
                 <button
                   onClick={() =>
                     setReplyingTo(replyingTo === msg.id ? null : msg.id)
@@ -119,17 +131,28 @@ const AdminMessages = () => {
                 >
                   <Reply className="w-3 h-3" /> Reply
                 </button>
-                <button className="text-gray-400 hover:text-green-500 text-xs flex items-center gap-1">
-                  <CheckCircle className="w-3 h-3" /> Mark read
+
+                <button
+                  onClick={() => toggleReadStatus(msg.id)}
+                  className="text-gray-400 hover:text-green-500 text-xs flex items-center gap-1"
+                >
+                  <CheckCircle className="w-3 h-3" />
+                  {msg.status === "read" ? "Mark Unread" : "Mark Read"}
                 </button>
-                <button className="text-gray-400 hover:text-red-500 text-xs flex items-center gap-1">
+
+                <button
+                  onClick={() => deleteMessage(msg.id)}
+                  className="text-gray-400 hover:text-red-500 text-xs flex items-center gap-1"
+                >
                   <Trash2 className="w-3 h-3" /> Delete
                 </button>
+
                 <button className="text-gray-400 hover:text-gray-700 text-xs">
                   <MoreVertical className="w-3 h-3" />
                 </button>
               </div>
 
+              {/* Reply Box */}
               {replyingTo === msg.id && (
                 <div className="mt-3 flex items-center gap-2 w-full max-w-[75%]">
                   <input

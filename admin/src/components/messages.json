@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "type": "support",
+      "sender": "Rahul Sharma",
+      "content": "Hi team, I’m facing an issue logging into my account after the recent update. The app keeps showing an authentication error even after resetting my password twice. Could you please help me resolve this?",
+      "date": "2025-11-03",
+      "status": "unread"
+    },
+    {
+      "id": 2,
+      "type": "business",
+      "sender": "Infosync Media Pvt. Ltd.",
+      "content": "Hello, we represent Infosync Media and would like to explore a partnership opportunity for sponsored tech tutorials on your platform. Kindly let us know if you’re open to a short call this week.",
+      "date": "2025-11-02",
+      "status": "read"
+    },
+    {
+      "id": 3,
+      "type": "general",
+      "sender": "Priya Mehta",
+      "content": "Hey there! I just wanted to say that your React Hooks tutorial was incredibly detailed and beginner-friendly. I followed every step and got my first project running smoothly. Please keep posting such amazing guides!",
+      "date": "2025-10-30",
+      "status": "unread"
+    },
+    {
+      "id": 4,
+      "type": "support",
+      "sender": "Amit Verma",
+      "content": "The payment page shows a validation error whenever I try to complete my subscription using my debit card. I’ve tried multiple browsers, but it still fails. Can you please look into this issue?",
+      "date": "2025-11-01",
+      "status": "read"
+    },
+    {
+      "id": 5,
+      "type": "business",
+      "sender": "TechSutra Innovations",
+      "content": "Greetings from TechSutra! We’re launching a new product line for developers and are impressed by your content. We’d love to feature your blog as part of our promotional campaign. Please share your media kit and pricing details.",
+      "date": "2025-10-29",
+      "status": "unread"
+    },
+    {
+      "id": 6,
+      "type": "general",
+      "sender": "Sneha Iyer",
+      "content": "Your comparison article between Redux and TanStack Query was spot-on! The explanations were practical, and your examples really helped me decide which library to use in my new project. You’ve gained a loyal reader here!",
+      "date": "2025-10-27",
+      "status": "read"
+    },
+    {
+      "id": 7,
+      "type": "support",
+      "sender": "Rohit Menon",
+      "content": "Hello, I’ve been trying to reset my password, but the reset link in the email keeps expiring within a few minutes. Could you please extend the validity or help me set a new password manually?",
+      "date": "2025-11-03",
+      "status": "unread"
+    },
+    {
+      "id": 8,
+      "type": "business",
+      "sender": "CodeVerse Solutions",
+      "content": "We at CodeVerse are interested in collaborating with you on a React masterclass series. We believe your expertise and teaching style would resonate well with our developer community. Looking forward to discussing this further.",
+      "date": "2025-10-25",
+      "status": "read"
+    },
+    {
+      "id": 9,
+      "type": "general",
+      "sender": "Ananya Gupta",
+      "content": "Hi! I just wanted to appreciate the consistency and clarity of your content. Your posts make even complex frontend topics feel approachable. It’s great to have such quality resources from an Indian developer.",
+      "date": "2025-10-24",
+      "status": "read"
+    },
+    {
+      "id": 10,
+      "type": "support",
+      "sender": "Vikas Nair",
+      "content": "I’m unable to upload my new profile picture — the upload keeps failing midway with no clear error message. Could you please check if there’s a size limit or temporary issue on the server side?",
+      "date": "2025-11-04",
+      "status": "unread"
+    }
+  ]
+  

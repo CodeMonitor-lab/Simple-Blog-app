@@ -1,10 +1,10 @@
 import React from 'react'
-import {UserMesages} from '@/components/custom/Messages'
+import {AdminMesages} from '@/components/custom/Messages'
 
 const Messages = () => {
   return (
     <main>
-      <UserMesages />
+      <AdminMesages/>
     </main>
   )
 }

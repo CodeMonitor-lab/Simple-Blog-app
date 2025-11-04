@@ -1,1 +1,1 @@
-export {default as UserMesages } from './UserMesages'
+export {default as AdminMesages } from './AdminMesages'
