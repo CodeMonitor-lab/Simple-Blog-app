@@ -1,103 +1,115 @@
-import Image from "next/image";
+"use client";
+import React, { useState } from "react";
+import { Search } from "lucide-react";
 
-export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+// Sample Blog Data (replace with your real data or fetch from API)
+const blogPosts = [
+  {
+    id: 1,
+    title: "Mastering React Hooks in 2025",
+    author: "John Doe",
+    date: "Nov 1, 2025",
+    image:
+      "https://plus.unsplash.com/premium_photo-1661766717882-65c84cf12a8e?w=800",
+    description:
+      "Learn how to use React Hooks efficiently with examples and best practices for modern web development.",
+    category: "React",
+  },
+  {
+    id: 2,
+    title: "Building Scalable APIs with Node.js and Express",
+    author: "Jane Smith",
+    date: "Oct 28, 2025",
+    image:
+      "https://images.unsplash.com/photo-1559526324-593bc073d938?w=800",
+    description:
+      "Discover how to design and build robust, scalable APIs using Node.js, Express, and MongoDB.",
+    category: "Backend",
+  },
+  {
+    id: 3,
+    title: "SEO Optimization Tips for Next.js Applications",
+    author: "Alex Carter",
+    date: "Oct 20, 2025",
+    image:
+      "https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=800",
+    description:
+      "Boost your Next.js website ranking with technical SEO best practices and tools that actually work.",
+    category: "SEO",
+  },
+];
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+const BlogHomePage = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const filteredPosts = blogPosts.filter((post) =>
+    post.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
-}
+
+  return (
+    <main className="min-h-screen bg-gray-50 py-10 px-6">
+      {/* 🔥 Hero Section */}
+      <section className="text-center mb-10">
+        <h1 className="text-4xl font-bold text-gray-800 mb-2">
+          Welcome to DevChronicles 🧠
+        </h1>
+        <p className="text-gray-600">
+          Insights, tutorials, and tips on React, SEO, and Full Stack Development.
+        </p>
+      </section>
+
+      {/* 🔍 Search */}
+      <div className="max-w-md mx-auto mb-8">
+        <div className="flex items-center gap-3 bg-white border border-gray-300 rounded-full px-4 py-2 shadow-sm">
+          <Search className="w-5 h-5 text-gray-500" />
+          <input
+            type="text"
+            placeholder="Search blog posts..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="w-full bg-transparent outline-none text-gray-700"
+          />
+        </div>
+      </div>
+
+      {/* 📝 Blog Grid */}
+      <section className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {filteredPosts.map((post) => (
+          <article
+            key={post.id}
+            className="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition-all duration-300"
+          >
+            <img
+              src={post.image}
+              alt={post.title}
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-5">
+              <p className="text-xs text-blue-600 font-semibold uppercase mb-1">
+                {post.category}
+              </p>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                {post.title}
+              </h3>
+              <p className="text-sm text-gray-600 mb-3 line-clamp-2">
+                {post.description}
+              </p>
+              <div className="flex items-center justify-between text-xs text-gray-500">
+                <span>By {post.author}</span>
+                <span>{post.date}</span>
+              </div>
+            </div>
+          </article>
+        ))}
+      </section>
+
+      {filteredPosts.length === 0 && (
+        <p className="text-center text-gray-500 mt-10">
+          No posts found matching “{searchTerm}”.
+        </p>
+      )}
+    </main>
+  );
+};
+
+export default BlogHomePage;
