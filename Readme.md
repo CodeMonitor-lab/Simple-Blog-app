@@ -1,32 +1,16 @@
-## Creating Vlog Application 
+# 📰 Simple Blog App
 
-{
-  "name": "server",
-  "version": "1.0.0",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "nodemon": "nodemon server.js"
-  },
-  "author": "dev_nitsh",
-  "license": "ISC",
-  "description": "this is using a testing purpose application for data encryption using it.",
-  "devDependencies": {
-    "nodemon": "^3.1.9"
-  },
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.20.3",
-    "colors-cli": "^1.0.33",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.9.2",
-    "zod": "^3.24.1"
-  }
-}
+A modern full-stack blog application built with **Next.js 15**, featuring a user-facing blog website and an admin dashboard for content management.  
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
-export default nextConfig;
+---
+
+## 🌍 Live Demo
+
+- **Frontend (User Site):** [simple-blog-app-web.vercel.app](https://simple-blog-app-web.vercel.app)  
+- **Admin Dashboard:** [simple-blog-app-admin.vercel.app/admin/dashboard](https://simple-blog-app-admin.vercel.app/admin/dashboard)
+
+---
+
+## 🧩 Project Structure
+
+This project uses a **monorepo setup** for better scalability and modularity.
