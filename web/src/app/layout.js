@@ -25,14 +25,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 text-gray-800`}
       >
-        {/* Analytics */}
-        <Analytics />
         {/* 🌐 Navbar */}
         <Navbar />
 
         {/* 🧱 Main Page Content */}
         <main className="min-h-screen">{children}</main>
-
+        {/* Analytics */}
+        <Analytics />
         {/* ⚙️ Footer */}
         <Footer />
       </body>
