@@ -22,9 +22,9 @@ const Footer = () => {
 
   const resources = [
     { name: "Learning Path", href: "/resources/learning-path" },
-    { name: "Free Templates", href: "/resources/templates" },
-    { name: "Code Snippets", href: "/resources/snippets" },
-    { name: "Tech Stack Guides", href: "/resources/guides" },
+    { name: "Free Templates", href: "/resources/free-templates" },
+    { name: "Code Snippets", href: "/resources/code-snippets" },
+    { name: "Tech Stack Guides", href: "/resources/tech-stack-guides" },
     { name: "Open Source Projects", href: "/resources/open-source" },
   ];
 
