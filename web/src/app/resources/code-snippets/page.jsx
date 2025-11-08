@@ -9,7 +9,7 @@ const CodeSnippetsPage = () => {
     {
       id: 1,
       title: "React useState Example",
-      description: "A simple example of using the useState hook in React to manage component state dynamically.",
+      description: "A simple example of using the useState w hook in React to manage component state dynamically.",
       language: "jsx",
       code: `import React, { useState } from 'react';
 
