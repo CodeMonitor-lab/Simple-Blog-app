@@ -8,11 +8,11 @@ const Navbar = () => {
 
    const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Projects", path: "/project" },
+    { name: "JS-Stack", path: "/projects" },
     { name: "Showcase", path: "/showcase" },
     { name: "Blog", path: "/blog" },
     { name: "Tutorials", path: "/tutorials" },
-    { name: "Resources", path: "/resources" },
+    { name: "Node-&-Backend", path: "/node-backend" },
     { name: "Login", path: "/auth/login" },
     { name: "Register", path: "/auth/register" },
   ];

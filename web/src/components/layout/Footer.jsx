@@ -13,11 +13,11 @@ const Footer = () => {
   ];
 
   const categories = [
-    { name: "React Projects", href: "/category/react" },
-    { name: "Node.js & Backend", href: "/category/node" },
-    { name: "SEO & Growth", href: "/category/seo" },
-    { name: "UI/UX & Design", href: "/category/uiux" },
-    { name: "Tools & Automation", href: "/category/tools" },
+    { name: "Javascript Stack", href: "/category/js-stack" },
+    { name: "Node.js & Backend", href: "/category/node-&-backend" },
+    { name: "SEO & Growth", href: "/category/seo-&-growth" },
+    { name: "UI/UX & Design", href: "/category/ui-&-ux" },
+    { name: "Tools & Automation", href: "/category/tools-&-automation" },
   ];
 
   const resources = [
