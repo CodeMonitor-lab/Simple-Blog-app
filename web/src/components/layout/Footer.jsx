@@ -5,15 +5,14 @@ import Link from "next/link";
 const Footer = () => {
   // 🧭 Footer Link Data
   const quickLinks = [
-    { name: "Home", href: "/" },
-    { name: "Projects", href: "/projects" },
-    { name: "Blog", href: "/blog" },
+    { name: "Home", href: "/home" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
+    { name: "T & C", href: "t-&-c" },
   ];
 
   const categories = [
-    { name: "Javascript Stack", href: "/category/js-stack" },
+    // { name: "Javascript Stack", href: "/category/js-stack" },
     { name: "Node.js & Backend", href: "/category/node-&-backend" },
     { name: "SEO & Growth", href: "/category/seo-&-growth" },
     { name: "UI/UX & Design", href: "/category/ui-&-ux" },
@@ -22,7 +21,7 @@ const Footer = () => {
 
   const resources = [
     { name: "Learning Path", href: "/resources/learning-path" },
-    { name: "Free Templates", href: "/resources/free-templates" },
+    // { name: "Free Templates", href: "/resources/free-templates" },
     { name: "Code Snippets", href: "/resources/code-snippets" },
     { name: "Tech Stack Guides", href: "/resources/tech-stack-guides" },
     { name: "Open Source Projects", href: "/resources/open-source" },
@@ -43,11 +42,6 @@ const Footer = () => {
       name: "Twitter / X",
       href: "https://twitter.com/yourusername",
       icon: <Twitter className="w-4 h-4" />,
-    },
-    {
-      name: "YouTube",
-      href: "https://youtube.com/@yourchannel",
-      icon: <Youtube className="w-4 h-4" />,
     },
     {
       name: "Email",

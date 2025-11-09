@@ -8,13 +8,13 @@ const Navbar = () => {
 
    const navLinks = [
     { name: "Home", path: "/" },
-    { name: "JS-Stack", path: "/projects" },
+    { name: "JS-Stack", path: "/js-stack" },
     { name: "Showcase", path: "/showcase" },
+    { name: "Templates", path: "/templates" },
     { name: "Blog", path: "/blog" },
     { name: "Tutorials", path: "/tutorials" },
-    { name: "Node-&-Backend", path: "/node-backend" },
-    { name: "Login", path: "/auth/login" },
     { name: "Register", path: "/auth/register" },
+    { name: "Login", path: "/auth/login" },
   ];
   
 
