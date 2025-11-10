@@ -1,115 +1,260 @@
 "use client";
-import React, { useState } from "react";
-import { Search } from "lucide-react";
+import React from "react";
+import { FolderGit2, Layers, Rocket } from "lucide-react";
 
-// Sample Blog Data (replace with your real data or fetch from API)
-const blogPosts = [
-  {
-    id: 1,
-    title: "Mastering React Hooks in 2025",
-    author: "John Doe",
-    date: "Nov 1, 2025",
-    image:
-      "https://plus.unsplash.com/premium_photo-1661766717882-65c84cf12a8e?w=800",
-    description:
-      "Learn how to use React Hooks efficiently with examples and best practices for modern web development.",
-    category: "React",
-  },
-  {
-    id: 2,
-    title: "Building Scalable APIs with Node.js and Express",
-    author: "Jane Smith",
-    date: "Oct 28, 2025",
-    image:
-      "https://images.unsplash.com/photo-1559526324-593bc073d938?w=800",
-    description:
-      "Discover how to design and build robust, scalable APIs using Node.js, Express, and MongoDB.",
-    category: "Backend",
-  },
-  {
-    id: 3,
-    title: "SEO Optimization Tips for Next.js Applications",
-    author: "Alex Carter",
-    date: "Oct 20, 2025",
-    image:
-      "https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=800",
-    description:
-      "Boost your Next.js website ranking with technical SEO best practices and tools that actually work.",
-    category: "SEO",
-  },
-];
-
-const BlogHomePage = () => {
-  const [searchTerm, setSearchTerm] = useState("");
-
-  const filteredPosts = blogPosts.filter((post) =>
-    post.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+const ProjectTemplatesPage = () => {
+  const categories = [
+    {
+      id: 1,
+      title: "Blog Templates",
+      templates: [
+        {
+          name: "Personal Blog",
+          description: "A markdown-based blog built with Next.js and TailwindCSS.",
+          stack: ["Next.js", "TailwindCSS", "MDX"],
+          link: "#",
+        },
+        {
+          name: "Tech Blog",
+          description: "A blog for developers to write and share tutorials.",
+          stack: ["Next.js", "Prism.js", "Vercel"],
+          link: "#",
+        },
+        {
+          name: "Travel Blog",
+          description: "Share travel stories and galleries with a modern layout.",
+          stack: ["React", "TailwindCSS", "Framer Motion"],
+          link: "#",
+        },
+        {
+          name: "Food Blog",
+          description: "Showcase recipes and culinary tips with a photo grid.",
+          stack: ["Next.js", "Contentful", "Vercel"],
+          link: "#",
+        },
+      ],
+    },
+    {
+      id: 2,
+      title: "Portfolio Templates",
+      templates: [
+        {
+          name: "Developer Portfolio",
+          description: "Clean portfolio with project showcase and contact form.",
+          stack: ["Next.js", "Framer Motion", "Vercel"],
+          link: "#",
+        },
+        {
+          name: "Designer Portfolio",
+          description: "Visual designer site with smooth animations and galleries.",
+          stack: ["React", "TailwindCSS", "GSAP"],
+          link: "#",
+        },
+        {
+          name: "Freelancer Portfolio",
+          description: "Simple one-page portfolio for freelancers and creators.",
+          stack: ["Next.js", "EmailJS", "TailwindCSS"],
+          link: "#",
+        },
+        {
+          name: "Photographer Portfolio",
+          description: "Showcase photography with lightbox and gallery sections.",
+          stack: ["React", "Next.js", "Lightbox.js"],
+          link: "#",
+        },
+      ],
+    },
+    {
+      id: 3,
+      title: "Business Templates",
+      templates: [
+        {
+          name: "Startup Landing Page",
+          description: "SaaS startup landing with pricing and testimonials.",
+          stack: ["Next.js", "TailwindCSS", "Formspree"],
+          link: "#",
+        },
+        {
+          name: "Agency Website",
+          description: "Professional site for creative agencies and studios.",
+          stack: ["Next.js", "Framer Motion", "EmailJS"],
+          link: "#",
+        },
+        {
+          name: "Corporate Website",
+          description: "Modern corporate template with team and service pages.",
+          stack: ["React", "Bootstrap", "Vercel"],
+          link: "#",
+        },
+        {
+          name: "Consulting Website",
+          description: "Clean consulting layout with contact and case study pages.",
+          stack: ["Next.js", "TailwindCSS", "Formspree"],
+          link: "#",
+        },
+      ],
+    },
+    {
+      id: 4,
+      title: "E-commerce Templates",
+      templates: [
+        {
+          name: "Online Store",
+          description: "Full-featured store with checkout and cart system.",
+          stack: ["Next.js", "Stripe", "MongoDB"],
+          link: "#",
+        },
+        {
+          name: "Clothing Store",
+          description: "E-commerce template for apparel and fashion stores.",
+          stack: ["Next.js", "Firebase", "TailwindCSS"],
+          link: "#",
+        },
+        {
+          name: "Digital Products Shop",
+          description: "Sell digital downloads with secure payment flow.",
+          stack: ["Next.js", "Stripe", "Supabase"],
+          link: "#",
+        },
+        {
+          name: "Furniture Store",
+          description: "Modern furniture e-commerce layout with filter and cart.",
+          stack: ["React", "Redux", "Vercel"],
+          link: "#",
+        },
+      ],
+    },
+    {
+      id: 5,
+      title: "Admin Dashboards",
+      templates: [
+        {
+          name: "Analytics Dashboard",
+          description: "Data visualization and analytics interface.",
+          stack: ["React", "Recharts", "Node.js"],
+          link: "#",
+        },
+        {
+          name: "CMS Dashboard",
+          description: "Manage content and media from one place.",
+          stack: ["Next.js", "Prisma", "Supabase"],
+          link: "#",
+        },
+        {
+          name: "Sales Dashboard",
+          description: "Track and monitor sales data with charts.",
+          stack: ["React", "Chart.js", "Express"],
+          link: "#",
+        },
+        {
+          name: "Admin Control Panel",
+          description: "Customizable admin dashboard with user management.",
+          stack: ["Next.js", "MongoDB", "TailwindCSS"],
+          link: "#",
+        },
+      ],
+    },
+    {
+      id: 6,
+      title: "Educational Templates",
+      templates: [
+        {
+          name: "Online Course Platform",
+          description: "Host and sell courses with progress tracking.",
+          stack: ["Next.js", "Stripe", "Supabase"],
+          link: "#",
+        },
+        {
+          name: "Learning Dashboard",
+          description: "Track lessons, progress, and quizzes.",
+          stack: ["React", "Chart.js", "Firebase"],
+          link: "#",
+        },
+        {
+          name: "School Website",
+          description: "Showcase institution info, courses, and admissions.",
+          stack: ["Next.js", "TailwindCSS", "Vercel"],
+          link: "#",
+        },
+        {
+          name: "Course Landing Page",
+          description: "Simple landing page for online educators.",
+          stack: ["React", "Bootstrap", "EmailJS"],
+          link: "#",
+        },
+      ],
+    },
+  ];
 
   return (
-    <main className="min-h-screen bg-gray-50 py-10 px-6">
-      {/* 🔥 Hero Section */}
-      <section className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-gray-800 mb-2">
-          Welcome to DevChronicles 🧠
-        </h1>
-        <p className="text-gray-600">
-          Insights, tutorials, and tips on React, SEO, and Full Stack Development.
+    <main className="max-w-6xl mx-auto px-6 py-16">
+      <header className="flex items-center gap-3 mb-10">
+        <FolderGit2 className="w-8 h-8 text-blue-600" />
+        <h1 className="text-3xl font-bold tracking-tight">All Project Template Categories</h1>
+      </header>
+
+      <p className="text-gray-600 mb-12 max-w-2xl">
+        Explore diverse project templates across multiple categories — blogs, portfolios, businesses, e-commerce, dashboards, and education.
+      </p>
+
+      {categories.map((category) => (
+        <section key={category.id} className="mb-16">
+          <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2">
+            <Layers className="w-5 h-5 text-blue-600" /> {category.title}
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {category.templates.map((template, index) => (
+              <article
+                key={index}
+                className="border rounded-2xl shadow-sm hover:shadow-md transition bg-white p-6 flex flex-col justify-between"
+              >
+                <div>
+                  <h3 className="text-lg font-semibold mb-2">{template.name}</h3>
+                  <p className="text-gray-600 mb-4">{template.description}</p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {template.stack.map((tech, i) => (
+                      <span
+                        key={i}
+                        className="text-xs bg-blue-50 text-blue-600 px-2 py-1 rounded-md border border-blue-100"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <a
+                  href={template.link}
+                  className="mt-auto inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+                >
+                  View Template
+                </a>
+              </article>
+            ))}
+          </div>
+        </section>
+      ))}
+
+      <section className="mt-20 bg-gray-50 rounded-2xl p-10 border text-center">
+        <h2 className="text-2xl font-semibold mb-4 flex justify-center items-center gap-2">
+          <Rocket className="w-6 h-6 text-blue-600" /> Start Building Faster
+        </h2>
+        <p className="text-gray-600 max-w-2xl mx-auto mb-6">
+          Choose a template, customize it, and launch your project quickly. All templates are responsive, scalable, and SEO-friendly.
         </p>
+        <a
+          href="#"
+          className="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition"
+        >
+          Browse More Templates
+        </a>
       </section>
 
-      {/* 🔍 Search */}
-      <div className="max-w-md mx-auto mb-8">
-        <div className="flex items-center gap-3 bg-white border border-gray-300 rounded-full px-4 py-2 shadow-sm">
-          <Search className="w-5 h-5 text-gray-500" />
-          <input
-            type="text"
-            placeholder="Search blog posts..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full bg-transparent outline-none text-gray-700"
-          />
-        </div>
-      </div>
-
-      {/* 📝 Blog Grid */}
-      <section className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        {filteredPosts.map((post) => (
-          <article
-            key={post.id}
-            className="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition-all duration-300"
-          >
-            <img
-              src={post.image}
-              alt={post.title}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-5">
-              <p className="text-xs text-blue-600 font-semibold uppercase mb-1">
-                {post.category}
-              </p>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                {post.title}
-              </h3>
-              <p className="text-sm text-gray-600 mb-3 line-clamp-2">
-                {post.description}
-              </p>
-              <div className="flex items-center justify-between text-xs text-gray-500">
-                <span>By {post.author}</span>
-                <span>{post.date}</span>
-              </div>
-            </div>
-          </article>
-        ))}
-      </section>
-
-      {filteredPosts.length === 0 && (
-        <p className="text-center text-gray-500 mt-10">
-          No posts found matching “{searchTerm}”.
-        </p>
-      )}
+      <footer className="mt-16 border-t pt-6 text-center text-gray-500 text-sm">
+        © {new Date().getFullYear()} WebStarter — Crafted with ❤️ for developers and creators.
+      </footer>
     </main>
   );
 };
 
-export default BlogHomePage;
+export default ProjectTemplatesPage;

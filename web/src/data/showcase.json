@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "title": "Next.js Blog Platform",
+      "description": "A clean blogging system with SEO features, Markdown posts, and smooth UI transitions.",
+      "tech": ["Next.js", "Tailwind CSS", "Vercel"],
+      "image": "https://source.unsplash.com/random/600x400?code"
+    },
+    {
+      "id": 2,
+      "title": "Admin Dashboard UI",
+      "description": "A modern dashboard featuring content analytics, charts, and role-based management.",
+      "tech": ["React", "ShadCN UI", "Lucide Icons"],
+      "image": "https://source.unsplash.com/random/600x400?dashboard"
+    },
+    {
+      "id": 3,
+      "title": "AI Content Generator",
+      "description": "An AI-powered writing studio using OpenAI and Next.js App Router with TypeScript.",
+      "tech": ["Next.js", "OpenAI API", "TypeScript"],
+      "image": "https://source.unsplash.com/random/600x400?ai,tech"
+    }
+  ]
+  

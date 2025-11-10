@@ -1,0 +1,101 @@
+{
+    "STACKS": [
+      {
+        "id": "mern",
+        "title": "MERN",
+        "category": "Full Stack",
+        "summary": "MongoDB • Express • React • Node.js — a classic JavaScript full-stack setup.",
+        "tags": ["React", "Node.js", "MongoDB", "Express"],
+        "docs": "https://www.mongodb.com/mern-stack"
+      },
+      {
+        "id": "nextjs",
+        "title": "Next.js (React)",
+        "category": "Frontend / SSR",
+        "summary": "Server-side rendering, static generation, and API routes built on top of React.",
+        "tags": ["React", "SSR", "Static", "Vercel"],
+        "docs": "https://nextjs.org/"
+      },
+      {
+        "id": "vite-react",
+        "title": "Vite + React",
+        "category": "Frontend",
+        "summary": "Lightning-fast dev server and optimized build for modern frontend apps.",
+        "tags": ["Vite", "React", "ESM"],
+        "docs": "https://vitejs.dev/"
+      },
+      {
+        "id": "remix",
+        "title": "Remix",
+        "category": "Frontend / SSR",
+        "summary": "A modern framework focused on web fundamentals and great UX for routing/data.",
+        "tags": ["Remix", "SSR", "Routing"],
+        "docs": "https://remix.run/"
+      },
+      {
+        "id": "sveltekit",
+        "title": "SvelteKit",
+        "category": "Frontend",
+        "summary": "Svelte-powered framework for tiny bundle sizes and excellent DX.",
+        "tags": ["Svelte", "SSR", "Kit"],
+        "docs": "https://kit.svelte.dev/"
+      },
+      {
+        "id": "node-express",
+        "title": "Node.js + Express",
+        "category": "Backend",
+        "summary": "Lightweight, unopinionated server layer for APIs and microservices.",
+        "tags": ["Node.js", "Express", "API"],
+        "docs": "https://expressjs.com/"
+      },
+      {
+        "id": "nest",
+        "title": "NestJS",
+        "category": "Backend",
+        "summary": "Opinionated TypeScript-friendly backend framework inspired by Angular.",
+        "tags": ["NestJS", "TypeScript", "GraphQL"],
+        "docs": "https://nestjs.com/"
+      },
+      {
+        "id": "deno",
+        "title": "Deno",
+        "category": "Runtime",
+        "summary": "Secure runtime for JavaScript and TypeScript with built-in tooling.",
+        "tags": ["Deno", "TypeScript", "Secure"],
+        "docs": "https://deno.com/"
+      },
+      {
+        "id": "prisma",
+        "title": "Prisma",
+        "category": "ORM",
+        "summary": "Type-safe database toolkit that works great with TypeScript/Node.js.",
+        "tags": ["Prisma", "ORM", "TypeScript"],
+        "docs": "https://www.prisma.io/"
+      },
+      {
+        "id": "supabase",
+        "title": "Supabase",
+        "category": "Backend-as-a-Service",
+        "summary": "Open-source Firebase alternative — Postgres + realtime + auth.",
+        "tags": ["Supabase", "Postgres", "Realtime"],
+        "docs": "https://supabase.com/"
+      },
+      {
+        "id": "testing",
+        "title": "Testing (Jest / Vitest)",
+        "category": "Testing",
+        "summary": "Unit / integration testing tools widely used in the JS ecosystem.",
+        "tags": ["Jest", "Vitest", "Testing"],
+        "docs": "https://jestjs.io/"
+      },
+      {
+        "id": "ci",
+        "title": "CI / CD",
+        "category": "DevOps",
+        "summary": "GitHub Actions, CircleCI, and Vercel for continuous integration and deployment.",
+        "tags": ["GitHub Actions", "Vercel", "CI/CD"],
+        "docs": "https://docs.github.com/en/actions"
+      }
+    ]
+  }
+  
