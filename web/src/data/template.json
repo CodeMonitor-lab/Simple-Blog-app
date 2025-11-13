@@ -1,0 +1,185 @@
+{
+    "categories": [
+      {
+        "id": 1,
+        "title": "Blog Templates",
+        "templates": [
+          {
+            "name": "Personal Blog",
+            "description": "A markdown-based blog built with Next.js and TailwindCSS.",
+            "stack": ["Next.js", "TailwindCSS", "MDX"],
+            "link": "#"
+          },
+          {
+            "name": "Tech Blog",
+            "description": "A blog for developers to write and share tutorials.",
+            "stack": ["Next.js", "Prism.js", "Vercel"],
+            "link": "#"
+          },
+          {
+            "name": "Travel Blog",
+            "description": "Share travel stories and galleries with a modern layout.",
+            "stack": ["React", "TailwindCSS", "Framer Motion"],
+            "link": "#"
+          },
+          {
+            "name": "Food Blog",
+            "description": "Showcase recipes and culinary tips with a photo grid.",
+            "stack": ["Next.js", "Contentful", "Vercel"],
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Portfolio Templates",
+        "templates": [
+          {
+            "name": "Developer Portfolio",
+            "description": "Clean portfolio with project showcase and contact form.",
+            "stack": ["Next.js", "Framer Motion", "Vercel"],
+            "link": "#"
+          },
+          {
+            "name": "Designer Portfolio",
+            "description": "Visual designer site with smooth animations and galleries.",
+            "stack": ["React", "TailwindCSS", "GSAP"],
+            "link": "#"
+          },
+          {
+            "name": "Freelancer Portfolio",
+            "description": "Simple one-page portfolio for freelancers and creators.",
+            "stack": ["Next.js", "EmailJS", "TailwindCSS"],
+            "link": "#"
+          },
+          {
+            "name": "Photographer Portfolio",
+            "description": "Showcase photography with lightbox and gallery sections.",
+            "stack": ["React", "Next.js", "Lightbox.js"],
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Business Templates",
+        "templates": [
+          {
+            "name": "Startup Landing Page",
+            "description": "SaaS startup landing with pricing and testimonials.",
+            "stack": ["Next.js", "TailwindCSS", "Formspree"],
+            "link": "#"
+          },
+          {
+            "name": "Agency Website",
+            "description": "Professional site for creative agencies and studios.",
+            "stack": ["Next.js", "Framer Motion", "EmailJS"],
+            "link": "#"
+          },
+          {
+            "name": "Corporate Website",
+            "description": "Modern corporate template with team and service pages.",
+            "stack": ["React", "Bootstrap", "Vercel"],
+            "link": "#"
+          },
+          {
+            "name": "Consulting Website",
+            "description": "Clean consulting layout with contact and case study pages.",
+            "stack": ["Next.js", "TailwindCSS", "Formspree"],
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "E-commerce Templates",
+        "templates": [
+          {
+            "name": "Online Store",
+            "description": "Full-featured store with checkout and cart system.",
+            "stack": ["Next.js", "Stripe", "MongoDB"],
+            "link": "#"
+          },
+          {
+            "name": "Clothing Store",
+            "description": "E-commerce template for apparel and fashion stores.",
+            "stack": ["Next.js", "Firebase", "TailwindCSS"],
+            "link": "#"
+          },
+          {
+            "name": "Digital Products Shop",
+            "description": "Sell digital downloads with secure payment flow.",
+            "stack": ["Next.js", "Stripe", "Supabase"],
+            "link": "#"
+          },
+          {
+            "name": "Furniture Store",
+            "description": "Modern furniture e-commerce layout with filter and cart.",
+            "stack": ["React", "Redux", "Vercel"],
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Admin Dashboards",
+        "templates": [
+          {
+            "name": "Analytics Dashboard",
+            "description": "Data visualization and analytics interface.",
+            "stack": ["React", "Recharts", "Node.js"],
+            "link": "#"
+          },
+          {
+            "name": "CMS Dashboard",
+            "description": "Manage content and media from one place.",
+            "stack": ["Next.js", "Prisma", "Supabase"],
+            "link": "#"
+          },
+          {
+            "name": "Sales Dashboard",
+            "description": "Track and monitor sales data with charts.",
+            "stack": ["React", "Chart.js", "Express"],
+            "link": "#"
+          },
+          {
+            "name": "Admin Control Panel",
+            "description": "Customizable admin dashboard with user management.",
+            "stack": ["Next.js", "MongoDB", "TailwindCSS"],
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Educational Templates",
+        "templates": [
+          {
+            "name": "Online Course Platform",
+            "description": "Host and sell courses with progress tracking.",
+            "stack": ["Next.js", "Stripe", "Supabase"],
+            "link": "#"
+          },
+          {
+            "name": "Learning Dashboard",
+            "description": "Track lessons, progress, and quizzes.",
+            "stack": ["React", "Chart.js", "Firebase"],
+            "link": "#"
+          },
+          {
+            "name": "School Website",
+            "description": "Showcase institution info, courses, and admissions.",
+            "stack": ["Next.js", "TailwindCSS", "Vercel"],
+            "link": "#"
+          },
+          {
+            "name": "Course Landing Page",
+            "description": "Simple landing page for online educators.",
+            "stack": ["React", "Bootstrap", "EmailJS"],
+            "link": "#"
+          }
+        ]
+      }
+    ]
+  }
+  

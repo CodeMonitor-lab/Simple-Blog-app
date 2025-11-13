@@ -1,0 +1,45 @@
+{
+    "tutorials": [
+      {
+        "id": 1,
+        "title": "Getting Started with React 19",
+        "description": "Learn the fundamentals of React 19, including hooks, components, and the new server actions.",
+        "category": "Frontend",
+        "level": "Beginner",
+        "image": "https://source.unsplash.com/random/800x600?react,frontend"
+      },
+      {
+        "id": 2,
+        "title": "Building APIs with Node.js & Express",
+        "description": "Step-by-step guide to create a REST API using Node.js and Express, with MongoDB integration.",
+        "category": "Backend",
+        "level": "Intermediate",
+        "image": "https://source.unsplash.com/random/800x600?nodejs,backend"
+      },
+      {
+        "id": 3,
+        "title": "Mastering On-Page SEO in 2025",
+        "description": "Understand modern on-page SEO techniques to boost your website’s search engine visibility.",
+        "category": "SEO",
+        "level": "Advanced",
+        "image": "https://source.unsplash.com/random/800x600?seo,analytics"
+      },
+      {
+        "id": 4,
+        "title": "Building Modern UI with Tailwind CSS",
+        "description": "Learn how to rapidly build responsive and beautiful interfaces using Tailwind CSS.",
+        "category": "Design",
+        "level": "Beginner",
+        "image": "https://source.unsplash.com/random/800x600?tailwindcss,design"
+      },
+      {
+        "id": 5,
+        "title": "Deploying Apps with Vercel",
+        "description": "A complete guide on deploying React and Next.js projects using Vercel — free, fast, and easy.",
+        "category": "DevOps",
+        "level": "Beginner",
+        "image": "https://source.unsplash.com/random/800x600?vercel,cloud"
+      }
+    ]
+  }
+  

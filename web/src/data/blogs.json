@@ -1,0 +1,29 @@
+{
+    "blogs": [
+      {
+        "id": 1,
+        "title": "Mastering React State Management in 2025",
+        "description": "Learn how to handle complex state using React hooks, Context API, and modern libraries like Zustand and Jotai.",
+        "date": "Oct 12, 2025",
+        "tags": ["React", "State", "Frontend"],
+        "image": "https://source.unsplash.com/random/800x600?react,code"
+      },
+      {
+        "id": 2,
+        "title": "Building a Scalable API with Node.js and Express",
+        "description": "A step-by-step guide on structuring your Express backend for better scalability, maintainability, and performance.",
+        "date": "Sep 27, 2025",
+        "tags": ["Node.js", "Backend", "API"],
+        "image": "https://source.unsplash.com/random/800x600?nodejs,server"
+      },
+      {
+        "id": 3,
+        "title": "SEO in the Age of AI: What Developers Should Know",
+        "description": "Explore how AI-driven search algorithms affect technical SEO and how developers can adapt for better rankings.",
+        "date": "Aug 15, 2025",
+        "tags": ["SEO", "AI", "Web Development"],
+        "image": "https://source.unsplash.com/random/800x600?seo,ai"
+      }
+    ]
+  }
+  
