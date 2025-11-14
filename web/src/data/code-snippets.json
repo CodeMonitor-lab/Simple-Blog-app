@@ -1,0 +1,61 @@
+{
+    "snippets": [
+      {
+        "id": 1,
+        "title": "React useState Example",
+        "description": "A simple example of using the useState hook in React to manage component state dynamically.",
+        "language": "jsx",
+        "code": "import React, { useState } from 'react';\n\nfunction Counter() {\n  const [count, setCount] = useState(0);\n\n  return (\n    <button onClick={() => setCount(count + 1)}>\n      Count: {count}\n    </button>\n  );\n}\n\nexport default Counter;"
+      },
+      {
+        "id": 2,
+        "title": "Fetch Data in Next.js",
+        "description": "Fetching data from an API using getServerSideProps in Next.js for server-side rendering.",
+        "language": "js",
+        "code": "export async function getServerSideProps() {\n  const res = await fetch('https://api.example.com/data');\n  const data = await res.json();\n\n  return { props: { data } };\n}"
+      },
+      {
+        "id": 3,
+        "title": "React useEffect API Call",
+        "description": "Using the useEffect hook to fetch data from an API after the component mounts.",
+        "language": "jsx",
+        "code": "import React, { useEffect, useState } from 'react';\n\nfunction UserList() {\n  const [users, setUsers] = useState([]);\n\n  useEffect(() => {\n    fetch('https://jsonplaceholder.typicode.com/users')\n      .then((res) => res.json())\n      .then((data) => setUsers(data));\n  }, []);\n\n  return (\n    <ul>\n      {users.map((user) => (\n        <li key={user.id}>{user.name}</li>\n      ))}\n    </ul>\n  );\n}\n\nexport default UserList;"
+      },
+      {
+        "id": 4,
+        "title": "Next.js Dynamic Route Example",
+        "description": "Example of dynamic routing in Next.js using [id].js and getStaticPaths.",
+        "language": "js",
+        "code": "export async function getStaticPaths() {\n  const res = await fetch('https://api.example.com/posts');\n  const posts = await res.json();\n\n  const paths = posts.map((post) => ({ params: { id: post.id.toString() } }));\n\n  return { paths, fallback: false };\n}\n\nexport async function getStaticProps({ params }) {\n  const res = await fetch(`https://api.example.com/posts/${params.id}`);\n  const post = await res.json();\n\n  return { props: { post } };\n}\n\nexport default function Post({ post }) {\n  return <h1>{post.title}</h1>;\n}"
+      },
+      {
+        "id": 5,
+        "title": "Debounce Function in JavaScript",
+        "description": "A reusable debounce utility function to delay execution until the user stops typing.",
+        "language": "js",
+        "code": "function debounce(func, delay) {\n  let timeout;\n  return function(...args) {\n    clearTimeout(timeout);\n    timeout = setTimeout(() => func.apply(this, args), delay);\n  };\n}\n\n// Example usage:\nconst handleSearch = debounce((query) => {\n  console.log('Searching for:', query);\n}, 300);"
+      },
+      {
+        "id": 6,
+        "title": "Custom Hook - useLocalStorage",
+        "description": "A custom React hook to sync state with localStorage.",
+        "language": "js",
+        "code": "import { useState, useEffect } from 'react';\n\nexport function useLocalStorage(key, initialValue) {\n  const [value, setValue] = useState(() => {\n    const stored = localStorage.getItem(key);\n    return stored ? JSON.parse(stored) : initialValue;\n  });\n\n  useEffect(() => {\n    localStorage.setItem(key, JSON.stringify(value));\n  }, [key, value]);\n\n  return [value, setValue];\n}"
+      },
+      {
+        "id": 7,
+        "title": "React Context Example",
+        "description": "Using React Context to manage global state for theme switching.",
+        "language": "jsx",
+        "code": "import React, { createContext, useContext, useState } from 'react';\n\nconst ThemeContext = createContext();\n\nexport function ThemeProvider({ children }) {\n  const [theme, setTheme] = useState('light');\n\n  const toggleTheme = () => {\n    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));\n  };\n\n  return (\n    <ThemeContext.Provider value={{ theme, toggleTheme }}>\n      {children}\n    </ThemeContext.Provider>\n  );\n}\n\nexport function useTheme() {\n  return useContext(ThemeContext);\n}"
+      },
+      {
+        "id": 8,
+        "title": "Async/Await Error Handling",
+        "description": "Example of handling errors in async/await using try...catch in JavaScript.",
+        "language": "js",
+        "code": "async function fetchData() {\n  try {\n    const res = await fetch('https://api.example.com/data');\n    if (!res.ok) throw new Error('Network error');\n    const data = await res.json();\n    console.log(data);\n  } catch (error) {\n    console.error('Error fetching data:', error.message);\n  }\n}\n\nfetchData();"
+      }
+    ]
+  }
+  
