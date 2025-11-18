@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useMemo } from "react";
 import { ShowcaseProjectCard } from "@/components/card";
-import { OptionModel, Search } from "@/components/common";
+import { Filter, Search } from "@/components/common";
 import projects from "@/data/showcase.json";
 
 const Page = () => {
@@ -37,7 +37,7 @@ const Page = () => {
 
       {/* 🔹 Controls */}
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-10">
-        <OptionModel
+        <Filter
           category={category}
           setCategory={setCategory}
           categories={categories}

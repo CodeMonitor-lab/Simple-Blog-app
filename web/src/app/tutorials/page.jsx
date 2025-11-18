@@ -1,23 +1,22 @@
-"use client";
-import React from "react";
-import {TutorialCard} from '@/components/card'
+import tutorials from "@/data/tutorial.json";
 
-const Page = () => {
-
+export default function Page() {
   return (
-    <section className="max-w-6xl mx-auto px-6 py-16">
-      {/* 🧠 Header */}
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-3">Tutorials & Guides</h1>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Practical coding tutorials covering frontend, backend, SEO, and deployment workflows.
-        </p>
-      </div>
+    <div>
+      <h1 className="text-3xl font-bold mb-4">All Tutorials</h1>
 
-      <TutorialCard/>
-      
-    </section>
+      <ul className="space-y-3">
+        {tutorials.map((module) => (
+          <li key={module.id}>
+            <a
+              href={`/tutorials/${module.slug}`}
+              className="text-blue-600 hover:underline"
+            >
+              {module.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
-};
-
-export default Page;
+}

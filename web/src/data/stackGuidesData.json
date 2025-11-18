@@ -1,0 +1,37 @@
+{
+    "guides": [
+      {
+        "id": 1,
+        "title": "MERN Stack",
+        "icon": "Layers",
+        "iconColor": "text-green-600",
+        "description": "A full-stack JavaScript solution combining MongoDB, Express, React, and Node.js. Ideal for dynamic web apps.",
+        "technologies": ["MongoDB", "Express.js", "React", "Node.js"]
+      },
+      {
+        "id": 2,
+        "title": "Next.js Full Stack",
+        "icon": "Globe",
+        "iconColor": "text-blue-600",
+        "description": "A React framework for server-side rendering, static generation, and building SEO-optimized web apps.",
+        "technologies": ["Next.js", "React", "TailwindCSS", "Prisma", "Vercel"]
+      },
+      {
+        "id": 3,
+        "title": "JAMstack",
+        "icon": "Code2",
+        "iconColor": "text-purple-600",
+        "description": "Modern web architecture using JavaScript, APIs, and Markup. Great for fast, secure static websites.",
+        "technologies": ["Gatsby", "Next.js", "Contentful", "Netlify"]
+      },
+      {
+        "id": 4,
+        "title": "MEAN Stack",
+        "icon": "Cpu",
+        "iconColor": "text-orange-500",
+        "description": "A powerful stack for enterprise apps using Angular on the frontend and Node.js on the backend.",
+        "technologies": ["MongoDB", "Express.js", "Angular", "Node.js"]
+      }
+    ]
+  }
+  

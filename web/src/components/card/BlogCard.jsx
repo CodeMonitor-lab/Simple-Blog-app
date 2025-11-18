@@ -3,6 +3,7 @@
 import React from "react";
 import { Calendar, ArrowRight } from "lucide-react";
 import blogData from "@/data/blogs.json";
+import Link from "next/link";
 
 const BlogCard = () => {
   const { blogs } = blogData;
@@ -51,7 +52,7 @@ const BlogCard = () => {
 
             {/* 🔗 Read More */}
             <button className="flex items-center text-indigo-600 hover:text-indigo-800 font-medium text-sm">
-              Read More
+            <Link href={`/blog/${post.slug}`}>Read Post</Link>
               <ArrowRight className="w-4 h-4 ml-1" />
             </button>
           </div>

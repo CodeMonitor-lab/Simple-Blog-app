@@ -13,24 +13,18 @@ import {
   Layers,
   Mail,
 } from "lucide-react";
+import {HeroBanner,CTA} from '@/components/ui'
 
 export default function UIUXPage() {
   return (
     <article className="max-w-6xl mx-auto px-6 py-12 text-gray-900 dark:text-gray-100">
       {/* HERO */}
       <header className="text-center mb-12">
-        <motion.div
-          initial={{ opacity: 0, y: 18 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <Layout className="w-14 h-14 mx-auto text-sky-500 mb-4" />
-          <h1 className="text-4xl font-extrabold mb-3">UI & UX — Design System</h1>
-          <p className="max-w-2xl mx-auto text-gray-600 dark:text-gray-300">
-            Principles, components, and patterns I use to design and build
-            delightful, accessible, and performant user experiences.
-          </p>
-        </motion.div>
+        <HeroBanner
+        icon={<Layout className="w-14 h-14 mx-auto text-sky-500 mb-4" />}
+        title={"UI & UX — Design System"}
+        description={"Principles, components, and patterns I use to design and build delightful, accessible, and performant user experiences."}
+        />
       </header>
 
       {/* Principles */}
@@ -164,17 +158,11 @@ export default function UIUXPage() {
 
       {/* CTA */}
       <footer className="mt-12 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-        >
-          <h3 className="text-xl font-semibold mb-3">Want a consistent UI / UX for your project?</h3>
-          <p className="text-gray-600 dark:text-gray-400 mb-6">I design and implement design systems, component libraries, and accessible experiences for web apps and marketing sites.</p>
-          <a href="mailto:contact@johnysince.dev" className="inline-flex items-center gap-2 px-5 py-3 bg-sky-600 text-white rounded-xl hover:bg-sky-700">
-            <Mail className="w-5 h-5" /> Get in touch
-          </a>
-        </motion.div>
+        <CTA 
+        title={"Want a consistent UI / UX for your project?"}
+        description={"I design and implement design systems, component libraries, and accessible experiences for web apps and marketing sites."}
+        buttonText={"Get in touch"}
+        />
       </footer>
     </article>
   );

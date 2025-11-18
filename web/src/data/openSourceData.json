@@ -1,0 +1,37 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "name": "NextBlog CMS",
+        "description": "An open-source blogging platform built with Next.js, Tailwind CSS, and Prisma.",
+        "tags": ["Next.js", "Tailwind", "Prisma"],
+        "stars": 210,
+        "repo": "https://github.com/example/nextblog-cms"
+      },
+      {
+        "id": 2,
+        "name": "React Dashboard",
+        "description": "A sleek admin dashboard template with charts, analytics, and dark mode.",
+        "tags": ["React", "Recharts", "Dashboard"],
+        "stars": 185,
+        "repo": "https://github.com/example/react-dashboard"
+      },
+      {
+        "id": 3,
+        "name": "Markdown Blog Engine",
+        "description": "A static blog engine powered by Markdown and MDX with built-in SEO.",
+        "tags": ["MDX", "Next.js", "SEO"],
+        "stars": 134,
+        "repo": "https://github.com/example/markdown-blog"
+      },
+      {
+        "id": 4,
+        "name": "Portfolio Starter Kit",
+        "description": "An elegant portfolio template with animations and dark mode.",
+        "tags": ["Framer Motion", "Tailwind", "Next.js"],
+        "stars": 256,
+        "repo": "https://github.com/example/portfolio-kit"
+      }
+    ]
+  }
+  

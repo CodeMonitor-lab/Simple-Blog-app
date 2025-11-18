@@ -1,0 +1,101 @@
+{
+    "BACKEND_STACKS": [
+      {
+        "id": "node",
+        "title": "Node.js",
+        "category": "Runtime",
+        "summary": "JavaScript runtime built on Chrome’s V8 engine — ideal for scalable network applications.",
+        "tags": ["JavaScript", "V8", "Runtime"],
+        "docs": "https://nodejs.org/"
+      },
+      {
+        "id": "express",
+        "title": "Express.js",
+        "category": "Framework",
+        "summary": "Minimal and flexible Node.js web application framework for building APIs and servers.",
+        "tags": ["Express", "Routing", "Middleware"],
+        "docs": "https://expressjs.com/"
+      },
+      {
+        "id": "nest",
+        "title": "NestJS",
+        "category": "Framework",
+        "summary": "A progressive Node.js framework leveraging TypeScript and modular architecture.",
+        "tags": ["NestJS", "TypeScript", "GraphQL"],
+        "docs": "https://nestjs.com/"
+      },
+      {
+        "id": "fastify",
+        "title": "Fastify",
+        "category": "Framework",
+        "summary": "Fast and low-overhead web framework for Node.js — built for performance.",
+        "tags": ["Fastify", "Performance", "API"],
+        "docs": "https://fastify.dev/"
+      },
+      {
+        "id": "hapi",
+        "title": "Hapi.js",
+        "category": "Framework",
+        "summary": "Rich framework for building scalable and maintainable server applications.",
+        "tags": ["Hapi", "API", "Plugins"],
+        "docs": "https://hapi.dev/"
+      },
+      {
+        "id": "prisma",
+        "title": "Prisma ORM",
+        "category": "Database",
+        "summary": "Next-generation ORM for Node.js and TypeScript with type-safe database access.",
+        "tags": ["Prisma", "ORM", "TypeScript"],
+        "docs": "https://www.prisma.io/"
+      },
+      {
+        "id": "mongoose",
+        "title": "Mongoose",
+        "category": "Database",
+        "summary": "Elegant MongoDB object modeling tool for Node.js with schema validation.",
+        "tags": ["MongoDB", "ODM", "Validation"],
+        "docs": "https://mongoosejs.com/"
+      },
+      {
+        "id": "supabase",
+        "title": "Supabase",
+        "category": "Backend-as-a-Service",
+        "summary": "Open-source Firebase alternative with Postgres, Auth, and Realtime APIs.",
+        "tags": ["Postgres", "Auth", "Realtime"],
+        "docs": "https://supabase.com/"
+      },
+      {
+        "id": "firebase",
+        "title": "Firebase",
+        "category": "Backend-as-a-Service",
+        "summary": "Google’s serverless backend for authentication, storage, and real-time data.",
+        "tags": ["Firebase", "Serverless", "Google"],
+        "docs": "https://firebase.google.com/"
+      },
+      {
+        "id": "graphql",
+        "title": "GraphQL",
+        "category": "API Layer",
+        "summary": "API query language and runtime for flexible data fetching from multiple sources.",
+        "tags": ["GraphQL", "API", "Schema"],
+        "docs": "https://graphql.org/"
+      },
+      {
+        "id": "socketio",
+        "title": "Socket.IO",
+        "category": "Realtime",
+        "summary": "Real-time, bidirectional, event-based communication for web applications.",
+        "tags": ["WebSockets", "Realtime", "Events"],
+        "docs": "https://socket.io/"
+      },
+      {
+        "id": "docker",
+        "title": "Docker",
+        "category": "DevOps",
+        "summary": "Container platform for building, shipping, and running backend apps anywhere.",
+        "tags": ["Containers", "DevOps", "Deployment"],
+        "docs": "https://www.docker.com/"
+      }
+    ]
+  }
+  

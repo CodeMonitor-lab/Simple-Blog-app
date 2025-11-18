@@ -1,0 +1,22 @@
+[
+    {
+      "id": "intro",
+      "title": "Introduction",
+      "lessons": [
+        { "id": "what-is-js", "title": "What is JavaScript?" },
+        { "id": "how-it-works", "title": "How it Works" },
+        { "id": "setup", "title": "Setup Environment" }
+      ]
+    },
+    {
+      "id": "basics",
+      "title": "Basics",
+      "lessons": [
+        { "id": "variables", "title": "Variables" },
+        { "id": "data-types", "title": "Data Types" },
+        { "id": "operators", "title": "Operators" },
+        { "id": "conditionals", "title": "Conditionals" }
+      ]
+    }
+  ]
+  

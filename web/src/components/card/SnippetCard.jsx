@@ -6,25 +6,25 @@ const SnippetCard = ({ copiedId, handleCopy }) => {
   const { snippets } = snippetsData;
 
   return (
-    <div className="space-y-10">
+    <main className="space-y-10">
       {snippets.map((snippet) => (
-        <article
-          key={snippet.id}
-          className="border border-gray-200 rounded-2xl shadow-sm bg-white p-6"
-        >
-          <header className="mb-4">
+        <article key={snippet.id} className="space-y-4">
+
+          {/* Header Card */}
+          <div className="border border-gray-200 rounded-2xl shadow-sm bg-white p-6">
             <h2 className="text-xl font-semibold">{snippet.title}</h2>
             <p className="text-gray-600 mt-1">{snippet.description}</p>
-          </header>
+          </div>
 
-          {/* ChatGPT-style code container */}
-          <div className="relative">
+          {/* Code Container */}
+          <div className="relative group">
+
             {/* Copy Button */}
             <button
               onClick={() => handleCopy(snippet.id, snippet.code)}
               className="absolute top-3 right-3 flex items-center gap-1 px-3 py-1 
-                         text-xs bg-gray-800 text-white rounded-md opacity-70 
-                         hover:opacity-100 transition"
+                text-xs bg-gray-900 text-white rounded-md opacity-70 
+                hover:opacity-100 transition duration-200"
             >
               {copiedId === snippet.id ? (
                 <>
@@ -40,13 +40,13 @@ const SnippetCard = ({ copiedId, handleCopy }) => {
             </button>
 
             {/* Code Block */}
-            <pre className="bg-[#0d0d0d] text-gray-100 rounded-xl p-4 overflow-x-auto text-sm hide-scrollbar">
+            <pre className="bg-[#0f0d4e] text-gray-100 rounded-xl p-4 overflow-x-auto text-sm hide-scrollbar">
               <code>{snippet.code}</code>
             </pre>
           </div>
         </article>
       ))}
-    </div>
+    </main>
   );
 };
 

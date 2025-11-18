@@ -1,0 +1,39 @@
+[
+    {
+      "icon": "Chrome",
+      "color": "text-blue-500",
+      "title": "Google Lighthouse",
+      "desc": "Performance and SEO audits to keep pages blazing fast."
+    },
+    {
+      "icon": "Search",
+      "color": "text-green-500",
+      "title": "Ahrefs & SEMrush",
+      "desc": "Keyword research, backlinks, and competitive insights."
+    },
+    {
+      "icon": "Globe",
+      "color": "text-purple-500",
+      "title": "Google Search Console",
+      "desc": "Monitor indexing, performance, and discoverability."
+    },
+    {
+      "icon": "BarChart2",
+      "color": "text-sky-500",
+      "title": "Google Analytics",
+      "desc": "Analyze visitor behavior and optimize growth strategies."
+    },
+    {
+      "icon": "Cpu",
+      "color": "text-red-500",
+      "title": "VS Code & Postman",
+      "desc": "Coding, testing APIs, and maintaining project consistency."
+    },
+    {
+      "icon": "Github",
+      "color": "text-gray-700",
+      "title": "GitHub Projects",
+      "desc": "Track issues, version control, and CI/CD pipelines."
+    }
+  ]
+  

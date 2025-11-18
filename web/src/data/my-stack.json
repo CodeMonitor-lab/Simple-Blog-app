@@ -1,0 +1,39 @@
+[
+    {
+      "icon": "Layers",
+      "color": "text-blue-500",
+      "title": "Next.js",
+      "desc": "For fast, SEO-friendly, and scalable web apps with SSR and static generation."
+    },
+    {
+      "icon": "Cpu",
+      "color": "text-yellow-500",
+      "title": "Node.js",
+      "desc": "Backend runtime that powers APIs and server-side logic efficiently."
+    },
+    {
+      "icon": "Wrench",
+      "color": "text-sky-500",
+      "title": "Tailwind CSS",
+      "desc": "Utility-first CSS for responsive, modern, and maintainable UI."
+    },
+    {
+      "icon": "Github",
+      "color": "text-gray-700",
+      "title": "GitHub & Vercel",
+      "desc": "Version control + instant deployments to scale projects quickly."
+    },
+    {
+      "icon": "BarChart2",
+      "color": "text-green-600",
+      "title": "MongoDB / Firebase",
+      "desc": "Reliable databases for scalable and flexible data handling."
+    },
+    {
+      "icon": "Globe",
+      "color": "text-indigo-500",
+      "title": "React Ecosystem",
+      "desc": "Smooth frontend experience built with reusable, modular components."
+    }
+  ]
+  
