@@ -1,22 +1,43 @@
-import tutorials from "@/data/tutorial.json";
+"use client";
 
-export default function Page() {
+import React from "react";
+import { FilterSelect,Search } from "@/components/common";
+
+const Page = () => {
+  const [category, setCategory] = React.useState("");
+
+  const tutorialFilterOptions = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "Tailwind CSS",
+    "React",
+    "Next.js",
+    "Redux",
+    "UI/UX ",
+    "Responsive Design",
+    "Accessibility",
+    "Performance Optimization",
+  ];
+  
+  
+
   return (
-    <div>
-      <h1 className="text-3xl font-bold mb-4">All Tutorials</h1>
+    <main className="p-6">
+      <FilterSelect
+        label="Select Tutorial Module"
+        options={tutorialFilterOptions}
+        value={category}
+        onChange={setCategory}
+      />
 
-      <ul className="space-y-3">
-        {tutorials.map((module) => (
-          <li key={module.id}>
-            <a
-              href={`/tutorials/${module.slug}`}
-              className="text-blue-600 hover:underline"
-            >
-              {module.title}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
+      <div className="mt-4">
+        Selected: {category || "None"}
+      </div>
+      <Search/>
+    </main>
   );
-}
+};
+
+export default Page;

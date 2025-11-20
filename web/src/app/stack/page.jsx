@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useMemo } from "react";
 import { JsStackCard } from "@/components/card";
-import { Filter, Search } from "@/components/common";
+import { FilterSelect, Search } from "@/components/common";
 import { HeroBanner } from "@/components/ui";
 import stacksData from "@/data/stacks.json";
 import { useFilteredStacks } from "@/hooks/useFilteredStacks";
@@ -34,7 +34,7 @@ Filter by category or search by name, tag, or summary.`}
 
       {/* Filters */}
       <div className="flex flex-wrap items-center gap-4 mb-8">
-        <Filter
+        <FilterSelect
           categories={categories}
           category={category}
           setCategory={setCategory}
