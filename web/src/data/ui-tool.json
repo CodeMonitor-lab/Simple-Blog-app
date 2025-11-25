@@ -1,0 +1,121 @@
+[
+  {
+    "icon": "Paintbrush",
+    "color": "text-blue-500",
+    "title": "Tailwind CSS",
+    "desc": "Utility-first CSS framework for rapid UI building.",
+    "slug": "tailwind-css"
+  },
+  {
+    "icon": "Palette",
+    "color": "text-purple-500",
+    "title": "Bootstrap",
+    "desc": "Popular CSS library for responsive UI components.",
+    "slug": "bootstrap"
+  },
+  {
+    "icon": "Layers",
+    "color": "text-green-500",
+    "title": "ShadCN UI",
+    "desc": "Beautifully designed UI components built using Radix UI and Tailwind CSS.",
+    "slug": "shadcn-ui"
+  },
+  {
+    "icon": "Shapes",
+    "color": "text-orange-500",
+    "title": "Material UI",
+    "desc": "Google’s Material Design React components.",
+    "slug": "material-ui"
+  },
+  {
+    "icon": "SquareStack",
+    "color": "text-red-500",
+    "title": "Ant Design",
+    "desc": "Enterprise-level UI design language and React components.",
+    "slug": "ant-design"
+  },
+  {
+    "icon": "SquareCode",
+    "color": "text-yellow-500",
+    "title": "Chakra UI",
+    "desc": "Accessible, modular, and composable React component library.",
+    "slug": "chakra-ui"
+  },
+  {
+    "icon": "SwissFranc",
+    "color": "text-pink-500",
+    "title": "Framer Motion",
+    "desc": "Production-ready animation library for React with 3D, layout, and scroll animations.",
+    "slug": "framer-motion"
+  },
+  {
+    "icon": "Bot",
+    "color": "text-fuchsia-500",
+    "title": "GSAP",
+    "desc": "High-performance JavaScript animation library for complex motion effects.",
+    "slug": "gsap"
+  },
+  {
+    "icon": "Sparkles",
+    "color": "text-purple-400",
+    "title": "Animate.css",
+    "desc": "Ready-to-use, cross-browser CSS animations for UI elements.",
+    "slug": "animate-css"
+  },
+  {
+    "icon": "FlipVertical",
+    "color": "text-emerald-500",
+    "title": "Motion One",
+    "desc": "Lightweight animation library built for the web, from the Framer team.",
+    "slug": "motion-one"
+  },
+  {
+    "icon": "FileStack",
+    "color": "text-emerald-500",
+    "title": "Theme UI",
+    "desc": "Build themeable React apps using constraint-based design principles.",
+    "slug": "theme-ui"
+  },
+  {
+    "icon": "LayoutGrid",
+    "color": "text-sky-500",
+    "title": "DaisyUI",
+    "desc": "Tailwind CSS component library with prebuilt themes.",
+    "slug": "daisy-ui"
+  },
+  {
+    "icon": "Blocks",
+    "color": "text-indigo-500",
+    "title": "Radix UI",
+    "desc": "Unstyled, accessible UI components for building custom design systems.",
+    "slug": "radix-ui"
+  },
+  {
+    "icon": "Puzzle",
+    "color": "text-teal-500",
+    "title": "Mantine",
+    "desc": "Fully featured React components and hooks library.",
+    "slug": "mantine"
+  },
+  {
+    "icon": "Brackets",
+    "color": "text-lime-500",
+    "title": "Styled Components",
+    "desc": "CSS-in-JS styling solution for React and React Native.",
+    "slug": "styled-components"
+  },
+  {
+    "icon": "CircleDot",
+    "color": "text-rose-500",
+    "title": "Emotion",
+    "desc": "Powerful and flexible CSS-in-JS styling library.",
+    "slug": "emotion"
+  },
+  {
+    "icon": "Rows",
+    "color": "text-cyan-500",
+    "title": "Bulma",
+    "desc": "Modern CSS framework based on Flexbox.",
+    "slug": "bulma"
+  }
+]

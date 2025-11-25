@@ -1,0 +1,267 @@
+[
+  {
+    "id": 1,
+    "title": "Introduction",
+    "slug": "introduction",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "What is JavaScript?",
+        "slug": "what-is-javascript",
+        "content": "JavaScript is a high-level, dynamic programming language used to make websites interactive. It runs in the browser and on servers using Node.js."
+      },
+      {
+        "id": 2,
+        "title": "How JavaScript Works",
+        "slug": "how-javascript-works",
+        "content": "JavaScript runs in browsers using engines like V8. It uses a single-threaded call stack, event loop, and Web APIs to handle async tasks."
+      },
+      {
+        "id": 3,
+        "title": "Setup Environment",
+        "slug": "setup-environment",
+        "content": "Install Node.js, use VS Code, and set up a project folder with index.js to start coding in JavaScript."
+      }
+    ]
+  },
+
+  {
+    "id": 2,
+    "title": "Basics",
+    "slug": "basics",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Variables",
+        "slug": "variables",
+        "content": "Variables store data. Use const for fixed values, let for reassignable ones, and avoid var in modern JavaScript."
+      },
+      {
+        "id": 2,
+        "title": "Data Types",
+        "slug": "data-types",
+        "content": "JavaScript has primitive types (string, number, boolean, null, undefined, symbol, bigint) and reference types like objects and arrays."
+      },
+      {
+        "id": 3,
+        "title": "Operators",
+        "slug": "operators",
+        "content": "Arithmetic, comparison, logical, and assignment operators help manipulate values in JavaScript."
+      },
+      {
+        "id": 4,
+        "title": "Conditionals",
+        "slug": "conditionals",
+        "content": "Use if, else, else-if, and switch statements to run different code based on conditions."
+      }
+    ]
+  },
+
+  {
+    "id": 3,
+    "title": "Functions",
+    "slug": "functions",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Function Basics",
+        "slug": "function-basics",
+        "content": "Functions are reusable blocks of code defined with function declarations, expressions, or arrow functions."
+      },
+      {
+        "id": 2,
+        "title": "Arrow Functions",
+        "slug": "arrow-functions",
+        "content": "Arrow functions provide a shorter syntax and lexically bind 'this'. Example: const sum = (a, b) => a + b."
+      },
+      {
+        "id": 3,
+        "title": "Scope & Hoisting",
+        "slug": "scope-and-hoisting",
+        "content": "Scope defines variable accessibility. Hoisting moves declarations to the top of their scope, allowing limited use before definition."
+      }
+    ]
+  },
+
+  {
+    "id": 4,
+    "title": "DOM Manipulation",
+    "slug": "dom-manipulation",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Selecting Elements",
+        "slug": "selecting-elements",
+        "content": "Use querySelector, getElementById, and class selectors to grab HTML elements."
+      },
+      {
+        "id": 2,
+        "title": "Updating Elements",
+        "slug": "updating-elements",
+        "content": "Manipulate text, HTML, or CSS using innerText, innerHTML, and style properties."
+      },
+      {
+        "id": 3,
+        "title": "Event Listeners",
+        "slug": "event-listeners",
+        "content": "Listen to clicks, keyboard input, and other events with addEventListener."
+      }
+    ]
+  },
+
+  {
+    "id": 5,
+    "title": "Asynchronous JavaScript",
+    "slug": "async-js",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Callbacks",
+        "slug": "callbacks",
+        "content": "Callbacks are functions passed as arguments to other functions to handle async tasks, sometimes causing callback hell."
+      },
+      {
+        "id": 2,
+        "title": "Promises",
+        "slug": "promises",
+        "content": "Promises represent async outcomes and can be handled using .then(), .catch(), and .finally()."
+      },
+      {
+        "id": 3,
+        "title": "Async/Await",
+        "slug": "async-await",
+        "content": "Async/await makes async code cleaner. Example: const data = await fetch(url).then(res => res.json())."
+      }
+    ]
+  },
+
+  {
+    "id": 6,
+    "title": "Objects & Arrays",
+    "slug": "objects-and-arrays",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Objects Basics",
+        "slug": "object-basics",
+        "content": "Objects store key-value pairs. Properties can be accessed using dot notation or bracket notation."
+      },
+      {
+        "id": 2,
+        "title": "Arrays & Methods",
+        "slug": "arrays-and-methods",
+        "content": "Arrays store lists of values. Use push, pop, shift, map, filter, and reduce to manipulate lists."
+      },
+      {
+        "id": 3,
+        "title": "Destructuring",
+        "slug": "destructuring",
+        "content": "Destructuring extracts values from arrays or objects into variables directly."
+      }
+    ]
+  },
+
+  {
+    "id": 7,
+    "title": "ES6+ Modern JavaScript",
+    "slug": "modern-js",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Let & Const",
+        "slug": "let-and-const",
+        "content": "ES6 introduced let and const for block scoping and improved variable management."
+      },
+      {
+        "id": 2,
+        "title": "Spread & Rest",
+        "slug": "spread-and-rest",
+        "content": "Spread expands arrays/objects, while rest groups multiple arguments into a single array."
+      },
+      {
+        "id": 3,
+        "title": "Template Literals",
+        "slug": "template-literals",
+        "content": "Use backticks (`) to embed variables using ${}. Supports multiline strings."
+      }
+    ]
+  },
+
+  {
+    "id": 8,
+    "title": "Error Handling",
+    "slug": "error-handling",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Try & Catch",
+        "slug": "try-and-catch",
+        "content": "Use try/catch to handle runtime errors gracefully and prevent script crashes."
+      },
+      {
+        "id": 2,
+        "title": "Throwing Errors",
+        "slug": "throwing-errors",
+        "content": "Use throw to create custom errors when invalid conditions are detected."
+      },
+      {
+        "id": 3,
+        "title": "Finally Block",
+        "slug": "finally-block",
+        "content": "The finally block always runs, making it ideal for cleanup operations."
+      }
+    ]
+  },
+
+  {
+    "id": 9,
+    "title": "Web APIs",
+    "slug": "web-apis",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Fetch API",
+        "slug": "fetch-api",
+        "content": "Fetch allows you to make HTTP requests and retrieve data from servers."
+      },
+      {
+        "id": 2,
+        "title": "LocalStorage",
+        "slug": "localstorage",
+        "content": "LocalStorage stores key-value pairs in the browser permanently (until cleared)."
+      },
+      {
+        "id": 3,
+        "title": "Geolocation API",
+        "slug": "geolocation-api",
+        "content": "The Geolocation API retrieves the user's current location coordinates."
+      }
+    ]
+  },
+
+  {
+    "id": 10,
+    "title": "JavaScript Projects",
+    "slug": "js-projects",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Calculator App",
+        "slug": "calculator-app",
+        "content": "Build a calculator using DOM methods, event listeners, and basic logic."
+      },
+      {
+        "id": 2,
+        "title": "Todo List",
+        "slug": "todo-list",
+        "content": "Create a todo list that adds, deletes, and stores tasks in LocalStorage."
+      },
+      {
+        "id": 3,
+        "title": "Weather App",
+        "slug": "weather-app",
+        "content": "Fetch live weather data using Fetch API and display it dynamically."
+      }
+    ]
+  }
+]

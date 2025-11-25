@@ -1,0 +1,160 @@
+[
+  {
+    "id": "js-basics",
+    "moduleTitle": "JavaScript Basics",
+    "icon": "Code",
+    "children": [
+      {
+        "title": "Introduction",
+        "lessons": [
+          { "title": "What is JavaScript?", "link": "/learn/js-basics/intro/what-is-js" },
+          { "title": "How JS Works", "link": "/learn/js-basics/intro/how-js-works" }
+        ]
+      },
+      {
+        "title": "Core Concepts",
+        "lessons": [
+          { "title": "Variables", "link": "/learn/js-basics/core/variables" },
+          { "title": "Data Types", "link": "/learn/js-basics/core/data-types" },
+          { "title": "Operators", "link": "/learn/js-basics/core/operators" }
+        ]
+      }
+    ]
+  },
+
+  {
+    "id": "js-advanced",
+    "moduleTitle": "Advanced JavaScript",
+    "icon": "Cpu",
+    "children": [
+      {
+        "title": "Functions Deep Dive",
+        "lessons": [
+          { "title": "Scopes & Closures", "link": "/learn/js-advanced/functions/scopes" },
+          { "title": "Higher Order Functions", "link": "/learn/js-advanced/functions/hof" },
+          { "title": "This Keyword", "link": "/learn/js-advanced/functions/this" }
+        ]
+      },
+      {
+        "title": "Async JavaScript",
+        "lessons": [
+          { "title": "Promises", "link": "/learn/js-advanced/async/promises" },
+          { "title": "Async/Await", "link": "/learn/js-advanced/async/async-await" },
+          { "title": "Event Loop", "link": "/learn/js-advanced/async/event-loop" }
+        ]
+      }
+    ]
+  },
+
+  {
+    "id": "react",
+    "moduleTitle": "React for Beginners",
+    "icon": "React",
+    "children": [
+      {
+        "title": "Getting Started",
+        "lessons": [
+          { "title": "What is React?", "link": "/learn/react/start/what-is-react" },
+          { "title": "Create React App / Vite", "link": "/learn/react/start/create-project" }
+        ]
+      },
+      {
+        "title": "Core Concepts",
+        "lessons": [
+          { "title": "Components", "link": "/learn/react/core/components" },
+          { "title": "Props & State", "link": "/learn/react/core/props-state" },
+          { "title": "Lifecycle & Hooks", "link": "/learn/react/core/hooks" }
+        ]
+      }
+    ]
+  },
+
+  {
+    "id": "node",
+    "moduleTitle": "Node.js & Express",
+    "icon": "Server",
+    "children": [
+      {
+        "title": "Node Fundamentals",
+        "lessons": [
+          { "title": "What is Node.js?", "link": "/learn/node/fundamentals/intro" },
+          { "title": "NPM & Packages", "link": "/learn/node/fundamentals/npm" }
+        ]
+      },
+      {
+        "title": "Express Framework",
+        "lessons": [
+          { "title": "Routing", "link": "/learn/node/express/routing" },
+          { "title": "Middleware", "link": "/learn/node/express/middleware" },
+          { "title": "REST API", "link": "/learn/node/express/rest-api" }
+        ]
+      }
+    ]
+  },
+
+  {
+    "id": "database",
+    "moduleTitle": "Database & ORM",
+    "icon": "Database",
+    "children": [
+      {
+        "title": "SQL Basics",
+        "lessons": [
+          { "title": "Tables & Relations", "link": "/learn/db/sql/tables" },
+          { "title": "Joins", "link": "/learn/db/sql/joins" }
+        ]
+      },
+      {
+        "title": "MongoDB",
+        "lessons": [
+          { "title": "Documents & Collections", "link": "/learn/db/mongo/docs" },
+          { "title": "CRUD Operations", "link": "/learn/db/mongo/crud" }
+        ]
+      }
+    ]
+  },
+
+  {
+    "id": "git",
+    "moduleTitle": "Git & GitHub",
+    "icon": "GitBranch",
+    "children": [
+      {
+        "title": "Basics",
+        "lessons": [
+          { "title": "Version Control Intro", "link": "/learn/git/basics/intro" },
+          { "title": "Git Setup", "link": "/learn/git/basics/setup" }
+        ]
+      },
+      {
+        "title": "Workflows",
+        "lessons": [
+          { "title": "Branches", "link": "/learn/git/workflow/branches" },
+          { "title": "Pull Requests", "link": "/learn/git/workflow/prs" }
+        ]
+      }
+    ]
+  },
+
+  {
+    "id": "devops",
+    "moduleTitle": "DevOps & Deployment",
+    "icon": "Layers",
+    "children": [
+      {
+        "title": "Hosting",
+        "lessons": [
+          { "title": "Netlify Deployment", "link": "/learn/devops/deploy/netlify" },
+          { "title": "Vercel Deployment", "link": "/learn/devops/deploy/vercel" }
+        ]
+      },
+      {
+        "title": "CI/CD",
+        "lessons": [
+          { "title": "GitHub Actions", "link": "/learn/devops/cicd/github-actions" },
+          { "title": "Docker Basics", "link": "/learn/devops/cicd/docker" }
+        ]
+      }
+    ]
+  }
+]

@@ -8,3 +8,5 @@ export {default as TemplateCard } from './TemplateCard'
 export {default as TutorialCard } from './TutorialCard'
 export {default as SnippetCard  } from './SnippetCard'
 export {default as StackGuide  } from './StackGuide'
+export {default as ToolsCard  } from './ToolsCard'
+

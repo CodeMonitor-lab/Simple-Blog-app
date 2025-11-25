@@ -1,39 +1,128 @@
 [
-    {
-      "icon": "Chrome",
-      "color": "text-blue-500",
-      "title": "Google Lighthouse",
-      "desc": "Performance and SEO audits to keep pages blazing fast."
-    },
-    {
-      "icon": "Search",
-      "color": "text-green-500",
-      "title": "Ahrefs & SEMrush",
-      "desc": "Keyword research, backlinks, and competitive insights."
-    },
-    {
-      "icon": "Globe",
-      "color": "text-purple-500",
-      "title": "Google Search Console",
-      "desc": "Monitor indexing, performance, and discoverability."
-    },
-    {
-      "icon": "BarChart2",
-      "color": "text-sky-500",
-      "title": "Google Analytics",
-      "desc": "Analyze visitor behavior and optimize growth strategies."
-    },
-    {
-      "icon": "Cpu",
-      "color": "text-red-500",
-      "title": "VS Code & Postman",
-      "desc": "Coding, testing APIs, and maintaining project consistency."
-    },
-    {
-      "icon": "Github",
-      "color": "text-gray-700",
-      "title": "GitHub Projects",
-      "desc": "Track issues, version control, and CI/CD pipelines."
-    }
-  ]
-  
+  {
+    "icon": "Chrome",
+    "color": "text-blue-500",
+    "title": "Google Lighthouse",
+    "desc": "Performance and SEO audits to keep pages blazing fast.",
+    "slug": "google-lighthouse"
+  },
+  {
+    "icon": "Search",
+    "color": "text-green-500",
+    "title": "Ahrefs & SEMrush",
+    "desc": "Keyword research, backlinks, and competitive insights.",
+    "slug": "ahrefs-semrush"
+  },
+  {
+    "icon": "Globe",
+    "color": "text-purple-500",
+    "title": "Google Search Console",
+    "desc": "Monitor indexing, performance, and discoverability.",
+    "slug": "google-search-console"
+  },
+  {
+    "icon": "BarChart2",
+    "color": "text-sky-500",
+    "title": "Google Analytics",
+    "desc": "Analyze visitor behavior and optimize growth strategies.",
+    "slug": "google-analytics"
+  },
+  {
+    "icon": "Cpu",
+    "color": "text-red-500",
+    "title": "VS Code & Postman",
+    "desc": "Coding, testing APIs, and maintaining project consistency.",
+    "slug": "vs-code-postman"
+  },
+  {
+    "icon": "Github",
+    "color": "text-gray-700",
+    "title": "GitHub Projects",
+    "desc": "Track issues, version control, and CI/CD pipelines.",
+    "slug": "github-projects"
+  },
+  {
+    "icon": "Terminal",
+    "color": "text-orange-500",
+    "title": "Zsh / Oh My Zsh",
+    "desc": "Powerful shell environment with plugins and productivity boosts.",
+    "slug": "zsh-oh-my-zsh"
+  },
+  {
+    "icon": "Package",
+    "color": "text-yellow-500",
+    "title": "NPM & Yarn",
+    "desc": "Package managers for installing and managing dependencies.",
+    "slug": "npm-yarn"
+  },
+  {
+    "icon": "Settings2",
+    "color": "text-indigo-500",
+    "title": "Webpack & Vite",
+    "desc": "High-performance bundlers for fast frontend builds.",
+    "slug": "webpack-vite"
+  },
+  {
+    "icon": "ServerCog",
+    "color": "text-teal-500",
+    "title": "Docker",
+    "desc": "Containerization platform for deploying reproducible environments.",
+    "slug": "docker"
+  },
+  {
+    "icon": "FolderGit2",
+    "color": "text-rose-500",
+    "title": "Git CLI",
+    "desc": "Essential tool for version control and project collaboration.",
+    "slug": "git-cli"
+  },
+  {
+    "icon": "CloudUpload",
+    "color": "text-blue-600",
+    "title": "Vercel & Netlify",
+    "desc": "Hosting, deployments, and serverless functions for modern apps.",
+    "slug": "vercel-netlify"
+  },
+  {
+    "icon": "Database",
+    "color": "text-emerald-500",
+    "title": "MongoDB Compass",
+    "desc": "GUI tool to visualize, query, and inspect MongoDB databases.",
+    "slug": "mongodb-compass"
+  },
+  {
+    "icon": "Puzzle",
+    "color": "text-violet-500",
+    "title": "Figma",
+    "desc": "Collaborative design tool for UI, prototypes, and systems.",
+    "slug": "figma"
+  },
+  {
+    "icon": "BookOpen",
+    "color": "text-cyan-600",
+    "title": "Notion",
+    "desc": "Documentation, project tracking, and personal workflow management.",
+    "slug": "notion"
+  },
+  {
+    "icon": "TestTube",
+    "color": "text-lime-500",
+    "title": "Jest",
+    "desc": "Delightful JavaScript testing framework for fast unit tests.",
+    "slug": "jest"
+  },
+  {
+    "icon": "Network",
+    "color": "text-fuchsia-500",
+    "title": "Thunder Client",
+    "desc": "VS Code extension for lightweight API testing.",
+    "slug": "thunder-client"
+  },
+  {
+    "icon": "Bug",
+    "color": "text-red-700",
+    "title": "Chrome DevTools",
+    "desc": "Debugging, inspections, and performance profiling inside Chrome.",
+    "slug": "chrome-devtools"
+  }
+]

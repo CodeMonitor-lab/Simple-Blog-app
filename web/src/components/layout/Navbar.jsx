@@ -12,11 +12,11 @@ const Navbar = () => {
     { name: "blogs", path: "/blog" }, 
     { name: "Showcase", path: "/showcase" },
     { name: "Tutorials", path: "/tutorials" },
-    { name: "Tools", path: "/ui-library" },
-    { name: "Insighs", path: "/blog" },
+    { name: "Tools", path: "/dev-tool" },
+    { name: "DevOps", path: "/dev-ops" },
+    { name: "UI", path: "/ui-library" },
     { name: "Templates", path: "/templates" },
-
-
+    
     // { name: "Register", path: "/auth/register" },
     // { name: "Login", path: "/auth/login" },
   ];

@@ -1,0 +1,165 @@
+[
+    {
+      "id": 1,
+      "category": "Version Control",
+      "title": "Git & GitHub",
+      "slug": "git-github",
+      "icon": "GitBranch",
+      "color": "text-orange-500",
+      "desc": "Learn version control, branching, merging, GitHub workflow, and collaboration."
+    },
+    {
+      "id": 2,
+      "category": "CI/CD",
+      "title": "GitHub Actions",
+      "slug": "github-actions",
+      "icon": "Workflow",
+      "color": "text-blue-600",
+      "desc": "Automate builds, tests, and deployments using GitHub Actions pipelines."
+    },
+    {
+      "id": 3,
+      "category": "CI/CD",
+      "title": "Jenkins",
+      "slug": "jenkins",
+      "icon": "Server",
+      "color": "text-yellow-500",
+      "desc": "Set up CI/CD pipelines with Jenkins, manage jobs, agents, and deployments."
+    },
+    {
+      "id": 4,
+      "category": "Containers",
+      "title": "Docker",
+      "slug": "docker",
+      "icon": "Cube",
+      "color": "text-blue-500",
+      "desc": "Learn containerization, Dockerfiles, image creation, and container orchestration."
+    },
+    {
+      "id": 5,
+      "category": "Container Orchestration",
+      "title": "Kubernetes",
+      "slug": "kubernetes",
+      "icon": "Layers",
+      "color": "text-sky-600",
+      "desc": "Deploy scalable apps using Kubernetes pods, deployments, services, and clusters."
+    },
+    {
+      "id": 6,
+      "category": "Monitoring",
+      "title": "Prometheus",
+      "slug": "prometheus",
+      "icon": "ChartBar",
+      "color": "text-red-600",
+      "desc": "Monitoring and alerting system for metrics-based infrastructure."
+    },
+    {
+      "id": 7,
+      "category": "Monitoring",
+      "title": "Grafana",
+      "slug": "grafana",
+      "icon": "BarChart2",
+      "color": "text-purple-600",
+      "desc": "Visualize metrics data and build dashboards for system performance."
+    },
+    {
+      "id": 8,
+      "category": "Infrastructure as Code",
+      "title": "Terraform",
+      "slug": "terraform",
+      "icon": "Code",
+      "color": "text-indigo-600",
+      "desc": "Provision and manage cloud infrastructure using Terraform IaC."
+    },
+    {
+      "id": 9,
+      "category": "Cloud",
+      "title": "AWS",
+      "slug": "aws",
+      "icon": "Cloud",
+      "color": "text-yellow-400",
+      "desc": "Learn EC2, S3, IAM, Lambda, RDS, VPC, and cloud deployment fundamentals."
+    },
+    {
+      "id": 10,
+      "category": "Cloud",
+      "title": "Google Cloud",
+      "slug": "gcp",
+      "icon": "CloudRain",
+      "color": "text-blue-400",
+      "desc": "Deploy and manage resources on Google Cloud Platform."
+    },
+    {
+      "id": 11,
+      "category": "Cloud",
+      "title": "Microsoft Azure",
+      "slug": "azure",
+      "icon": "CloudSun",
+      "color": "text-blue-700",
+      "desc": "Build, deploy, and scale apps using Azure cloud services."
+    },
+    {
+      "id": 12,
+      "category": "Automation",
+      "title": "Ansible",
+      "slug": "ansible",
+      "icon": "Settings",
+      "color": "text-red-500",
+      "desc": "Automate deployments, configuration management, and server provisioning."
+    },
+    {
+      "id": 13,
+      "category": "Logs & Observability",
+      "title": "ELK Stack",
+      "slug": "elk-stack",
+      "icon": "FileSearch",
+      "color": "text-green-600",
+      "desc": "Analyze logs using Elasticsearch, Logstash, and Kibana."
+    },
+    {
+      "id": 14,
+      "category": "Networking",
+      "title": "Nginx",
+      "slug": "nginx",
+      "icon": "Globe",
+      "color": "text-green-500",
+      "desc": "Web server, reverse proxying, load balancing, and performance optimization."
+    },
+    {
+      "id": 15,
+      "category": "Networking",
+      "title": "Apache",
+      "slug": "apache",
+      "icon": "ServerCrash",
+      "color": "text-gray-600",
+      "desc": "Learn HTTP server setup, virtual hosts, and backend routing."
+    },
+    {
+      "id": 16,
+      "category": "Artifact Management",
+      "title": "SonarQube",
+      "slug": "sonarqube",
+      "icon": "ShieldCheck",
+      "color": "text-teal-600",
+      "desc": "Improve code quality with static code analysis and pipeline integration."
+    },
+    {
+      "id": 17,
+      "category": "Security",
+      "title": "DevSecOps",
+      "slug": "devsecops",
+      "icon": "Shield",
+      "color": "text-red-700",
+      "desc": "Security automation, SAST, DAST, secrets management, and zero-trust."
+    },
+    {
+      "id": 18,
+      "category": "Scripting",
+      "title": "Bash Scripting",
+      "slug": "bash-scripting",
+      "icon": "Terminal",
+      "color": "text-gray-800",
+      "desc": "Automate repetitive DevOps tasks using shell scripting."
+    }
+  ]
+  

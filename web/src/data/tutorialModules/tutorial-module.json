@@ -1,0 +1,164 @@
+[
+    {
+      "id": "html-css",
+      "moduleTitle": "HTML & CSS",
+      "icon": "Layout",
+      "children": [
+        {
+          "title": "HTML Basics",
+          "lessons": [
+            { "title": "What is HTML?", "link": "/tutorial/html-css/html/what-is-html" },
+            { "title": "HTML Tags & Structure", "link": "/tutorial/html-css/html/tags" },
+            { "title": "Forms & Inputs", "link": "/tutorial/html-css/html/forms" }
+          ]
+        },
+        {
+          "title": "CSS Basics",
+          "lessons": [
+            { "title": "Selectors & Properties", "link": "/tutorial/html-css/css/selectors" },
+            { "title": "Flexbox", "link": "/tutorial/html-css/css/flexbox" },
+            { "title": "Grid Layout", "link": "/tutorial/html-css/css/grid" }
+          ]
+        }
+      ]
+    },
+  
+    {
+      "id": "javascript",
+      "moduleTitle": "JavaScript Tutorials",
+      "icon": "Code2",
+      "children": [
+        {
+          "title": "Beginner Tutorials",
+          "lessons": [
+            { "title": "JS Syntax Explained", "link": "/tutorial/js/beginner/syntax" },
+            { "title": "Let, Const, Var", "link": "/tutorial/js/beginner/variables" },
+            { "title": "Functions Basics", "link": "/tutorial/js/beginner/functions" }
+          ]
+        },
+        {
+          "title": "Intermediate Tutorials",
+          "lessons": [
+            { "title": "Array Methods", "link": "/tutorial/js/intermediate/arrays" },
+            { "title": "Objects & Prototypes", "link": "/tutorial/js/intermediate/objects" },
+            { "title": "DOM Manipulation", "link": "/tutorial/js/intermediate/dom" }
+          ]
+        }
+      ]
+    },
+  
+    {
+      "id": "react",
+      "moduleTitle": "React Tutorials",
+      "icon": "Atom",
+      "children": [
+        {
+          "title": "React Basics",
+          "lessons": [
+            { "title": "React Introduction", "link": "/tutorial/react/basics/intro" },
+            { "title": "JSX & Components", "link": "/tutorial/react/basics/jsx" },
+            { "title": "Props & State", "link": "/tutorial/react/basics/props-state" }
+          ]
+        },
+        {
+          "title": "React Advanced",
+          "lessons": [
+            { "title": "React Router", "link": "/tutorial/react/advance/router" },
+            { "title": "Redux Toolkit", "link": "/tutorial/react/advance/redux" },
+            { "title": "Performance Optimization", "link": "/tutorial/react/advance/performance" }
+          ]
+        }
+      ]
+    },
+  
+    {
+      "id": "node",
+      "moduleTitle": "Node.js Tutorials",
+      "icon": "ServerCog",
+      "children": [
+        {
+          "title": "Node Fundamentals",
+          "lessons": [
+            { "title": "Intro to Node.js", "link": "/tutorial/node/fundamentals/intro" },
+            { "title": "Modules System", "link": "/tutorial/node/fundamentals/modules" },
+            { "title": "Working With Files", "link": "/tutorial/node/fundamentals/fs" }
+          ]
+        },
+        {
+          "title": "Express Tutorials",
+          "lessons": [
+            { "title": "Express Basics", "link": "/tutorial/node/express/basics" },
+            { "title": "Middleware Explained", "link": "/tutorial/node/express/middleware" },
+            { "title": "Building REST API", "link": "/tutorial/node/express/rest-api" }
+          ]
+        }
+      ]
+    },
+  
+    {
+      "id": "database",
+      "moduleTitle": "Database Tutorials",
+      "icon": "Database",
+      "children": [
+        {
+          "title": "MySQL",
+          "lessons": [
+            { "title": "Intro to SQL", "link": "/tutorial/db/mysql/intro" },
+            { "title": "CRUD Operations", "link": "/tutorial/db/mysql/crud" }
+          ]
+        },
+        {
+          "title": "MongoDB",
+          "lessons": [
+            { "title": "Collections & Documents", "link": "/tutorial/db/mongo/docs" },
+            { "title": "Mongoose Models", "link": "/tutorial/db/mongo/models" }
+          ]
+        }
+      ]
+    },
+  
+    {
+      "id": "devops",
+      "moduleTitle": "DevOps Tutorials",
+      "icon": "Settings2",
+      "children": [
+        {
+          "title": "Linux Basics",
+          "lessons": [
+            { "title": "Linux Commands", "link": "/tutorial/devops/linux/commands" },
+            { "title": "File Permissions", "link": "/tutorial/devops/linux/permissions" }
+          ]
+        },
+        {
+          "title": "Deployment",
+          "lessons": [
+            { "title": "Deploy Node App", "link": "/tutorial/devops/deploy/node" },
+            { "title": "Docker for Beginners", "link": "/tutorial/devops/deploy/docker" }
+          ]
+        }
+      ]
+    },
+  
+    {
+      "id": "tools",
+      "moduleTitle": "Tools & Utilities",
+      "icon": "Tool",
+      "children": [
+        {
+          "title": "Git & GitHub",
+          "lessons": [
+            { "title": "Git Setup", "link": "/tutorial/tools/git/setup" },
+            { "title": "Branching Strategy", "link": "/tutorial/tools/git/branches" }
+          ]
+        },
+        {
+          "title": "VS Code",
+          "lessons": [
+            { "title": "Extensions Setup", "link": "/tutorial/tools/vscode/extensions" },
+            { "title": "Productivity Tips", "link": "/tutorial/tools/vscode/tips" }
+          ]
+        }
+      ]
+    }
+  ]
+  

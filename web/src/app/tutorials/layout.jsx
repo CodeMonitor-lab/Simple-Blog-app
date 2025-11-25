@@ -1,16 +1,20 @@
+"use client"
+
 import React from "react";
-import { SidebarHeader, SidebarModules, SidebarFooter } from "@/components/sidebar";
-import tutorials from "@/data/tutorial.json";
+import tutorials from "@/data/tutorialModules/tutorial-module.json";
+import { SidebarLayout } from "@/components/layout";
+
 
 export default function Layout({ children }) {
   return (
     <div className="flex">
 
       {/* SIDEBAR */}
+      
       <aside className="w-72 h-screen border-r p-5 overflow-y-auto bg-white dark:bg-gray-900">
-        <SidebarHeader />
-        <SidebarModules modules={tutorials} />
-        <SidebarFooter />
+        <SidebarLayout
+        data={tutorials}
+        />
       </aside>
 
       {/* MAIN CONTENT */}

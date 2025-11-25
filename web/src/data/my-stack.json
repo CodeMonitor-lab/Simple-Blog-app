@@ -1,39 +1,122 @@
 [
-    {
-      "icon": "Layers",
-      "color": "text-blue-500",
-      "title": "Next.js",
-      "desc": "For fast, SEO-friendly, and scalable web apps with SSR and static generation."
-    },
-    {
-      "icon": "Cpu",
-      "color": "text-yellow-500",
-      "title": "Node.js",
-      "desc": "Backend runtime that powers APIs and server-side logic efficiently."
-    },
-    {
-      "icon": "Wrench",
-      "color": "text-sky-500",
-      "title": "Tailwind CSS",
-      "desc": "Utility-first CSS for responsive, modern, and maintainable UI."
-    },
-    {
-      "icon": "Github",
-      "color": "text-gray-700",
-      "title": "GitHub & Vercel",
-      "desc": "Version control + instant deployments to scale projects quickly."
-    },
-    {
-      "icon": "BarChart2",
-      "color": "text-green-600",
-      "title": "MongoDB / Firebase",
-      "desc": "Reliable databases for scalable and flexible data handling."
-    },
-    {
-      "icon": "Globe",
-      "color": "text-indigo-500",
-      "title": "React Ecosystem",
-      "desc": "Smooth frontend experience built with reusable, modular components."
-    }
-  ]
-  
+  {
+    "icon": "Palette",
+    "color": "text-blue-500",
+    "title": "Tailwind CSS",
+    "slug": "tailwind-css",
+    "desc": "Utility-first CSS for responsive, modern, and maintainable UI.",
+    "content": "Tailwind CSS provides a utility-first approach that speeds up UI development and eliminates repetitive CSS. It enables you to build responsive, modern, and consistent interfaces while keeping the codebase clean and scalable without writing custom CSS."
+  },
+  {
+    "icon": "Layers",
+    "color": "text-purple-500",
+    "title": "Bootstrap",
+    "slug": "bootstrap",
+    "desc": "Classic CSS framework with a grid system and ready UI components.",
+    "content": "Bootstrap remains one of the most widely used CSS frameworks, offering a robust grid system, prebuilt UI components, and responsive utilities. It helps beginners and professionals quickly build consistent designs without deep CSS knowledge."
+  },
+  {
+    "icon": "Grid",
+    "color": "text-green-500",
+    "title": "Chakra UI",
+    "slug": "chakra-ui",
+    "desc": "Simple, accessible, and themeable React component library.",
+    "content": "Chakra UI focuses on accessibility and DX, providing easy-to-use, theme-ready components. It helps developers build consistent design systems with simple props and a modular architecture that works seamlessly with React."
+  },
+  {
+    "icon": "Square",
+    "color": "text-blue-600",
+    "title": "Material UI (MUI)",
+    "slug": "material-ui",
+    "desc": "Google Material Design–powered UI library for React.",
+    "content": "Material UI provides a vast collection of React components built on Google’s Material Design guidelines. It includes customizable themes, responsive layouts, and modern UI components suitable for enterprise-grade applications."
+  },
+  {
+    "icon": "Box",
+    "color": "text-red-500",
+    "title": "Ant Design",
+    "slug": "ant-design",
+    "desc": "Enterprise-level UI framework with polished components.",
+    "content": "Ant Design offers a professional, enterprise-ready component system widely used in dashboards and business applications. Its well-polished components, design rules, and theme customization make it ideal for large-scale systems."
+  },
+  {
+    "icon": "Sparkle",
+    "color": "text-pink-500",
+    "title": "Framer Motion",
+    "slug": "framer-motion",
+    "desc": "Powerful animation library for delightful React UI interactions.",
+    "content": "Framer Motion is a highly intuitive React animation library that makes adding motion and transitions effortless. With drag controls, gestures, and layout animations, it creates stunning interactive experiences with minimal code."
+  },
+  {
+    "icon": "BezierCurve",
+    "color": "text-green-600",
+    "title": "GSAP",
+    "slug": "gsap",
+    "desc": "High-performance animation library for complex motion graphics.",
+    "content": "GSAP delivers professional-grade animations with exceptional performance. It's widely used for interactive websites, advanced timeline controls, scroll animations, and any complex motion work that requires precision."
+  },
+  {
+    "icon": "Brackets",
+    "color": "text-yellow-500",
+    "title": "Styled Components",
+    "slug": "styled-components",
+    "desc": "CSS-in-JS library for styling React components dynamically.",
+    "content": "Styled Components lets you write actual CSS inside JavaScript, attaching styles directly to components. It promotes clean code, dynamic styling, and theme support, making large applications easier to maintain."
+  },
+  {
+    "icon": "Brackets",
+    "color": "text-pink-600",
+    "title": "Emotion",
+    "slug": "emotion",
+    "desc": "Fast, flexible CSS-in-JS library with high performance.",
+    "content": "Emotion combines performance with flexibility, allowing you to style components using string or object syntax. It offers excellent integration with React and supports theming for design system workflows."
+  },
+  {
+    "icon": "Columns",
+    "color": "text-pink-400",
+    "title": "Sass / SCSS",
+    "slug": "sass-scss",
+    "desc": "Feature-rich CSS preprocessor for writing maintainable styles.",
+    "content": "Sass extends CSS with variables, nesting, mixins, and functions, enabling more organized and reusable styles. It’s ideal for large projects that require structure and style consistency at scale."
+  },
+  {
+    "icon": "Brush",
+    "color": "text-red-400",
+    "title": "PostCSS",
+    "slug": "postcss",
+    "desc": "Modern tool for transforming CSS with plugins.",
+    "content": "PostCSS uses JavaScript-powered plugins to process and optimize CSS. From autoprefixing to advanced transformations, it’s highly customizable and is used under the hood in many modern frameworks."
+  },
+  {
+    "icon": "SquareGantt",
+    "color": "text-indigo-500",
+    "title": "Radix UI",
+    "slug": "radix-ui",
+    "desc": "Unstyled, accessible building blocks for custom UI.",
+    "content": "Radix UI provides low-level, accessible primitives for building custom design systems. It’s perfect for developers wanting full styling control while maintaining accessibility best practices."
+  },
+  {
+    "icon": "SquareGantt",
+    "color": "text-indigo-600",
+    "title": "Headless UI",
+    "slug": "headless-ui",
+    "desc": "Unstyled components designed for Tailwind workflows.",
+    "content": "Headless UI offers unstyled, fully accessible components ideal for Tailwind CSS. It allows you to design UIs with full control over the styling while using prebuilt component logic."
+  },
+  {
+    "icon": "Paintbrush",
+    "color": "text-teal-500",
+    "title": "DaisyUI",
+    "slug": "daisyui",
+    "desc": "Beautiful UI components built on top of Tailwind CSS.",
+    "content": "DaisyUI extends Tailwind CSS with themes and ready-to-use UI components. It accelerates design speed while keeping styles consistent, making it ideal for dashboards, apps, and SaaS products."
+  },
+  {
+    "icon": "Paintbrush",
+    "color": "text-cyan-500",
+    "title": "Flowbite",
+    "slug": "flowbite",
+    "desc": "Tailwind-based component library for modern web apps.",
+    "content": "Flowbite provides Tailwind-styled components and complex UI patterns such as navbars, tables, and modals. It simplifies building dashboards and full UI systems with clean, responsive components."
+  }
+]
