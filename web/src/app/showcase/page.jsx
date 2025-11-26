@@ -1,54 +1,24 @@
-"use client";
-import React, { useState, useMemo } from "react";
-import { ShowcaseProjectCard } from "@/components/card";
-import { FilterSelect, Search } from "@/components/common";
-import projects from "@/data/showcase.json";
+import Link from "next/link";
 
-const Page = () => {
-  const categories = ["All", "Frontend", "Backend", "Full Stack", "AI"];
+const categories = [
+  { title: "Backend", slug: "backend" },
+  { title: "Frontend", slug: "frontend" },
+  { title: "Full Stack", slug: "full-stack" },
+  { title: "Template", slug: "template" },
+];
 
-  const [category, setCategory] = useState("All");
-  const [query, setQuery] = useState("");
-
-  // 🔍 Filter logic (reusable pattern)
-  const filteredProjects = useMemo(() => {
-    return projects.filter((p) => {
-      const matchCategory = category === "All" || p.category === category;
-      const matchQuery =
-        p.title.toLowerCase().includes(query.toLowerCase()) ||
-        p.description.toLowerCase().includes(query.toLowerCase()) ||
-        p.tech.some((t) => t.toLowerCase().includes(query.toLowerCase()));
-      return matchCategory && matchQuery;
-    });
-  }, [projects, category, query]);
-
+export default function Page() {
   return (
-    <main className="max-w-6xl mx-auto px-6 py-10">
-      {/* 🔹 Header */}
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-3">
-          Project Showcase
-        </h1>
-        <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Explore featured web projects that demonstrate clean UI design and
-          full-stack functionality.
-        </p>
-      </div>
-
-      {/* 🔹 Controls */}
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-10">
-        <FilterSelect
-          category={category}
-          setCategory={setCategory}
-          categories={categories}
-        />
-        <Search query={query} setQuery={setQuery} />
-      </div>
-
-      {/* 🔹 Cards */}
-      <ShowcaseProjectCard projects={filteredProjects} />
-    </main>
+    <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {categories.map((cat) => (
+        <Link
+          key={cat.slug}
+          href={`/showcase/${cat.slug}`}
+          className="p-6 border rounded-xl hover:bg-gray-100 transition"
+        >
+          <h2 className="text-xl font-semibold">{cat.title}</h2>
+        </Link>
+      ))}
+    </section>
   );
-};
-
-export default Page;
+}
