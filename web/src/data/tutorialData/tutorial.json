@@ -1,0 +1,223 @@
+[
+  {
+    "id": "module-introduction",
+    "order": 1,
+    "title": "Introduction",
+    "slug": "introduction",
+    "description": "Start learning JavaScript from basics: what it is, how it runs, and how to set up your environment.",
+    "lessons": [
+      {
+        "id": "lesson-what-is-javascript",
+        "order": 1,
+        "title": "What is JavaScript?",
+        "slug": "what-is-javascript",
+        "duration": "6 min",
+        "summary": "Learn what JavaScript is and why it is essential for building interactive websites.",
+        "content": "JavaScript is a high-level, dynamic programming language used to make websites interactive. It runs in the browser and on servers using environments like Node.js.",
+        "isLocked": false,
+        "createdAt": "2025-01-01"
+      },
+      {
+        "id": "lesson-how-javascript-works",
+        "order": 2,
+        "title": "How JavaScript Works",
+        "slug": "how-javascript-works",
+        "duration": "7 min",
+        "summary": "Understand how the JS engine, call stack, and event loop execute code.",
+        "content": "JavaScript runs inside a browser's JS engine (such as V8). It uses a single-threaded event loop, call stack, and Web APIs to manage asynchronous tasks efficiently.",
+        "isLocked": false,
+        "createdAt": "2025-01-02"
+      },
+      {
+        "id": "lesson-setup-environment",
+        "order": 3,
+        "title": "Setup Environment",
+        "slug": "setup-environment",
+        "duration": "5 min",
+        "summary": "Set up Node.js, VS Code, and create your first JS file.",
+        "content": "To start coding in JS, install Node.js, choose a code editor like VS Code, and set up a basic project folder with an index.js file.",
+        "isLocked": false,
+        "createdAt": "2025-01-03"
+      }
+    ]
+  },
+  {
+    "id": "module-basics",
+    "order": 2,
+    "title": "Basics",
+    "slug": "basics",
+    "description": "Understand fundamental programming concepts like variables, data types, and operators.",
+    "lessons": [
+      {
+        "id": "lesson-variables",
+        "order": 1,
+        "title": "Variables",
+        "slug": "variables",
+        "duration": "8 min",
+        "summary": "Learn about variable declaration using let, const, and var.",
+        "content": "Variables store data values. JavaScript provides let, const, and var. Prefer const for values that do not change and let for reassignable values.",
+        "isLocked": false,
+        "createdAt": "2025-01-04"
+      },
+      {
+        "id": "lesson-data-types",
+        "order": 2,
+        "title": "Data Types",
+        "slug": "data-types",
+        "duration": "6 min",
+        "summary": "Explore primitive and reference types.",
+        "content": "JavaScript has primitive types (string, number, boolean, null, undefined, symbol, bigint) and reference types (objects, arrays, functions).",
+        "isLocked": false,
+        "createdAt": "2025-01-05"
+      },
+      {
+        "id": "lesson-operators",
+        "order": 3,
+        "title": "Operators",
+        "slug": "operators",
+        "duration": "6 min",
+        "summary": "Learn arithmetic, comparison, logical, and assignment operators.",
+        "content": "Operators include arithmetic (+, -, *, /), comparison (==, ===, !=), logical (&&, ||), and assignment (=, +=). They help perform operations on values.",
+        "isLocked": false,
+        "createdAt": "2025-01-06"
+      },
+      {
+        "id": "lesson-conditionals",
+        "order": 4,
+        "title": "Conditionals",
+        "slug": "conditionals",
+        "duration": "9 min",
+        "summary": "Control flow using if/else and switch.",
+        "content": "Conditional statements control decisions using if, else if, else, and switch. They allow programs to perform different actions based on conditions.",
+        "isLocked": false,
+        "createdAt": "2025-01-07"
+      }
+    ]
+  },
+  {
+    "id": "module-functions",
+    "order": 3,
+    "title": "Functions",
+    "slug": "functions",
+    "description": "Learn to write modular code using functions, scopes, and hoisting.",
+    "lessons": [
+      {
+        "id": "lesson-function-basics",
+        "order": 1,
+        "title": "Function Basics",
+        "slug": "function-basics",
+        "duration": "8 min",
+        "summary": "Understand function declarations, arguments, and return values.",
+        "content": "Functions are reusable blocks of code. Declare them using function declarations, expressions, or arrow functions. They help keep code modular.",
+        "isLocked": false,
+        "createdAt": "2025-01-08"
+      },
+      {
+        "id": "lesson-arrow-functions",
+        "order": 2,
+        "title": "Arrow Functions",
+        "slug": "arrow-functions",
+        "duration": "7 min",
+        "summary": "Shorter syntax + lexical binding of this.",
+        "content": "Arrow functions provide shorter syntax and lexically bind 'this'. Example: const sum = (a, b) => a + b.",
+        "isLocked": false,
+        "createdAt": "2025-01-09"
+      },
+      {
+        "id": "lesson-scope-and-hoisting",
+        "order": 3,
+        "title": "Scope & Hoisting",
+        "slug": "scope-and-hoisting",
+        "duration": "8 min",
+        "summary": "Understand how variable visibility works in JS.",
+        "content": "Scope defines the accessibility of variables. Hoisting moves declarations to the top of their scope, allowing usage before definition (with limitations).",
+        "isLocked": false,
+        "createdAt": "2025-01-10"
+      }
+    ]
+  },
+  {
+    "id": "module-dom-manipulation",
+    "order": 4,
+    "title": "DOM Manipulation",
+    "slug": "dom-manipulation",
+    "description": "Learn how to interact with and update web pages using JavaScript.",
+    "lessons": [
+      {
+        "id": "lesson-selecting-elements",
+        "order": 1,
+        "title": "Selecting Elements",
+        "slug": "selecting-elements",
+        "duration": "5 min",
+        "summary": "Learn DOM selectors like querySelector and getElementById.",
+        "content": "You can select elements using querySelector, getElementById, and class selectors. Example: document.querySelector('.btn').",
+        "isLocked": false,
+        "createdAt": "2025-01-11"
+      },
+      {
+        "id": "lesson-updating-elements",
+        "order": 2,
+        "title": "Updating Elements",
+        "slug": "updating-elements",
+        "duration": "6 min",
+        "summary": "Update text, HTML, and styles in the DOM.",
+        "content": "Change text, HTML, or styles using innerText, innerHTML, and style properties. Example: element.style.color = 'red'.",
+        "isLocked": false,
+        "createdAt": "2025-01-12"
+      },
+      {
+        "id": "lesson-event-listeners",
+        "order": 3,
+        "title": "Event Listeners",
+        "slug": "event-listeners",
+        "duration": "6 min",
+        "summary": "Handle events such as clicks, input, and hover.",
+        "content": "Use addEventListener to respond to user actions. Example: button.addEventListener('click', handleClick).",
+        "isLocked": false,
+        "createdAt": "2025-01-13"
+      }
+    ]
+  },
+  {
+    "id": "module-async-js",
+    "order": 5,
+    "title": "Asynchronous JavaScript",
+    "slug": "async-js",
+    "description": "Handle asynchronous operations using callbacks, promises, and async/await.",
+    "lessons": [
+      {
+        "id": "lesson-callbacks",
+        "order": 1,
+        "title": "Callbacks",
+        "slug": "callbacks",
+        "duration": "7 min",
+        "summary": "Understand async programming with callbacks.",
+        "content": "Callbacks are functions passed as arguments to other functions, mainly used for async operations. They can lead to callback hell.",
+        "isLocked": false,
+        "createdAt": "2025-01-14"
+      },
+      {
+        "id": "lesson-promises",
+        "order": 2,
+        "title": "Promises",
+        "slug": "promises",
+        "duration": "7 min",
+        "summary": "Learn how promises work with then() and catch().",
+        "content": "Promises represent the result of an async operation. They have states: pending, fulfilled, rejected. Use .then() and .catch() to handle them.",
+        "isLocked": false,
+        "createdAt": "2025-01-15"
+      },
+      {
+        "id": "lesson-async-await",
+        "order": 3,
+        "title": "Async/Await",
+        "slug": "async-await",
+        "duration": "8 min",
+        "summary": "Write cleaner async code using async/await.",
+        "content": "Async/await provides cleaner async code. Example: const data = await fetch(url).then(res => res.json()).",
+        "isLocked": false,
+        "createdAt": "2025-01-16"
+      }
+    ]
+  }
+]

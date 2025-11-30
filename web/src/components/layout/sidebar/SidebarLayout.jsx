@@ -1,22 +1,19 @@
 "use client";
+
+import React from "react";
 import SidebarHeader from "./compo/SidebarHeader";
 import SidebarFooter from "./compo/SidebarFooter";
-import Link from "next/link";
 
-export default function SidebarLayout({ children, title, lessons }) {
+const SidebarLayout = ({ children }) => {
   return (
-    <main className="flex">
-      <aside className="w-64 border-r p-4">
-        <SidebarHeader  />
-
-        <ul className="space-y-2 mt-4">
-      
-        </ul>
-
-        <SidebarFooter />
-      </aside>
-
-      <section className="flex-1 p-6">{children}</section>
-    </main>
+    <div>
+      <SidebarHeader />
+      <main className="flex-1 overflow-y-auto px-3 py-4" >
+        {children}
+      </main>
+      <SidebarFooter />
+    </div>
   );
-}
+};
+
+export default SidebarLayout;

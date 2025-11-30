@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const HomePage = () => {
   const tutorialRoute = [
-    { path: "/stack/react", name: "React" },
-    { path: "/stack/next-js", name: "NextJS" },
+    { path: "/tutorial/react", name: "React" },
+    { path: "/tutorial/next-js", name: "NextJS" },
   ];
 
   return (

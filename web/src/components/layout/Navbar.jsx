@@ -11,7 +11,7 @@ const Navbar = () => {
     { name: "Stacks", path: "/stack" },
     { name: "blogs", path: "/blog" }, 
     { name: "Showcase", path: "/showcase" },
-    { name: "Tutorials", path: "/tutorials" },
+    { name: "Tutorial", path: "/tutorial" },
     { name: "Tools", path: "/dev-tool" },
     { name: "DevOps", path: "/dev-ops" },
     { name: "UI", path: "/ui-library" },

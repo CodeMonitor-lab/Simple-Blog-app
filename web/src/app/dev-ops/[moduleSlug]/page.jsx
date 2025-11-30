@@ -9,7 +9,7 @@ const Page = async ({ params }) => {
   );
 
   if (!moduleData) {
-    return <div className="p-10 text-red-500">Module not found ❌</div>;
+    return <div className="p-10 text-red-500">Module not found </div>;
   }
 
   return (

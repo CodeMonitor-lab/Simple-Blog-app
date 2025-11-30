@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "HTML & CSS",
+    "desc": "Learn the essential building blocks of the web by mastering HTML for page structure and CSS for styling. This tutorial guides you through semantic markup, responsive layouts, Flexbox, Grid, forms, typography, and modern design techniques. By the end, you’ll be able to create clean, accessible, and visually appealing websites from scratch.",
+    "slug": "html-css"
+  },
+  {
+    "id": 2,
+    "title": "JavaScript",
+    "desc": "Understand the programming language that powers dynamic web applications. You’ll explore variables, functions, loops, arrays, objects, ES6 features, asynchronous programming, DOM manipulation, events, and real project-based logic building. By completing this module, you’ll be able to build interactive web features and strengthen core problem-solving skills.",
+    "slug": "javascript"
+  },
+  {
+    "id": 3,
+    "title": "React.js",
+    "desc": "Learn how to build modern interactive interfaces using reusable components and declarative UI patterns. This module explains components, props, state, hooks, effects, context API, routing, API integration, UI rendering patterns, performance improvements, and real-world architecture so you can confidently create production-level applications.",
+    "slug": "react-js"
+  },
+  {
+    "id": 4,
+    "title": "Next.js",
+    "desc": "Master the framework used to build full-stack, SEO-optimized, and high-performance production apps. You’ll learn file-based routing, server components, data fetching methods like SSR, SSG, and ISR, API routes, middleware, authentication, deployment strategies, caching, and app architecture used in real enterprise-grade apps.",
+    "slug": "next-js"
+  },
+  {
+    "id": 5,
+    "title": "Tailwind CSS",
+    "desc": "Discover how to design fast and beautifully without writing custom CSS. Tailwind empowers developers to build stunning responsive interfaces using utility classes. This module covers layouts, spacing, typography, dark mode, component compositions, custom configuration, and practical real-world UI building for dashboards, landing pages, and apps.",
+    "slug": "tailwind-css"
+  },
+  {
+    "id": 6,
+    "title": "Node.js",
+    "desc": "Learn how JavaScript runs on the backend to build scalable and high-performance server applications. This tutorial covers the event loop, modules, filesystem, creating REST APIs, real-time communication using WebSockets, streams, deployment techniques, and architecture suitable for modern applications and microservices.",
+    "slug": "node-js"
+  },
+  {
+    "id": 7,
+    "title": "Express.js",
+    "desc": "Build powerful backend APIs using a minimal and flexible Node.js framework. You’ll learn routing, middleware, controllers, authentication, validation, error handling, file uploads, security best practices, database integration, and how to structure production-ready RESTful backend services.",
+    "slug": "express-js"
+  },
+  {
+    "id": 8,
+    "title": "MongoDB",
+    "desc": "Understand how to store and manage application data using a modern NoSQL database. This tutorial covers CRUD operations, schema design patterns, indexing, aggregation pipelines, relationships, performance tuning, and scalable database design principles commonly used in MERN stack applications.",
+    "slug": "mongodb"
+  }
+]

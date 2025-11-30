@@ -1,22 +1,177 @@
 [
-    {
-      "id": "intro",
-      "title": "Introduction",
-      "lessons": [
-        { "id": "what-is-js", "title": "What is JavaScript?" },
-        { "id": "how-it-works", "title": "How it Works" },
-        { "id": "setup", "title": "Setup Environment" }
-      ]
-    },
-    {
-      "id": "basics",
-      "title": "Basics",
-      "lessons": [
-        { "id": "variables", "title": "Variables" },
-        { "id": "data-types", "title": "Data Types" },
-        { "id": "operators", "title": "Operators" },
-        { "id": "conditionals", "title": "Conditionals" }
-      ]
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "Introduction",
+    "slug": "introduction",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "What is JavaScript?",
+        "slug": "what-is-javascript",
+        "content": "JavaScript is a high-level, dynamic programming language used to make websites interactive. It runs in the browser and on servers using environments like Node.js."
+      },
+      {
+        "id": 2,
+        "title": "How JavaScript Works",
+        "slug": "how-javascript-works",
+        "content": "JavaScript runs inside a browser's JS engine (such as V8). It uses a single-threaded event loop, call stack, and Web APIs to manage asynchronous tasks efficiently."
+      },
+      {
+        "id": 3,
+        "title": "Setup Environment",
+        "slug": "setup-environment",
+        "content": "To start coding in JS, install Node.js, choose a code editor like VS Code, and set up a basic project folder with an index.js file."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Basics",
+    "slug": "basics",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Variables",
+        "slug": "variables",
+        "content": "Variables store data values. Use const for non-changing values, let for reassigned values, and avoid var due to function scoping and hoisting issues."
+      },
+      {
+        "id": 2,
+        "title": "Data Types",
+        "slug": "data-types",
+        "content": "JavaScript has primitive types (string, number, boolean, null, undefined, symbol, bigint) and reference types (objects, arrays, functions)."
+      },
+      {
+        "id": 3,
+        "title": "Operators",
+        "slug": "operators",
+        "content": "Operators include arithmetic (+, -, *, /), comparison (===, !=), logical (&&, ||), and assignment (=, +=). They allow calculations and logical decisions."
+      },
+      {
+        "id": 4,
+        "title": "Conditionals",
+        "slug": "conditionals",
+        "content": "Conditional statements allow programs to perform different actions based on conditions using if, else if, else, and switch."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Functions",
+    "slug": "functions",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Function Basics",
+        "slug": "function-basics",
+        "content": "Functions are reusable blocks of code. Declare them using function declarations, function expressions, or arrow functions."
+      },
+      {
+        "id": 2,
+        "title": "Arrow Functions",
+        "slug": "arrow-functions",
+        "content": "Arrow functions provide shorter syntax and lexically bind 'this'. Example: const sum = (a, b) => a + b."
+      },
+      {
+        "id": 3,
+        "title": "Scope & Hoisting",
+        "slug": "scope-and-hoisting",
+        "content": "Scope defines where variables can be accessed. Hoisting moves declarations to the top of the scope during compilation."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "DOM Manipulation",
+    "slug": "dom-manipulation",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Selecting Elements",
+        "slug": "selecting-elements",
+        "content": "Use querySelector, getElementById, and class selectors to target DOM nodes for manipulation."
+      },
+      {
+        "id": 2,
+        "title": "Updating Elements",
+        "slug": "updating-elements",
+        "content": "Modify HTML, text, or styling via innerText, innerHTML, and style properties."
+      },
+      {
+        "id": 3,
+        "title": "Event Listeners",
+        "slug": "event-listeners",
+        "content": "Use addEventListener to respond to user interactions such as clicks, input changes, and keyboard events."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Asynchronous JavaScript",
+    "slug": "async-js",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Callbacks",
+        "slug": "callbacks",
+        "content": "Callbacks are functions passed as arguments to other functions, mainly used for async operations. They can lead to callback hell."
+      },
+      {
+        "id": 2,
+        "title": "Promises",
+        "slug": "promises",
+        "content": "Promises represent the result of an async operation. They have states: pending, fulfilled, rejected."
+      },
+      {
+        "id": 3,
+        "title": "Async/Await",
+        "slug": "async-await",
+        "content": "Async/await provides cleaner asynchronous code using try/catch for error handling."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "ES6 & Modern JavaScript",
+    "slug": "es6",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Template Literals",
+        "slug": "template-literals",
+        "content": "Template literals allow easier string formatting using backticks and ${expressions}."
+      },
+      {
+        "id": 2,
+        "title": "Destructuring",
+        "slug": "destructuring",
+        "content": "Destructuring extracts values from arrays and objects into variables easily."
+      },
+      {
+        "id": 3,
+        "title": "Spread & Rest Operators",
+        "slug": "spread-rest",
+        "content": "Spread (...) expands values, while rest (...) collects remaining items into an array."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Object-Oriented Programming",
+    "slug": "oop",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Classes & Constructors",
+        "slug": "classes",
+        "content": "Classes create reusable object blueprints using constructor methods and properties."
+      },
+      {
+        "id": 2,
+        "title": "Inheritance",
+        "slug": "inheritance",
+        "content": "Inheritance allows child classes to access parent class features using extends and super()."
+      }
+    ]
+  }
+]

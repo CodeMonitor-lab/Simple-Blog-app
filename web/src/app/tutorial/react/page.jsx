@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>Full Stack</div>
+    <div>OverView Page</div>
   )
 }
 

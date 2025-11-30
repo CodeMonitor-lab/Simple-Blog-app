@@ -20,12 +20,10 @@ export default function RootLayout({ children }) {
         className={`${GeistSans.variable} ${GeistMono.variable} antialiased bg-gray-50 text-gray-800`}
       >
         <Navbar />
-        <main className="min-h-screen">{children}</main>
+        <main>{children}</main>
         <Footer />
-
-        {/* 📊 Analytics & Performance */}
         <Analytics />
-        <SpeedInsights />
+        <SpeedInsights /> 
       </body>
     </html>
   );
