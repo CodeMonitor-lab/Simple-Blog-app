@@ -8,14 +8,13 @@ const Navbar = () => {
 
    const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Stacks", path: "/stack" },
-    { name: "blogs", path: "/blog" }, 
+    { name: "Templates", path: "/templates" },
     { name: "Showcase", path: "/showcase" },
+    { name: "Elements", path: "/ui-library" },
     { name: "Tutorial", path: "/tutorial" },
     { name: "Tools", path: "/dev-tool" },
+    { name: "blogs", path: "/blog" }, 
     { name: "DevOps", path: "/dev-ops" },
-    { name: "UI", path: "/ui-library" },
-    { name: "Templates", path: "/templates" },
     
     // { name: "Register", path: "/auth/register" },
     // { name: "Login", path: "/auth/login" },

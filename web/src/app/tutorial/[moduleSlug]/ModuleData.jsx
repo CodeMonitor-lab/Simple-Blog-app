@@ -16,7 +16,7 @@ const ModuleData = () => (
             <ul className="pl-4 space-y-1">
               {m.lessons?.map((lesson) => (
                 <li key={lesson.id}>
-                  <Link href={`/stack/${m.slug}/${lesson.slug}`} className="text-sm hover:text-blue-500 transition">
+                  <Link href={`/tutorial/${m.slug}/${lesson.slug}`} className="text-sm hover:text-blue-500 transition">
                     {lesson.title}
                   </Link>
                 </li>

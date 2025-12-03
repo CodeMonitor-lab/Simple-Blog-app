@@ -3,7 +3,7 @@ import { RefreshCw, HelpCircle } from "lucide-react";
 
 const SidebarFooter = () => {
   return (
-    <div className="mt-6 pt-4 px-2 border-t border-gray-200 dark:border-gray-800">
+    <div className="mt-6 pt-4 px-4 border-t border-gray-200 dark:border-gray-800">
       <button
         className="w-full flex items-center gap-2 px-3 py-2 rounded-md 
                    bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 
