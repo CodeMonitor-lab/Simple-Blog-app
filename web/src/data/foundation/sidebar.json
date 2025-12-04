@@ -1,0 +1,121 @@
+{
+    "meta": {
+      "version": "1.0.0",
+      "lastUpdated": "2025-12-03",
+      "author": "Your Name",
+      "basePath": "/foundation"
+    },
+    "sidebar": [
+      {
+        "section": "Getting Started",
+        "slug": "getting-started",
+        "order": 1,
+        "items": [
+          {
+            "label": "Overview",
+            "slug": "overview",
+            "order": 1,
+            "icon": "book-open",
+            "description": "Introduction to the design system and how to use it."
+          },
+          {
+            "label": "Principles",
+            "slug": "principles",
+            "order": 2,
+            "icon": "layout-grid",
+            "description": "Core values driving design decisions."
+          }
+        ]
+      },
+      {
+        "section": "Design Tokens",
+        "slug": "tokens",
+        "order": 2,
+        "items": [
+          {
+            "label": "Colors",
+            "slug": "colors",
+            "order": 1,
+            "description": "Semantic and functional color usage."
+          },
+          {
+            "label": "Typography",
+            "slug": "typography",
+            "order": 2,
+            "description": "Type scales, font families, and readability rules."
+          },
+          {
+            "label": "Spacing",
+            "slug": "spacing",
+            "order": 3,
+            "description": "Consistent layout spacing scale."
+          },
+          {
+            "label": "Radius & Elevation",
+            "slug": "radius-elevation",
+            "order": 4,
+            "description": "Corner radiuses and shadows for visual hierarchy."
+          }
+        ]
+      },
+      {
+        "section": "Components",
+        "slug": "components",
+        "order": 3,
+        "items": [
+          { "label": "Buttons", "slug": "buttons", "order": 1 },
+          { "label": "Cards", "slug": "cards", "order": 2 },
+          { "label": "Inputs", "slug": "inputs", "order": 3 },
+          { "label": "Tags & Badges", "slug": "tags", "order": 4 },
+          { "label": "Navigation", "slug": "navigation", "order": 5 },
+          { "label": "Modals & Dialogs", "slug": "dialogs", "order": 6 }
+        ]
+      },
+      {
+        "section": "Patterns",
+        "slug": "patterns",
+        "order": 4,
+        "items": [
+          { "label": "Responsive Layouts", "slug": "responsive", "order": 1 },
+          { "label": "Desktop Navigation", "slug": "desktop-navigation", "order": 2 },
+          { "label": "Mobile Navigation", "slug": "mobile-navigation", "order": 3 }
+        ]
+      },
+      {
+        "section": "Accessibility",
+        "slug": "accessibility",
+        "order": 5,
+        "items": [
+          { "label": "WCAG Guidelines", "slug": "wcag", "order": 1 },
+          { "label": "Keyboard Interaction", "slug": "keyboard", "order": 2 },
+          { "label": "Performance", "slug": "performance", "order": 3 }
+        ]
+      },
+      {
+        "section": "Showcase",
+        "slug": "showcase",
+        "order": 6,
+        "items": [
+          { "label": "Component Gallery", "slug": "gallery", "order": 1 }
+        ]
+      },
+      {
+        "section": "Resources",
+        "slug": "resources",
+        "order": 7,
+        "items": [
+          { "label": "Docs & Templates", "slug": "docs", "order": 1 },
+          { "label": "Articles & References", "slug": "articles", "order": 2 }
+        ]
+      },
+      {
+        "section": "Contact",
+        "slug": "contact",
+        "order": 8,
+        "items": [
+          { "label": "Work With Me", "slug": "work-with-me", "order": 1 }
+        ]
+      }
+    ]
+  }
+  
